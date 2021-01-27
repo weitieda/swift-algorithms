@@ -7,8 +7,20 @@
 
 import Foundation
 
-class TwoSum {
-    static func run() -> Bool {
-        return false
+public class TwoSum {
+    public static func run(input: [Int], target: Int) -> [Int] {
+        
+        var numberHasSeen = Set<Int>()
+        
+        for number in input {
+            let needNumber = target - number
+            if numberHasSeen.contains(needNumber) {
+                return [needNumber, number]
+            } else {
+                numberHasSeen.insert(number)
+            }
+        }
+        
+        return []
     }
 }

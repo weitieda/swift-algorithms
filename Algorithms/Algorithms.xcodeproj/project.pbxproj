@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		838087B225C2161900D5635C /* Algorithms.h in Headers */ = {isa = PBXBuildFile; fileRef = 838087B025C2161900D5635C /* Algorithms.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		838087BC25C2164300D5635C /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838087BB25C2164300D5635C /* TwoSum.swift */; };
-		838087C725C2186000D5635C /* AlgorithmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838087C625C2186000D5635C /* AlgorithmsTests.swift */; };
 		838087C925C2186000D5635C /* Algorithms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838087AD25C2161900D5635C /* Algorithms.framework */; };
+		838087E725C22D0400D5635C /* TwoSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838087E625C22D0400D5635C /* TwoSumTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,8 +29,8 @@
 		838087B125C2161900D5635C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		838087BB25C2164300D5635C /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 		838087C425C2186000D5635C /* AlgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		838087C625C2186000D5635C /* AlgorithmsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsTests.swift; sourceTree = "<group>"; };
 		838087C825C2186000D5635C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		838087E625C22D0400D5635C /* TwoSumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +99,8 @@
 		838087C525C2186000D5635C /* AlgorithmsTests */ = {
 			isa = PBXGroup;
 			children = (
-				838087C625C2186000D5635C /* AlgorithmsTests.swift */,
 				838087C825C2186000D5635C /* Info.plist */,
+				838087E625C22D0400D5635C /* TwoSumTest.swift */,
 			);
 			path = AlgorithmsTests;
 			sourceTree = "<group>";
@@ -170,6 +170,7 @@
 					};
 					838087C325C2186000D5635C = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -222,7 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				838087C725C2186000D5635C /* AlgorithmsTests.swift in Sources */,
+				838087E725C22D0400D5635C /* TwoSumTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +413,7 @@
 		838087CD25C2186000D5635C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = T64RAU2S7P;
@@ -423,6 +425,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiedawei.AlgorithmsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -430,6 +434,7 @@
 		838087CE25C2186000D5635C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = T64RAU2S7P;
@@ -441,6 +446,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiedawei.AlgorithmsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
