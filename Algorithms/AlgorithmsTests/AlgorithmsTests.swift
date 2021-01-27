@@ -6,7 +6,7 @@
 //
 
 import XCTest
-import Algorithms
+@testable import Algorithms
 
 class AlgorithmsTests: XCTestCase {
 

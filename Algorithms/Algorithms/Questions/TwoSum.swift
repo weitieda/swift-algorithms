@@ -7,8 +7,8 @@
 
 import Foundation
 
-public class TwoSum {
-    public static func run() -> Bool {
+class TwoSum {
+    static func run() -> Bool {
         return false
     }
 }
