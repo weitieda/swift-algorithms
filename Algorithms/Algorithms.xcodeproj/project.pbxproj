@@ -11,6 +11,8 @@
 		838087BC25C2164300D5635C /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838087BB25C2164300D5635C /* TwoSum.swift */; };
 		838087C925C2186000D5635C /* Algorithms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838087AD25C2161900D5635C /* Algorithms.framework */; };
 		838087E725C22D0400D5635C /* TwoSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838087E625C22D0400D5635C /* TwoSumTest.swift */; };
+		83E96F7225C25F77001E35DC /* ValidateSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E96F7125C25F77001E35DC /* ValidateSubsequence.swift */; };
+		83E96F7C25C2632D001E35DC /* ValidateSubsequenceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E96F7B25C2632D001E35DC /* ValidateSubsequenceTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		838087C425C2186000D5635C /* AlgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		838087C825C2186000D5635C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		838087E625C22D0400D5635C /* TwoSumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumTest.swift; sourceTree = "<group>"; };
+		83E96F7125C25F77001E35DC /* ValidateSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateSubsequence.swift; sourceTree = "<group>"; };
+		83E96F7B25C2632D001E35DC /* ValidateSubsequenceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateSubsequenceTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 		838087A325C2161900D5635C = {
 			isa = PBXGroup;
 			children = (
+				83E96F7125C25F77001E35DC /* ValidateSubsequence.swift */,
 				838087AF25C2161900D5635C /* Algorithms */,
 				838087C525C2186000D5635C /* AlgorithmsTests */,
 				838087AE25C2161900D5635C /* Products */,
@@ -101,6 +106,7 @@
 			children = (
 				838087C825C2186000D5635C /* Info.plist */,
 				838087E625C22D0400D5635C /* TwoSumTest.swift */,
+				83E96F7B25C2632D001E35DC /* ValidateSubsequenceTest.swift */,
 			);
 			path = AlgorithmsTests;
 			sourceTree = "<group>";
@@ -216,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				838087BC25C2164300D5635C /* TwoSum.swift in Sources */,
+				83E96F7225C25F77001E35DC /* ValidateSubsequence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				838087E725C22D0400D5635C /* TwoSumTest.swift in Sources */,
+				83E96F7C25C2632D001E35DC /* ValidateSubsequenceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
