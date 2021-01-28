@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83318B4125C375C400EE4612 /* ThreeSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83318B4025C375C400EE4612 /* ThreeSumTest.swift */; };
 		838087B225C2161900D5635C /* Algorithms.h in Headers */ = {isa = PBXBuildFile; fileRef = 838087B025C2161900D5635C /* Algorithms.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		838087BC25C2164300D5635C /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838087BB25C2164300D5635C /* TwoSum.swift */; };
 		838087C925C2186000D5635C /* Algorithms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838087AD25C2161900D5635C /* Algorithms.framework */; };
 		838087E725C22D0400D5635C /* TwoSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838087E625C22D0400D5635C /* TwoSumTest.swift */; };
 		83E96F7225C25F77001E35DC /* ValidateSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E96F7125C25F77001E35DC /* ValidateSubsequence.swift */; };
 		83E96F7C25C2632D001E35DC /* ValidateSubsequenceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E96F7B25C2632D001E35DC /* ValidateSubsequenceTest.swift */; };
+		83E96F8E25C32800001E35DC /* ThreeSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E96F8D25C32800001E35DC /* ThreeSum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		83318B4025C375C400EE4612 /* ThreeSumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSumTest.swift; sourceTree = "<group>"; };
 		838087AD25C2161900D5635C /* Algorithms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Algorithms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		838087B025C2161900D5635C /* Algorithms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Algorithms.h; sourceTree = "<group>"; };
 		838087B125C2161900D5635C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +38,7 @@
 		838087E625C22D0400D5635C /* TwoSumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumTest.swift; sourceTree = "<group>"; };
 		83E96F7125C25F77001E35DC /* ValidateSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateSubsequence.swift; sourceTree = "<group>"; };
 		83E96F7B25C2632D001E35DC /* ValidateSubsequenceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateSubsequenceTest.swift; sourceTree = "<group>"; };
+		83E96F8D25C32800001E35DC /* ThreeSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 			children = (
 				83E96F7125C25F77001E35DC /* ValidateSubsequence.swift */,
 				838087BB25C2164300D5635C /* TwoSum.swift */,
+				83E96F8D25C32800001E35DC /* ThreeSum.swift */,
 			);
 			path = Questions;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 				838087C825C2186000D5635C /* Info.plist */,
 				838087E625C22D0400D5635C /* TwoSumTest.swift */,
 				83E96F7B25C2632D001E35DC /* ValidateSubsequenceTest.swift */,
+				83318B4025C375C400EE4612 /* ThreeSumTest.swift */,
 			);
 			path = AlgorithmsTests;
 			sourceTree = "<group>";
@@ -222,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				838087BC25C2164300D5635C /* TwoSum.swift in Sources */,
+				83E96F8E25C32800001E35DC /* ThreeSum.swift in Sources */,
 				83E96F7225C25F77001E35DC /* ValidateSubsequence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				838087E725C22D0400D5635C /* TwoSumTest.swift in Sources */,
+				83318B4125C375C400EE4612 /* ThreeSumTest.swift in Sources */,
 				83E96F7C25C2632D001E35DC /* ValidateSubsequenceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
