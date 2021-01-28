@@ -59,7 +59,6 @@
 		838087A325C2161900D5635C = {
 			isa = PBXGroup;
 			children = (
-				83E96F7125C25F77001E35DC /* ValidateSubsequence.swift */,
 				838087AF25C2161900D5635C /* Algorithms */,
 				838087C525C2186000D5635C /* AlgorithmsTests */,
 				838087AE25C2161900D5635C /* Products */,
@@ -96,6 +95,7 @@
 		838087BE25C2164600D5635C /* Questions */ = {
 			isa = PBXGroup;
 			children = (
+				83E96F7125C25F77001E35DC /* ValidateSubsequence.swift */,
 				838087BB25C2164300D5635C /* TwoSum.swift */,
 			);
 			path = Questions;
