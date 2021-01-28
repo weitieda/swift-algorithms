@@ -13,7 +13,9 @@ class TwoSumTest: XCTestCase {
     func test() {
         let input1 = [3, 5, -4, 8, 11, 1, -1, 6]
         let target1 = 10
-        XCTAssertEqual([11, -1], TwoSum.run(input: input1, target: target1))
+        
+        XCTAssertEqual([4, 6].sorted(),
+                       TwoSum.run(input: input1, target: target1).sorted())
         
         let input2 = [4, 6, 1, -3]
         let target2 = 11
