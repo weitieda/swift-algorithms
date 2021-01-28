@@ -30,7 +30,7 @@ import Foundation
 class ValidateSubsequence {
     
     // t: O(n), s: O(1)
-    static func run(input: [Int], sequence: [Int]) -> Bool {
+    static func solution(input: [Int], sequence: [Int]) -> Bool {
         var inputIndex = 0
         var seqIndex = 0
         
@@ -45,7 +45,7 @@ class ValidateSubsequence {
     }
     
     // t: O(n), s: O(1)
-    static func run2(input: [Int], sequence: [Int]) -> Bool {
+    static func solution2(input: [Int], sequence: [Int]) -> Bool {
         var seqIndex = 0
 
         for index in input.indices {

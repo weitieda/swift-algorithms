@@ -15,11 +15,11 @@ class TwoSumTest: XCTestCase {
         let target1 = 10
         
         XCTAssertEqual([4, 6].sorted(),
-                       TwoSum.run(input: input1, target: target1).sorted())
+                       TwoSum.solution(input: input1, target: target1).sorted())
         
         let input2 = [4, 6, 1, -3]
         let target2 = 11
-        XCTAssertEqual([], TwoSum.run(input: input2, target: target2))
+        XCTAssertEqual([], TwoSum.solution(input: input2, target: target2))
     }
 }
 

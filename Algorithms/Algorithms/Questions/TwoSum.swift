@@ -8,7 +8,7 @@
 import Foundation
 
 final class TwoSum {
-    static func run(input: [Int], target: Int) -> [Int] {
+    static func solution(input: [Int], target: Int) -> [Int] {
         
         var numberHasSeen = [Int: Int]()
 
