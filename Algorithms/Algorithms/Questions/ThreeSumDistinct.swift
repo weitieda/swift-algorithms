@@ -1,12 +1,11 @@
 //
-//  ThreeSum.swift
+//  ThreeSumDistinct.swift
 //  Algorithms
 //
 //  Created by Tieda Wei on 2021-01-28.
 //
 
 import Foundation
-
 /*
  
  Write a function that takes in a non-empty array of distinct integers and an
@@ -27,7 +26,7 @@ import Foundation
 
  */
 
-final class ThreeSum {
+final class ThreeSumDistinct {
     
     // t: O(n^3), s: O(n)
     static func solution(input: [Int], targetSum: Int) -> [[Int]] {
@@ -67,4 +66,3 @@ final class ThreeSum {
     }
     
 }
-

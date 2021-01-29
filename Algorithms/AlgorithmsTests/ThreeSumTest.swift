@@ -16,13 +16,13 @@ class ThreeSumTest: XCTestCase {
         
         let expected = [[-8, 2, 6], [-8, 5, 3], [-6, 1, 5]]
         
-        let sut = ThreeSum.solution(input: input, targetSum: targetSum)
+        let sut = ThreeSumDistinct.solution(input: input, targetSum: targetSum)
         XCTAssertEqual(expected.count, sut.count)
         avoidOrder(sut).forEach {
             XCTAssertTrue(avoidOrder(expected).contains($0))
         }
         
-        let sut2 = ThreeSum.solution2(input: input, targetSum: targetSum)
+        let sut2 = ThreeSumDistinct.solution2(input: input, targetSum: targetSum)
         XCTAssertEqual(expected.count, sut2.count)
         avoidOrder(sut2).forEach {
             XCTAssertTrue(avoidOrder(expected).contains($0))
@@ -44,13 +44,13 @@ class ThreeSumTest: XCTestCase {
             [5, 6, 7]
           ]
         
-        let sut = ThreeSum.solution(input: input, targetSum: targetSum)
+        let sut = ThreeSumDistinct.solution(input: input, targetSum: targetSum)
         XCTAssertEqual(expected.count, sut.count)
         avoidOrder(sut).forEach {
             XCTAssertTrue(avoidOrder(expected).contains($0))
         }
         
-        let sut2 = ThreeSum.solution2(input: input, targetSum: targetSum)
+        let sut2 = ThreeSumDistinct.solution2(input: input, targetSum: targetSum)
         XCTAssertEqual(expected.count, sut2.count)
         avoidOrder(sut2).forEach {
             XCTAssertTrue(avoidOrder(expected).contains($0))
