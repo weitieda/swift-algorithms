@@ -19,6 +19,8 @@
 		838087E725C22D0400D5635C /* TwoSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838087E625C22D0400D5635C /* TwoSumTest.swift */; };
 		83E96F7225C25F77001E35DC /* ValidateSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E96F7125C25F77001E35DC /* ValidateSubsequence.swift */; };
 		83E96F7C25C2632D001E35DC /* ValidateSubsequenceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E96F7B25C2632D001E35DC /* ValidateSubsequenceTest.swift */; };
+		83F9429925C4C32A000CCB17 /* MoveElementToEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F9429825C4C32A000CCB17 /* MoveElementToEnd.swift */; };
+		83F9429D25C4C394000CCB17 /* MoveElementToEndTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F9429C25C4C394000CCB17 /* MoveElementToEndTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		838087E625C22D0400D5635C /* TwoSumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumTest.swift; sourceTree = "<group>"; };
 		83E96F7125C25F77001E35DC /* ValidateSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateSubsequence.swift; sourceTree = "<group>"; };
 		83E96F7B25C2632D001E35DC /* ValidateSubsequenceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateSubsequenceTest.swift; sourceTree = "<group>"; };
+		83F9429825C4C32A000CCB17 /* MoveElementToEnd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveElementToEnd.swift; sourceTree = "<group>"; };
+		83F9429C25C4C394000CCB17 /* MoveElementToEndTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveElementToEndTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 				83318B4625C3971100EE4612 /* ThreeSumDistinct.swift */,
 				83318B5025C3977A00EE4612 /* ThreeSum.swift */,
 				83318B5425C3DCBB00EE4612 /* SmallestDifference.swift */,
+				83F9429825C4C32A000CCB17 /* MoveElementToEnd.swift */,
 			);
 			path = Questions;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 				83318B4025C375C400EE4612 /* ThreeSumTest.swift */,
 				83318B4C25C3973600EE4612 /* ThreeSumDistinctTest.swift */,
 				83662E6325C3DFD600D12AD1 /* SmallestDifferenceTest.swift */,
+				83F9429C25C4C394000CCB17 /* MoveElementToEndTest.swift */,
 			);
 			path = AlgorithmsTests;
 			sourceTree = "<group>";
@@ -239,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F9429925C4C32A000CCB17 /* MoveElementToEnd.swift in Sources */,
 				83318B4725C3971100EE4612 /* ThreeSumDistinct.swift in Sources */,
 				838087BC25C2164300D5635C /* TwoSum.swift in Sources */,
 				83318B5125C3977A00EE4612 /* ThreeSum.swift in Sources */,
@@ -251,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F9429D25C4C394000CCB17 /* MoveElementToEndTest.swift in Sources */,
 				83318B4D25C3973600EE4612 /* ThreeSumDistinctTest.swift in Sources */,
 				838087E725C22D0400D5635C /* TwoSumTest.swift in Sources */,
 				83318B4125C375C400EE4612 /* ThreeSumTest.swift in Sources */,
