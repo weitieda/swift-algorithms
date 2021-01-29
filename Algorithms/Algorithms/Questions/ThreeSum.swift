@@ -30,8 +30,52 @@ import Foundation
 final class ThreeSum {
     
     // t: O(), s: O()
-    static func solution() {
+    static func solution(input: [Int]) -> [[Int]] {
+        var result = [[Int]]()
         
+        if input.count < 3 {
+            return result
+        }
+        
+        let sortedInput = input.sorted()
+        
+        for i in 0..<sortedInput.count - 2 {
+            if i > 0 && sortedInput[i] == sortedInput[i - 1] {
+                continue
+            }
+            
+            var j = i + 1
+            var k = sortedInput.count - 1
+            
+            while j < k {
+                let currentSum = sortedInput[j] + sortedInput[k]
+                let sumNeeded = -sortedInput[i]
+                
+                if sumNeeded == currentSum {
+                    result.append([sortedInput[i], sortedInput[j], sortedInput[k]])
+                    j += 1
+                    k -= 1
+                    while j < k && sortedInput[j] == sortedInput[j - 1] {
+                        j += 1
+                    }
+                    while j < k && sortedInput[k] == sortedInput[k + 1] {
+                        k -= 1
+                    }
+                } else if sumNeeded < currentSum {
+                    k -= 1
+                    while j < k && sortedInput[k] == sortedInput[k + 1] {
+                        k -= 1
+                    }
+                } else if sumNeeded > currentSum {
+                    j += 1
+                    while j < k && sortedInput[j] == sortedInput[j - 1] {
+                        j += 1
+                    }
+                }
+            }
+        }
+
+        return result
     }
     
 }
