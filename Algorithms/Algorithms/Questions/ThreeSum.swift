@@ -29,7 +29,7 @@ import Foundation
 
 final class ThreeSum {
     
-    // t: O(), s: O()
+    // t: O(n^2), s: O(1)
     static func solution(input: [Int]) -> [[Int]] {
         var result = [[Int]]()
         
