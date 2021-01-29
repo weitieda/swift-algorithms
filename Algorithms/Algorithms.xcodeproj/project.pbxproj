@@ -10,6 +10,7 @@
 		83318B4125C375C400EE4612 /* ThreeSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83318B4025C375C400EE4612 /* ThreeSumTest.swift */; };
 		83318B4725C3971100EE4612 /* ThreeSumDistinct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83318B4625C3971100EE4612 /* ThreeSumDistinct.swift */; };
 		83318B4D25C3973600EE4612 /* ThreeSumDistinctTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83318B4C25C3973600EE4612 /* ThreeSumDistinctTest.swift */; };
+		83318B5125C3977A00EE4612 /* ThreeSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83318B5025C3977A00EE4612 /* ThreeSum.swift */; };
 		838087B225C2161900D5635C /* Algorithms.h in Headers */ = {isa = PBXBuildFile; fileRef = 838087B025C2161900D5635C /* Algorithms.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		838087BC25C2164300D5635C /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838087BB25C2164300D5635C /* TwoSum.swift */; };
 		838087C925C2186000D5635C /* Algorithms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838087AD25C2161900D5635C /* Algorithms.framework */; };
@@ -32,6 +33,7 @@
 		83318B4025C375C400EE4612 /* ThreeSumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSumTest.swift; sourceTree = "<group>"; };
 		83318B4625C3971100EE4612 /* ThreeSumDistinct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSumDistinct.swift; sourceTree = "<group>"; };
 		83318B4C25C3973600EE4612 /* ThreeSumDistinctTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSumDistinctTest.swift; sourceTree = "<group>"; };
+		83318B5025C3977A00EE4612 /* ThreeSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSum.swift; sourceTree = "<group>"; };
 		838087AD25C2161900D5635C /* Algorithms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Algorithms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		838087B025C2161900D5635C /* Algorithms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Algorithms.h; sourceTree = "<group>"; };
 		838087B125C2161900D5635C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				83E96F7125C25F77001E35DC /* ValidateSubsequence.swift */,
 				838087BB25C2164300D5635C /* TwoSum.swift */,
 				83318B4625C3971100EE4612 /* ThreeSumDistinct.swift */,
+				83318B5025C3977A00EE4612 /* ThreeSum.swift */,
 			);
 			path = Questions;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			files = (
 				83318B4725C3971100EE4612 /* ThreeSumDistinct.swift in Sources */,
 				838087BC25C2164300D5635C /* TwoSum.swift in Sources */,
+				83318B5125C3977A00EE4612 /* ThreeSum.swift in Sources */,
 				83E96F7225C25F77001E35DC /* ValidateSubsequence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
