@@ -9,7 +9,7 @@ import Foundation
 
 final class TwoSum {
     static func solution(input: [Int], target: Int) -> [Int] {
-        
+
         var numberHasSeen = [Int: Int]()
 
         for index in input.indices {
@@ -19,7 +19,7 @@ final class TwoSum {
             }
             numberHasSeen[currentNumber] = index
         }
-        
+
         return []
     }
 }

@@ -28,22 +28,22 @@ import Foundation
  */
 
 class ValidateSubsequence {
-    
+
     // t: O(n), s: O(1)
     static func solution(input: [Int], sequence: [Int]) -> Bool {
         var inputIndex = 0
         var seqIndex = 0
-        
+
         while inputIndex != input.count && seqIndex != sequence.count {
             if input[inputIndex] == sequence[seqIndex] {
                 seqIndex += 1
             }
             inputIndex += 1
         }
-        
+
         return seqIndex == sequence.count
     }
-    
+
     // t: O(n), s: O(1)
     static func solution2(input: [Int], sequence: [Int]) -> Bool {
         var seqIndex = 0
@@ -56,7 +56,7 @@ class ValidateSubsequence {
                 seqIndex += 1
             }
         }
-        
+
         return seqIndex == sequence.count
     }
 }

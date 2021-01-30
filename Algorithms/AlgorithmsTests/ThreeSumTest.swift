@@ -13,17 +13,16 @@ class ThreeSumTest: XCTestCase {
         let nums = [-1, 0, 1, 2, -1, -4]
 
         let sut = ThreeSum.solution(input: nums)
-        
+
         let exp = [[-1, -1, 2], [-1, 0, 1]]
-        
+
         XCTAssertEqual(sut.count, exp.count)
         avoidOrder(sut).forEach {
             XCTAssertTrue(avoidOrder(exp).contains($0))
         }
     }
-    
+
     private func avoidOrder(_ array: [[Int]]) -> [[Int]] {
         array.map { $0.sorted() }
     }
 }
-

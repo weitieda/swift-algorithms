@@ -28,29 +28,29 @@ import Foundation
  */
 
 final class ThreeSum {
-    
+
     // t: O(n^2), s: O(1)
     static func solution(input: [Int]) -> [[Int]] {
         var result = [[Int]]()
-        
+
         if input.count < 3 {
             return result
         }
-        
+
         let sortedInput = input.sorted()
-        
+
         for i in 0..<sortedInput.count - 2 {
             if i > 0 && sortedInput[i] == sortedInput[i - 1] {
                 continue
             }
-            
+
             var j = i + 1
             var k = sortedInput.count - 1
-            
+
             while j < k {
                 let currentSum = sortedInput[j] + sortedInput[k]
                 let sumNeeded = -sortedInput[i]
-                
+
                 if sumNeeded == currentSum {
                     result.append([sortedInput[i], sortedInput[j], sortedInput[k]])
                     j += 1
@@ -77,6 +77,5 @@ final class ThreeSum {
 
         return result
     }
-    
-}
 
+}

@@ -13,7 +13,8 @@ import Foundation
  finds the pair of numbers (one from each array) whose absolute difference is closest to zero,
  and returns an array containing these two numbers, with the number from   the first array in the first position.
  
- Note that the absolute difference of two integers is the distance between them on the real number line. For example, the absolute difference of -5 and 5 is 10, and the absolute difference of -5 and -4 is 1.
+ Note that the absolute difference of two integers is the distance between them on the real number line.
+ For example, the absolute difference of -5 and 5 is 10, and the absolute difference of -5 and -4 is 1.
  
  You can assume that there will only be one pair of numbers with the smallest difference.
  
@@ -25,26 +26,26 @@ import Foundation
  */
 
 final class SmallestDifference {
-    
+
     // t: O(nlog(n) + mlog(m)), s: O(1)
     static func solution(arrayOne: [Int], arrayTwo: [Int]) -> [Int] {
-        
+
         let sortedArrayOne = arrayOne.sorted()
         let sortedArrayTwo = arrayTwo.sorted()
-        
+
         var pair = [Int]()
         var current = Int.max
         var smallestDiff = Int.max
-        
+
         var indexOne = 0
         var indexTwo = 0
-        
+
         while indexOne < sortedArrayOne.count && indexTwo < sortedArrayTwo.count {
             let firstNum = sortedArrayOne[indexOne]
             let secondNum = sortedArrayTwo[indexTwo]
-            
+
             current = abs(firstNum - secondNum)
-            
+
             if firstNum < secondNum {
                 indexOne += 1
             } else if firstNum > secondNum {
@@ -52,15 +53,14 @@ final class SmallestDifference {
             } else {
                 return [firstNum, secondNum] // == 0
             }
-            
+
             if current < smallestDiff {
                 smallestDiff = current
                 pair = [firstNum, secondNum]
             }
         }
-        
+
         return pair
     }
-    
-}
 
+}
