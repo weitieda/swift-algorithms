@@ -29,19 +29,12 @@ final class MoveElementToEnd {
         
         while head < tail {
             if result[head] == toMove {
-                while result[tail] == toMove {
-                    if head < tail {
-                        tail -= 1
-                    }
-                    break
+                while head < tail && result[tail] == toMove {
+                    tail -= 1
                 }
-                result[head] = result[tail]
-                result[tail] = toMove
-                head += 1
-                tail -= 1
-            } else {
-                head += 1
+                (result[head], result[tail]) = (result[tail], result[head])
             }
+            head += 1
         }
         
         return result
