@@ -30,18 +30,18 @@ import Foundation
 
 final class ThreeSum {
 
-    // t: O(n^2), s: O(1)
+    // t: O(n^2), s: O(n)
     static func solution(input: [Int]) -> [[Int]] {
         var result = [[Int]]()
 
-        if input.count < 3 {
-            return result
-        }
+        guard input.count > 2 else { return result }
 
         let sortedInput = input.sorted()
 
         for i in 0..<sortedInput.count - 2 {
-            if i > 0 && sortedInput[i] == sortedInput[i - 1] {
+
+            let isBaseNumberSameAsPrevious = i > 0 && sortedInput[i] == sortedInput[i - 1]
+            if isBaseNumberSameAsPrevious {
                 continue
             }
 
@@ -56,27 +56,31 @@ final class ThreeSum {
                     result.append([sortedInput[i], sortedInput[j], sortedInput[k]])
                     j += 1
                     k -= 1
-                    while j < k && sortedInput[j] == sortedInput[j - 1] {
-                        j += 1
-                    }
-                    while j < k && sortedInput[k] == sortedInput[k + 1] {
-                        k -= 1
-                    }
+                    skipDuplicateWhenMoveToLeft(j, &k, sortedInput)
+                    skipDuplicateWhenMoveToRight(&j, k, sortedInput)
                 } else if sumNeeded < currentSum {
                     k -= 1
-                    while j < k && sortedInput[k] == sortedInput[k + 1] {
-                        k -= 1
-                    }
+                    skipDuplicateWhenMoveToLeft(j, &k, sortedInput)
                 } else if sumNeeded > currentSum {
                     j += 1
-                    while j < k && sortedInput[j] == sortedInput[j - 1] {
-                        j += 1
-                    }
+                    skipDuplicateWhenMoveToRight(&j, k, sortedInput)
                 }
             }
         }
 
         return result
+    }
+
+    fileprivate static func skipDuplicateWhenMoveToLeft(_ j: Int, _ k: inout Int, _ sortedInput: [Int]) {
+        while j < k && sortedInput[k] == sortedInput[k + 1] {
+            k -= 1
+        }
+    }
+
+    fileprivate static func skipDuplicateWhenMoveToRight(_ j: inout Int, _ k: Int, _ sortedInput: [Int]) {
+        while j < k && sortedInput[j] == sortedInput[j - 1] {
+            j += 1
+        }
     }
 
 }
