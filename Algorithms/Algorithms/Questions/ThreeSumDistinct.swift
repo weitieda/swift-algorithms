@@ -28,7 +28,7 @@ import Foundation
 
 final class ThreeSumDistinct {
 
-    // t: O(n^3), s: O(1)
+    // t: O(n^3), s: O(n)
     static func solution(input: [Int], targetSum: Int) -> [[Int]] {
         var result = [[Int]]()
 
@@ -36,10 +36,11 @@ final class ThreeSumDistinct {
 
         for i in 0..<(inputCount - 2) {
             for j in (i+1)..<(inputCount - 1) {
-                for k in (j+1)..<inputCount where (input[i] + input[j] + input[k]) == targetSum {
-//                    if ( {
+                for k in (j+1)..<inputCount {
+                    let currentSum = input[i] + input[j] + input[k]
+                    if currentSum == targetSum {
                         result.append([input[i], input[j], input[k]])
-//                    }
+                    }
                 }
             }
         }
