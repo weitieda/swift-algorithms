@@ -28,10 +28,10 @@ import Foundation
 final class SmallestDifference {
 
     // t: O(nlog(n) + mlog(m)), s: O(1)
-    static func solution(arrayOne: [Int], arrayTwo: [Int]) -> [Int] {
+    static func solution(arrayOne: inout [Int], arrayTwo: inout [Int]) -> [Int] {
 
-        let sortedArrayOne = arrayOne.sorted()
-        let sortedArrayTwo = arrayTwo.sorted()
+        arrayOne.sort()
+        arrayTwo.sort()
 
         var pair = [Int]()
         var current = Int.max
@@ -40,9 +40,9 @@ final class SmallestDifference {
         var indexOne = 0
         var indexTwo = 0
 
-        while indexOne < sortedArrayOne.count && indexTwo < sortedArrayTwo.count {
-            let firstNum = sortedArrayOne[indexOne]
-            let secondNum = sortedArrayTwo[indexTwo]
+        while indexOne < arrayOne.count && indexTwo < arrayTwo.count {
+            let firstNum = arrayOne[indexOne]
+            let secondNum = arrayTwo[indexTwo]
 
             current = abs(firstNum - secondNum)
 
@@ -50,8 +50,8 @@ final class SmallestDifference {
                 indexOne += 1
             } else if firstNum > secondNum {
                 indexTwo += 1
-            } else {
-                return [firstNum, secondNum] // == 0
+            } else {  // == 0
+                return [firstNum, secondNum]
             }
 
             if current < smallestDiff {
