@@ -11,14 +11,34 @@ import XCTest
 class MonotonicArrayTest: XCTestCase {
 
     func test1() {
-
+        let monotoneIncreasingArrays = [
+            [1, 1, 2, 2],
+            [1, 1, 1],
+            [5, 4, 4],
+            [1, 2, 2, 5]
+        ]
+        monotoneIncreasingArrays.forEach {
+            expect($0, true)
+        }
+        
+        let monotoneDecreasingArrays = [
+            [1, 0, 2, 2],
+            [1, 0, 1],
+            [0, 1, 0],
+            [1, 2, 2, 1]
+        ]
+        monotoneDecreasingArrays.forEach {
+            expect($0, false)
+        }
     }
-
-    func test2() {
-
-    }
-
-    func test3() {
-
+    
+    private func expect(_ input: [Int], _ isTrue: Bool) {
+        if isTrue {
+            XCTAssertTrue(MonotonicArray.solution(input))
+            XCTAssertTrue(MonotonicArray.solution2(input))
+        } else {
+            XCTAssertFalse(MonotonicArray.solution(input))
+            XCTAssertFalse(MonotonicArray.solution2(input))
+        }
     }
 }

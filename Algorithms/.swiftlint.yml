@@ -1,3 +1,5 @@
 disabled_rules:
     - identifier_name
     - cyclomatic_complexity
+    - trailing_whitespace
+    - vertical_whitespace

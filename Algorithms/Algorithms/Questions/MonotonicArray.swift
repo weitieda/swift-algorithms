@@ -29,9 +29,48 @@ import Foundation
 
 final class MonotonicArray {
 
-    // t: O(), s: O()
-    static func solution() {
-
+    // t: O(n), s: O(1)
+    static func solution(_ input: [Int]) -> Bool {
+        isMonotoneIncreasing(input) || isMonotoneDecreasing(input)
+    }
+    
+    static func isMonotoneIncreasing(_ array: [Int]) -> Bool {
+        for i in 0..<array.count - 1 where array[i] > array[i+1] {
+            return false
+        }
+        return true
+    }
+    
+    static func isMonotoneDecreasing(_ array: [Int]) -> Bool {
+        for i in 0..<array.count - 1 where array[i] < array[i+1] {
+            return false
+        }
+        return true
+    }
+    
+    // t: O(n), s: O(1)
+    static func solution2(_ input: [Int]) -> Bool {
+        var isMonotoneIncreasing = true
+        var isMonotoneDecreasing = true
+        
+        for i in 0..<input.count - 1 {
+            
+            let shouldBeMonotoneIncreasingButFoundDecreasing = isMonotoneIncreasing && input[i] > input[i+1]
+            if shouldBeMonotoneIncreasingButFoundDecreasing {
+                isMonotoneIncreasing = false
+            }
+            
+            let shouldBeMonotoneDecreasingButFoundIncreasing = isMonotoneDecreasing && input[i] < input[i+1]
+            if shouldBeMonotoneDecreasingButFoundIncreasing {
+                isMonotoneDecreasing = false
+            }
+            
+            if !isMonotoneIncreasing && !isMonotoneDecreasing {
+                return false
+            }
+        }
+        
+        return true // all same number
     }
 
 }
