@@ -34,14 +34,14 @@ final class MonotonicArray {
         isMonotoneIncreasing(input) || isMonotoneDecreasing(input)
     }
     
-    static func isMonotoneIncreasing(_ array: [Int]) -> Bool {
+    private static func isMonotoneIncreasing(_ array: [Int]) -> Bool {
         for i in 0..<array.count - 1 where array[i] > array[i+1] {
             return false
         }
         return true
     }
     
-    static func isMonotoneDecreasing(_ array: [Int]) -> Bool {
+    private static func isMonotoneDecreasing(_ array: [Int]) -> Bool {
         for i in 0..<array.count - 1 where array[i] < array[i+1] {
             return false
         }
@@ -60,7 +60,7 @@ final class MonotonicArray {
                 isMonotoneIncreasing = false
             }
             
-            let shouldBeMonotoneDecreasingButFoundIncreasing = isMonotoneDecreasing && input[i] < input[i+1]
+            let shouldBeMonotoneDecreasingButFoundIncreasing = isMonotoneDecreasing && input[i] < input[i+1] 
             if shouldBeMonotoneDecreasingButFoundIncreasing {
                 isMonotoneDecreasing = false
             }

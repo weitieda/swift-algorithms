@@ -20,7 +20,7 @@ class MonotonicArrayTest: XCTestCase {
         monotoneIncreasingArrays.forEach {
             expect($0, true)
         }
-        
+
         let monotoneDecreasingArrays = [
             [1, 0, 2, 2],
             [1, 0, 1],
