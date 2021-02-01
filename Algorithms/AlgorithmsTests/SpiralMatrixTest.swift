@@ -44,6 +44,25 @@ class SpiralMatrixTest: XCTestCase {
                when: matrix)
     }
 
+    func test4() {
+        let matrix = [
+            [1, 2],
+            [3, 4]
+        ]
+
+        expect([1, 2, 4, 3],
+               when: matrix)
+    }
+
+    func test5() {
+        let matrix = [
+            [1]
+        ]
+
+        expect([1],
+               when: matrix)
+    }
+
     private func expect(_ result: [Int], when input: [[Int]]) {
         let sut = SpiralMatrix.solution(input)
         XCTAssertEqual(sut, result)
