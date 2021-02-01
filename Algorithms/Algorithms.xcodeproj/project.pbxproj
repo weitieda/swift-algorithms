@@ -17,7 +17,6 @@
 		83662E6425C3DFD600D12AD1 /* SmallestDifferenceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83662E6325C3DFD600D12AD1 /* SmallestDifferenceTest.swift */; };
 		836F519125C7870800ED0432 /* SpiralMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836F519025C7870800ED0432 /* SpiralMatrix.swift */; };
 		836F519525C7874500ED0432 /* SpiralMatrixTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836F519425C7874500ED0432 /* SpiralMatrixTest.swift */; };
-		838087B225C2161900D5635C /* Algorithms.h in Headers */ = {isa = PBXBuildFile; fileRef = 838087B025C2161900D5635C /* Algorithms.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		838087BC25C2164300D5635C /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838087BB25C2164300D5635C /* TwoSum.swift */; };
 		838087C925C2186000D5635C /* Algorithms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838087AD25C2161900D5635C /* Algorithms.framework */; };
 		838087E725C22D0400D5635C /* TwoSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838087E625C22D0400D5635C /* TwoSumTest.swift */; };
@@ -49,7 +48,6 @@
 		836F519025C7870800ED0432 /* SpiralMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralMatrix.swift; sourceTree = "<group>"; };
 		836F519425C7874500ED0432 /* SpiralMatrixTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralMatrixTest.swift; sourceTree = "<group>"; };
 		838087AD25C2161900D5635C /* Algorithms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Algorithms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		838087B025C2161900D5635C /* Algorithms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Algorithms.h; sourceTree = "<group>"; };
 		838087B125C2161900D5635C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		838087BB25C2164300D5635C /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 		838087C425C2186000D5635C /* AlgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +78,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		836F519C25C7C07100ED0432 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				838087E625C22D0400D5635C /* TwoSumTest.swift */,
+				8364163825C5F540009FCBE7 /* MonotonicArrayTest.swift */,
+				83E96F7B25C2632D001E35DC /* ValidateSubsequenceTest.swift */,
+				83318B4025C375C400EE4612 /* ThreeSumTest.swift */,
+				83318B4C25C3973600EE4612 /* ThreeSumDistinctTest.swift */,
+				83662E6325C3DFD600D12AD1 /* SmallestDifferenceTest.swift */,
+				83F9429C25C4C394000CCB17 /* MoveElementToEndTest.swift */,
+				836F519425C7874500ED0432 /* SpiralMatrixTest.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		838087A325C2161900D5635C = {
 			isa = PBXGroup;
 			children = (
@@ -110,7 +123,6 @@
 		838087B925C2161D00D5635C /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				838087B025C2161900D5635C /* Algorithms.h */,
 				838087B125C2161900D5635C /* Info.plist */,
 			);
 			path = SupportingFiles;
@@ -134,15 +146,8 @@
 		838087C525C2186000D5635C /* AlgorithmsTests */ = {
 			isa = PBXGroup;
 			children = (
+				836F519C25C7C07100ED0432 /* Tests */,
 				838087C825C2186000D5635C /* Info.plist */,
-				838087E625C22D0400D5635C /* TwoSumTest.swift */,
-				8364163825C5F540009FCBE7 /* MonotonicArrayTest.swift */,
-				83E96F7B25C2632D001E35DC /* ValidateSubsequenceTest.swift */,
-				83318B4025C375C400EE4612 /* ThreeSumTest.swift */,
-				83318B4C25C3973600EE4612 /* ThreeSumDistinctTest.swift */,
-				83662E6325C3DFD600D12AD1 /* SmallestDifferenceTest.swift */,
-				83F9429C25C4C394000CCB17 /* MoveElementToEndTest.swift */,
-				836F519425C7874500ED0432 /* SpiralMatrixTest.swift */,
 			);
 			path = AlgorithmsTests;
 			sourceTree = "<group>";
@@ -154,7 +159,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				838087B225C2161900D5635C /* Algorithms.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
