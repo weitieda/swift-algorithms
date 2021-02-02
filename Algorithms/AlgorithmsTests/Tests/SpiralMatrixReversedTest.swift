@@ -11,66 +11,31 @@ import XCTest
 class SpiralMatrixReversedTest: XCTestCase {
 
     func test1() {
-        let matrix = [
-            [1, 2, 3],
-            [4, 5, 6],
-            [7, 8, 9]
-        ]
+        let matrix = [[1, 2, 3],
+                      [8, 9, 4],
+                      [7, 6, 5]]
 
-        let input = [1, 2, 3, 6, 9, 8, 7, 4, 5]
-
-        expect(matrix,
-               when: input)
+        expect(matrix, n: 3)
     }
 
     func test2() {
-        let matrix = [
-            [1, 2, 3, 4],
-            [5, 6, 7, 8],
-            [9, 10, 11, 12]
-        ]
+        let matrix = [[1, 2],
+                      [4, 3]]
 
-        let input = [1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7]
-
-        expect(matrix,
-               when: input)
+        expect(matrix, n: 2)
     }
 
     func test3() {
-        let matrix = [
-            [27, 12, 35],
-            [25, 21, 94],
-            [19, 96, 43],
-            [55, 36, 10]
-        ]
+        let matrix = [[1, 2, 3, 4],
+                      [12, 13, 14, 5],
+                      [11, 16, 15, 6],
+                      [10, 9, 8, 7]]
 
-        let input = [27, 12, 35, 94, 43, 10, 36, 55, 19, 25, 21, 96]
-
-        expect(matrix,
-               when: input)
+        expect(matrix, n: 4)
     }
 
-    func test4() {
-        let matrix = [
-            [1, 2],
-            [3, 4]
-        ]
-
-        let input = [1, 2, 4, 3]
-
-        expect(matrix,
-               when: input)
-    }
-
-    func test5() {
-        let input = [1]
-
-        expect([[1]],
-               when: input)
-    }
-
-    private func expect(_ result: [[Int]], when input: [Int]) {
-        let sut = SpiralMatrixReversed.solution(input)
+    private func expect(_ result: [[Int]], n: Int) {
+        let sut = SpiralMatrixReversed.solution(n)
         XCTAssertEqual(sut, result)
     }
 }
