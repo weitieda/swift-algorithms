@@ -85,15 +85,7 @@
 		836F519C25C7C07100ED0432 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				838087E625C22D0400D5635C /* TwoSumTest.swift */,
-				8364163825C5F540009FCBE7 /* MonotonicArrayTest.swift */,
-				83E96F7B25C2632D001E35DC /* ValidateSubsequenceTest.swift */,
-				83318B4025C375C400EE4612 /* ThreeSumTest.swift */,
-				83318B4C25C3973600EE4612 /* ThreeSumDistinctTest.swift */,
-				83662E6325C3DFD600D12AD1 /* SmallestDifferenceTest.swift */,
-				83F9429C25C4C394000CCB17 /* MoveElementToEndTest.swift */,
-				836F519425C7874500ED0432 /* SpiralMatrixTest.swift */,
-				83C279B225C8DE4600FF32A4 /* SpiralMatrixReversedTest.swift */,
+				83C279B725C8F4D200FF32A4 /* Array */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -136,15 +128,7 @@
 		838087BE25C2164600D5635C /* Questions */ = {
 			isa = PBXGroup;
 			children = (
-				83E96F7125C25F77001E35DC /* ValidateSubsequence.swift */,
-				838087BB25C2164300D5635C /* TwoSum.swift */,
-				83318B4625C3971100EE4612 /* ThreeSumDistinct.swift */,
-				83318B5025C3977A00EE4612 /* ThreeSum.swift */,
-				83318B5425C3DCBB00EE4612 /* SmallestDifference.swift */,
-				83F9429825C4C32A000CCB17 /* MoveElementToEnd.swift */,
-				8364163425C5F48C009FCBE7 /* MonotonicArray.swift */,
-				836F519025C7870800ED0432 /* SpiralMatrix.swift */,
-				83C279AE25C8DDBB00FF32A4 /* SpiralMatrixReversed.swift */,
+				83C279B625C8F4C400FF32A4 /* Array */,
 			);
 			path = Questions;
 			sourceTree = "<group>";
@@ -156,6 +140,38 @@
 				838087C825C2186000D5635C /* Info.plist */,
 			);
 			path = AlgorithmsTests;
+			sourceTree = "<group>";
+		};
+		83C279B625C8F4C400FF32A4 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				83E96F7125C25F77001E35DC /* ValidateSubsequence.swift */,
+				838087BB25C2164300D5635C /* TwoSum.swift */,
+				83318B4625C3971100EE4612 /* ThreeSumDistinct.swift */,
+				83318B5025C3977A00EE4612 /* ThreeSum.swift */,
+				83318B5425C3DCBB00EE4612 /* SmallestDifference.swift */,
+				83F9429825C4C32A000CCB17 /* MoveElementToEnd.swift */,
+				8364163425C5F48C009FCBE7 /* MonotonicArray.swift */,
+				836F519025C7870800ED0432 /* SpiralMatrix.swift */,
+				83C279AE25C8DDBB00FF32A4 /* SpiralMatrixReversed.swift */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
+		83C279B725C8F4D200FF32A4 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				838087E625C22D0400D5635C /* TwoSumTest.swift */,
+				8364163825C5F540009FCBE7 /* MonotonicArrayTest.swift */,
+				83E96F7B25C2632D001E35DC /* ValidateSubsequenceTest.swift */,
+				83318B4025C375C400EE4612 /* ThreeSumTest.swift */,
+				83318B4C25C3973600EE4612 /* ThreeSumDistinctTest.swift */,
+				83662E6325C3DFD600D12AD1 /* SmallestDifferenceTest.swift */,
+				83F9429C25C4C394000CCB17 /* MoveElementToEndTest.swift */,
+				836F519425C7874500ED0432 /* SpiralMatrixTest.swift */,
+				83C279B225C8DE4600FF32A4 /* SpiralMatrixReversedTest.swift */,
+			);
+			path = Array;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
