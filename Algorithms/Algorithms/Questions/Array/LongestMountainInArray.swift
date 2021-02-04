@@ -37,8 +37,11 @@ final class LongestMountainInArray {
     // t: O(n), s: O(1)
     static func solution(_ input: [Int]) -> Int {
         var count = 0
+
         for i in 1..<input.count-1 {
+            
             let isPeek = input[i-1] < input[i] && input[i+1] < input[i]
+
             if isPeek {
 
                 var leftIndex = i-1
