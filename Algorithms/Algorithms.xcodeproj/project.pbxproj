@@ -20,6 +20,8 @@
 		838087BC25C2164300D5635C /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838087BB25C2164300D5635C /* TwoSum.swift */; };
 		838087C925C2186000D5635C /* Algorithms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838087AD25C2161900D5635C /* Algorithms.framework */; };
 		838087E725C22D0400D5635C /* TwoSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838087E625C22D0400D5635C /* TwoSumTest.swift */; };
+		83AD336F25CCF906002C9C35 /* ProductOfArrayExcepSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD336E25CCF906002C9C35 /* ProductOfArrayExcepSelf.swift */; };
+		83AD337325CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD337225CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift */; };
 		83C279AF25C8DDBB00FF32A4 /* SpiralMatrixReversed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C279AE25C8DDBB00FF32A4 /* SpiralMatrixReversed.swift */; };
 		83C279B325C8DE4600FF32A4 /* SpiralMatrixReversedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C279B225C8DE4600FF32A4 /* SpiralMatrixReversedTest.swift */; };
 		83C279BD25C9136400FF32A4 /* LongestMountainInArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C279BC25C9136400FF32A4 /* LongestMountainInArray.swift */; };
@@ -57,6 +59,8 @@
 		838087C425C2186000D5635C /* AlgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		838087C825C2186000D5635C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		838087E625C22D0400D5635C /* TwoSumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumTest.swift; sourceTree = "<group>"; };
+		83AD336E25CCF906002C9C35 /* ProductOfArrayExcepSelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOfArrayExcepSelf.swift; sourceTree = "<group>"; };
+		83AD337225CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOfArrayExcepSelfTest.swift; sourceTree = "<group>"; };
 		83C279AE25C8DDBB00FF32A4 /* SpiralMatrixReversed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralMatrixReversed.swift; sourceTree = "<group>"; };
 		83C279B225C8DE4600FF32A4 /* SpiralMatrixReversedTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralMatrixReversedTest.swift; sourceTree = "<group>"; };
 		83C279BC25C9136400FF32A4 /* LongestMountainInArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestMountainInArray.swift; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 				836F519025C7870800ED0432 /* SpiralMatrix.swift */,
 				83C279AE25C8DDBB00FF32A4 /* SpiralMatrixReversed.swift */,
 				83C279BC25C9136400FF32A4 /* LongestMountainInArray.swift */,
+				83AD336E25CCF906002C9C35 /* ProductOfArrayExcepSelf.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 				836F519425C7874500ED0432 /* SpiralMatrixTest.swift */,
 				83C279B225C8DE4600FF32A4 /* SpiralMatrixReversedTest.swift */,
 				83C279C025C913DB00FF32A4 /* LongestMountainInArrayTest.swift */,
+				83AD337225CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -315,6 +321,7 @@
 				83318B4725C3971100EE4612 /* ThreeSumDistinct.swift in Sources */,
 				838087BC25C2164300D5635C /* TwoSum.swift in Sources */,
 				83318B5125C3977A00EE4612 /* ThreeSum.swift in Sources */,
+				83AD336F25CCF906002C9C35 /* ProductOfArrayExcepSelf.swift in Sources */,
 				83E96F7225C25F77001E35DC /* ValidateSubsequence.swift in Sources */,
 				836F519125C7870800ED0432 /* SpiralMatrix.swift in Sources */,
 				83C279AF25C8DDBB00FF32A4 /* SpiralMatrixReversed.swift in Sources */,
@@ -332,6 +339,7 @@
 				83C279C125C913DB00FF32A4 /* LongestMountainInArrayTest.swift in Sources */,
 				83C279B325C8DE4600FF32A4 /* SpiralMatrixReversedTest.swift in Sources */,
 				836F519525C7874500ED0432 /* SpiralMatrixTest.swift in Sources */,
+				83AD337325CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift in Sources */,
 				83F9429D25C4C394000CCB17 /* MoveElementToEndTest.swift in Sources */,
 				83318B4D25C3973600EE4612 /* ThreeSumDistinctTest.swift in Sources */,
 				838087E725C22D0400D5635C /* TwoSumTest.swift in Sources */,
