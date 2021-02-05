@@ -21,8 +21,4 @@ class ProductOfArrayExcepSelfTest: XCTestCase {
         let sut = ProductOfArrayExcepSelf.solution2(array: input)
         XCTAssertEqual([24, 12, 8, 6], sut)
     }
-
-    func test3() {
-
-    }
 }
