@@ -38,6 +38,12 @@ final class FirstDuplicateValue {
     // t: O(n), s: O(1)
     static func solution(array: inout [Int]) -> Int {
         for v in array {
+            
+            /// Because each number is in [1, n],
+            /// we could utilize index to mark seen number
+            /// e.g. If we see 5, we make `array[abs(5) - 1]`
+            /// negative; If we have another 5, `array[abs(5) - 1]` would be negative
+            
             let mapIndex = abs(v) - 1
             if array[mapIndex] < 0 {
                 return v

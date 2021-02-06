@@ -23,6 +23,7 @@ class FirstDuplicateValueTest: XCTestCase {
     }
     
     func test3() {
+        
         var input = [2, 2, 5, 1, 3, 3, 4]
         let sut = FirstDuplicateValue.solution(array: &input)
         XCTAssertEqual(sut, 2)
