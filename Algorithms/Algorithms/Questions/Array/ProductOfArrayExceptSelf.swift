@@ -24,7 +24,7 @@ import Foundation
 
  */
 
-final class ProductOfArrayExcepSelf {
+final class ProductOfArrayExceptSelf {
 
     // t: O(n), s: O(n)
     static func solution(array: [Int]) -> [Int] {
@@ -54,16 +54,16 @@ final class ProductOfArrayExcepSelf {
 
         var result = Array(repeating: 1, count: array.count)
 
-        var currentProdcut = 1
+        var currentProduct = 1
         for i in array.indices {
-            result[i] = currentProdcut
-            currentProdcut *= array[i]
+            result[i] = currentProduct
+            currentProduct *= array[i]
         }
 
-        currentProdcut = 1
+        currentProduct = 1
         for i in stride(from: array.count-1, through: 0, by: -1) {
-            result[i] *= currentProdcut
-            currentProdcut *= array[i]
+            result[i] *= currentProduct
+            currentProduct *= array[i]
         }
 
         return result

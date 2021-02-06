@@ -22,7 +22,7 @@
 		838087BC25C2164300D5635C /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838087BB25C2164300D5635C /* TwoSum.swift */; };
 		838087C925C2186000D5635C /* Algorithms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838087AD25C2161900D5635C /* Algorithms.framework */; };
 		838087E725C22D0400D5635C /* TwoSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838087E625C22D0400D5635C /* TwoSumTest.swift */; };
-		83AD336F25CCF906002C9C35 /* ProductOfArrayExcepSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD336E25CCF906002C9C35 /* ProductOfArrayExcepSelf.swift */; };
+		83AD336F25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD336E25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift */; };
 		83AD337325CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD337225CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift */; };
 		83AD337A25CD07DD002C9C35 /* BST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD337925CD07DD002C9C35 /* BST.swift */; };
 		83C279AF25C8DDBB00FF32A4 /* SpiralMatrixReversed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C279AE25C8DDBB00FF32A4 /* SpiralMatrixReversed.swift */; };
@@ -64,7 +64,7 @@
 		838087C425C2186000D5635C /* AlgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		838087C825C2186000D5635C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		838087E625C22D0400D5635C /* TwoSumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumTest.swift; sourceTree = "<group>"; };
-		83AD336E25CCF906002C9C35 /* ProductOfArrayExcepSelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOfArrayExcepSelf.swift; sourceTree = "<group>"; };
+		83AD336E25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOfArrayExceptSelf.swift; sourceTree = "<group>"; };
 		83AD337225CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOfArrayExcepSelfTest.swift; sourceTree = "<group>"; };
 		83AD337925CD07DD002C9C35 /* BST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BST.swift; sourceTree = "<group>"; };
 		83C279AE25C8DDBB00FF32A4 /* SpiralMatrixReversed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralMatrixReversed.swift; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 				836F519025C7870800ED0432 /* SpiralMatrix.swift */,
 				83C279AE25C8DDBB00FF32A4 /* SpiralMatrixReversed.swift */,
 				83C279BC25C9136400FF32A4 /* LongestMountainInArray.swift */,
-				83AD336E25CCF906002C9C35 /* ProductOfArrayExcepSelf.swift */,
+				83AD336E25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift */,
 				83081EBD25CE49E30085333C /* FindDuplicateNumber.swift */,
 			);
 			path = Array;
@@ -339,7 +339,7 @@
 				83318B4725C3971100EE4612 /* ThreeSumDistinct.swift in Sources */,
 				838087BC25C2164300D5635C /* TwoSum.swift in Sources */,
 				83318B5125C3977A00EE4612 /* ThreeSum.swift in Sources */,
-				83AD336F25CCF906002C9C35 /* ProductOfArrayExcepSelf.swift in Sources */,
+				83AD336F25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift in Sources */,
 				83E96F7225C25F77001E35DC /* ValidateSubsequence.swift in Sources */,
 				836F519125C7870800ED0432 /* SpiralMatrix.swift in Sources */,
 				83C279AF25C8DDBB00FF32A4 /* SpiralMatrixReversed.swift in Sources */,
