@@ -1,5 +1,5 @@
 //
-//  LinkedListNode.swift
+//  LinkedList.swift
 //  Algorithms
 //
 //  Created by Tieda Wei on 2021-02-06.
