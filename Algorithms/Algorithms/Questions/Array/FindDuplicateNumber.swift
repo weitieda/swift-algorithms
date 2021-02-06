@@ -35,8 +35,6 @@ final class FindDuplicateNumber {
 
     // t: O(), s: O()
     static func solution(array: [Int]) -> Int {
-
-
         
         return 0
     }
