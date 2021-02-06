@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83081EBE25CE49E30085333C /* FindDuplicateNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83081EBD25CE49E30085333C /* FindDuplicateNumber.swift */; };
+		83081EC225CE49F50085333C /* FindDuplicateNumberTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83081EC125CE49F50085333C /* FindDuplicateNumberTest.swift */; };
 		83318B4125C375C400EE4612 /* ThreeSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83318B4025C375C400EE4612 /* ThreeSumTest.swift */; };
 		83318B4725C3971100EE4612 /* ThreeSumDistinct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83318B4625C3971100EE4612 /* ThreeSumDistinct.swift */; };
 		83318B4D25C3973600EE4612 /* ThreeSumDistinctTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83318B4C25C3973600EE4612 /* ThreeSumDistinctTest.swift */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		83081EBD25CE49E30085333C /* FindDuplicateNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDuplicateNumber.swift; sourceTree = "<group>"; };
+		83081EC125CE49F50085333C /* FindDuplicateNumberTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDuplicateNumberTest.swift; sourceTree = "<group>"; };
 		83318B4025C375C400EE4612 /* ThreeSumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSumTest.swift; sourceTree = "<group>"; };
 		83318B4625C3971100EE4612 /* ThreeSumDistinct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSumDistinct.swift; sourceTree = "<group>"; };
 		83318B4C25C3973600EE4612 /* ThreeSumDistinctTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSumDistinctTest.swift; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 				83C279AE25C8DDBB00FF32A4 /* SpiralMatrixReversed.swift */,
 				83C279BC25C9136400FF32A4 /* LongestMountainInArray.swift */,
 				83AD336E25CCF906002C9C35 /* ProductOfArrayExcepSelf.swift */,
+				83081EBD25CE49E30085333C /* FindDuplicateNumber.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 				83C279B225C8DE4600FF32A4 /* SpiralMatrixReversedTest.swift */,
 				83C279C025C913DB00FF32A4 /* LongestMountainInArrayTest.swift */,
 				83AD337225CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift */,
+				83081EC125CE49F50085333C /* FindDuplicateNumberTest.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -340,6 +346,7 @@
 				8364163525C5F48C009FCBE7 /* MonotonicArray.swift in Sources */,
 				83318B5525C3DCBB00EE4612 /* SmallestDifference.swift in Sources */,
 				83C279BD25C9136400FF32A4 /* LongestMountainInArray.swift in Sources */,
+				83081EBE25CE49E30085333C /* FindDuplicateNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8364163925C5F540009FCBE7 /* MonotonicArrayTest.swift in Sources */,
+				83081EC225CE49F50085333C /* FindDuplicateNumberTest.swift in Sources */,
 				83C279C125C913DB00FF32A4 /* LongestMountainInArrayTest.swift in Sources */,
 				83C279B325C8DE4600FF32A4 /* SpiralMatrixReversedTest.swift in Sources */,
 				836F519525C7874500ED0432 /* SpiralMatrixTest.swift in Sources */,
