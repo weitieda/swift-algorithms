@@ -34,11 +34,23 @@ final class LinkedList<T: Comparable> {
     convenience init(array: [T]) {
         self.init()
 
-        array.forEach { append($0) }
+        guard let first = array.first else {
+            return
+        }
+        
+        var node = Node(value: first)
+        
+        append(node)
+        
+        for value in array[1...] {
+            let nextNode = Node(value: value)
+            node.next = nextNode
+            node = nextNode
+        }
     }
 
     func append(_ value: T) {
-        append(.init(value: value))
+        append(Node(value: value))
     }
 
     func append(_ node: Node) {
