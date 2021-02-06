@@ -14,6 +14,7 @@
 		83318B4D25C3973600EE4612 /* ThreeSumDistinctTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83318B4C25C3973600EE4612 /* ThreeSumDistinctTest.swift */; };
 		83318B5125C3977A00EE4612 /* ThreeSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83318B5025C3977A00EE4612 /* ThreeSum.swift */; };
 		83318B5525C3DCBB00EE4612 /* SmallestDifference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83318B5425C3DCBB00EE4612 /* SmallestDifference.swift */; };
+		8362C11225CF12DF007A79AD /* LinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362C11125CF12DF007A79AD /* LinkedListNode.swift */; };
 		8364163525C5F48C009FCBE7 /* MonotonicArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8364163425C5F48C009FCBE7 /* MonotonicArray.swift */; };
 		8364163925C5F540009FCBE7 /* MonotonicArrayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8364163825C5F540009FCBE7 /* MonotonicArrayTest.swift */; };
 		83662E6425C3DFD600D12AD1 /* SmallestDifferenceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83662E6325C3DFD600D12AD1 /* SmallestDifferenceTest.swift */; };
@@ -55,6 +56,7 @@
 		83318B4C25C3973600EE4612 /* ThreeSumDistinctTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSumDistinctTest.swift; sourceTree = "<group>"; };
 		83318B5025C3977A00EE4612 /* ThreeSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSum.swift; sourceTree = "<group>"; };
 		83318B5425C3DCBB00EE4612 /* SmallestDifference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallestDifference.swift; sourceTree = "<group>"; };
+		8362C11125CF12DF007A79AD /* LinkedListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListNode.swift; sourceTree = "<group>"; };
 		8364163425C5F48C009FCBE7 /* MonotonicArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonotonicArray.swift; sourceTree = "<group>"; };
 		8364163825C5F540009FCBE7 /* MonotonicArrayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonotonicArrayTest.swift; sourceTree = "<group>"; };
 		83662E6325C3DFD600D12AD1 /* SmallestDifferenceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallestDifferenceTest.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				83AD337925CD07DD002C9C35 /* BST.swift */,
+				8362C11125CF12DF007A79AD /* LinkedListNode.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				83E96F7225C25F77001E35DC /* ValidateSubsequence.swift in Sources */,
 				836F519125C7870800ED0432 /* SpiralMatrix.swift in Sources */,
 				83C308A625CE5BAD0046D54B /* FirstDuplicateValue.swift in Sources */,
+				8362C11225CF12DF007A79AD /* LinkedListNode.swift in Sources */,
 				83C279AF25C8DDBB00FF32A4 /* SpiralMatrixReversed.swift in Sources */,
 				8364163525C5F48C009FCBE7 /* MonotonicArray.swift in Sources */,
 				83318B5525C3DCBB00EE4612 /* SmallestDifference.swift in Sources */,
