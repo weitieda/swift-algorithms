@@ -11,7 +11,7 @@ final class LinkedList<T: Comparable> {
 
     typealias Node = LinkedListNode<T>
 
-    class LinkedListNode<T> {
+    final class LinkedListNode<T> {
         var value: T
         var next: LinkedListNode?
 
