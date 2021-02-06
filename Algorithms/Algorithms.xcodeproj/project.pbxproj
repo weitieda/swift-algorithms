@@ -17,6 +17,7 @@
 		8362C11225CF12DF007A79AD /* LinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362C11125CF12DF007A79AD /* LinkedListNode.swift */; };
 		8362C11725CF1C71007A79AD /* RemoveDuplicatesFromSortedOrderLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362C11625CF1C71007A79AD /* RemoveDuplicatesFromSortedOrderLinkedList.swift */; };
 		8362C11C25CF290D007A79AD /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362C11B25CF290D007A79AD /* LinkedListTest.swift */; };
+		8362C12B25CF3352007A79AD /* RemoveDuplicatesFromSortedOrderLinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362C12A25CF3352007A79AD /* RemoveDuplicatesFromSortedOrderLinkedListTest.swift */; };
 		8364163525C5F48C009FCBE7 /* MonotonicArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8364163425C5F48C009FCBE7 /* MonotonicArray.swift */; };
 		8364163925C5F540009FCBE7 /* MonotonicArrayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8364163825C5F540009FCBE7 /* MonotonicArrayTest.swift */; };
 		83662E6425C3DFD600D12AD1 /* SmallestDifferenceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83662E6325C3DFD600D12AD1 /* SmallestDifferenceTest.swift */; };
@@ -61,6 +62,7 @@
 		8362C11125CF12DF007A79AD /* LinkedListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListNode.swift; sourceTree = "<group>"; };
 		8362C11625CF1C71007A79AD /* RemoveDuplicatesFromSortedOrderLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicatesFromSortedOrderLinkedList.swift; sourceTree = "<group>"; };
 		8362C11B25CF290D007A79AD /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
+		8362C12A25CF3352007A79AD /* RemoveDuplicatesFromSortedOrderLinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicatesFromSortedOrderLinkedListTest.swift; sourceTree = "<group>"; };
 		8364163425C5F48C009FCBE7 /* MonotonicArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonotonicArray.swift; sourceTree = "<group>"; };
 		8364163825C5F540009FCBE7 /* MonotonicArrayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonotonicArrayTest.swift; sourceTree = "<group>"; };
 		83662E6325C3DFD600D12AD1 /* SmallestDifferenceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallestDifferenceTest.swift; sourceTree = "<group>"; };
@@ -122,9 +124,18 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		8362C12125CF32C4007A79AD /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				8362C12A25CF3352007A79AD /* RemoveDuplicatesFromSortedOrderLinkedListTest.swift */,
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
 		836F519C25C7C07100ED0432 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				8362C12125CF32C4007A79AD /* LinkedList */,
 				8362C11A25CF28F2007A79AD /* Helpers */,
 				83C279B725C8F4D200FF32A4 /* Array */,
 			);
@@ -396,6 +407,7 @@
 				83AD337325CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift in Sources */,
 				83F9429D25C4C394000CCB17 /* MoveElementToEndTest.swift in Sources */,
 				83318B4D25C3973600EE4612 /* ThreeSumDistinctTest.swift in Sources */,
+				8362C12B25CF3352007A79AD /* RemoveDuplicatesFromSortedOrderLinkedListTest.swift in Sources */,
 				8362C11C25CF290D007A79AD /* LinkedListTest.swift in Sources */,
 				83C308AA25CE5BC30046D54B /* FirstDuplicateValueTest.swift in Sources */,
 				838087E725C22D0400D5635C /* TwoSumTest.swift in Sources */,

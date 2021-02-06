@@ -26,9 +26,19 @@ import Foundation
 
 final class RemoveDuplicatesFromSortedOrderLinkedList {
 
-    // t: O(), s: O()
-    static func solution() {
+    // t: O(n), s: O(1)
+    static func solution(input: inout LinkedList<Int>) -> LinkedList<Int> {
 
+        var node = input.head
+
+        while node?.next != nil {
+            while node?.value == node?.next?.value {
+                node?.next = node?.next?.next
+            }
+            node = node?.next
+        }
+
+        return input
     }
 
 }
