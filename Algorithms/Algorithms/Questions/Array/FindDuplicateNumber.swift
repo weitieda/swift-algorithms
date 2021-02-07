@@ -33,10 +33,41 @@ import Foundation
 
 final class FindDuplicateNumber {
 
-    // t: O(), s: O()
+    /*
+
+     Solution 1:
+     Sort then compare adjacent number
+     t: O(nLog(n)), s: O(1)
+
+     Solution 2:
+     Use a set<Int> to track seen value
+     t: O(n), s: O(n)
+
+     Solution 3:
+     If allow mutating, map seen value to index,
+     convert that value to negative, same as question: `FirstDuplicateValue`
+     t: O(n), s: O(1)
+
+     */
+
+    // t: O(nlog(n)), s: O(1)
     static func solution(array: [Int]) -> Int {
-        
-        return 0
+
+        // number range [1, n]
+        var left = 1
+        var right = array.count - 1
+
+        while left < right {
+            let middle = (left + right)/2
+            let count = array.filter { $0 <= middle }.count
+            if count <= middle {
+                left = middle + 1
+            } else {
+                right = middle
+            }
+        }
+
+        return left
     }
 
 }
