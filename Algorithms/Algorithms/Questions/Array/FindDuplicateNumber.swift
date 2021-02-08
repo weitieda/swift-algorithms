@@ -70,4 +70,58 @@ final class FindDuplicateNumber {
         return left
     }
 
+    /*
+
+     https://leetcode.com/problems/find-the-duplicate-number/discuss/543300/Swift-solution-with-explanation
+
+     Why Using Cycle Detection
+
+     According to the description of this problem, we knowing that the value of the elements might between 1 to count.
+
+     So the hint tells as we might be ok to see this array as a kind of flow. Base on this,
+     we also can say the value of an elements is represent the next index we can go.
+
+     For example, if we have a given array [1, 3, 4, 2, 3]
+
+     +-----+-----+-----+-----+-----+
+     | [0] | [1] | [2] | [3] | [4] |
+     +-----+-----+-----+-----+-----+
+     |  1  |  3  |  4  |  2  |  3  |
+     +-----+-----+-----+-----+-----+
+     We started from [0], we found that we start from 1, then we got 3 at [1], 2 at [3] and so on.
+
+     And let's trying to redraw this array into a simple flow. (I am not sure we can call it a state machine or not lol)
+
+
+     +---+    +---+    +---+    +---+
+     | 1 | -> | 3 | -> | 2 | -> | 4 |
+     +---+    +---+    +---+    +---+
+                ^                 |
+                |                 |
+                +-----------------+
+
+     Then we got a flow has a cycle. And that's the reason why we can use Floyd to solve this problem.
+     */
+
+    // t: O(n), s: O(1)
+    static func solution2(array: [Int]) -> Int {
+        
+        var slow = array[0]
+        var fast = array[0]
+
+        repeat {
+            slow = array[slow]
+            fast = array[array[fast]]
+        } while slow != fast
+
+
+        slow = array[0]
+
+        while slow != fast {
+            slow = array[slow]
+            fast = array[fast]
+        }
+
+        return slow
+    }
 }

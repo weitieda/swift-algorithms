@@ -24,7 +24,10 @@ class FindDuplicateNumberTest: XCTestCase {
         XCTAssertEqual(sut, 2)
     }
 
-    func test3() {
+    func test_solution2() {
+        let array = [1, 2, 2, 3, 4]
+        let sut = FindDuplicateNumber.solution2(array: array)
 
+        XCTAssertEqual(sut, 2)
     }
 }
