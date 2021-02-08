@@ -25,11 +25,12 @@ import Foundation
 
 final class ValidPalindrome {
 
-    // t: O(n), s: O(1)
+    // t: O(n^2), s: O(1)
     //
-    // WARNING:
-    // ```let leftIndex = string.index(string.startIndex, offsetBy: i)```
-    // Seems have a performance issue when looping each char in a super long string
+    // NOTE:
+    // let leftIndex = string.index(string.startIndex, offsetBy: i)
+    // let leftChar = string[leftIndex]
+    // This is O(n) operation in Swift
 
     static func solution(string: String) -> Bool {
 
@@ -56,6 +57,7 @@ final class ValidPalindrome {
         return true
     }
 
+    // t: O(n), s: O(n)
     static func solution2(string: String) -> Bool {
 
         let charArray = Array(string)
