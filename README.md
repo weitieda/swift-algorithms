@@ -1,3 +1,3 @@
 # algorithms
 
-Solving Leetcode questions in `Swift`.
+Solving algorithms problems on LeetCode in `Swift`, cover by Unit Test.
