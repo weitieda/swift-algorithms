@@ -3,6 +3,7 @@ disabled_rules:
     - cyclomatic_complexity
     - trailing_whitespace
     - vertical_whitespace
+    - line_length
 
 type_name:
     min_length: 3

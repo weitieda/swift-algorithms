@@ -18,6 +18,8 @@
 		8362C11725CF1C71007A79AD /* RemoveDuplicatesFromSortedOrderLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362C11625CF1C71007A79AD /* RemoveDuplicatesFromSortedOrderLinkedList.swift */; };
 		8362C11C25CF290D007A79AD /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362C11B25CF290D007A79AD /* LinkedListTest.swift */; };
 		8362C12B25CF3352007A79AD /* RemoveDuplicatesFromSortedOrderLinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362C12A25CF3352007A79AD /* RemoveDuplicatesFromSortedOrderLinkedListTest.swift */; };
+		8362C13225D0E27C007A79AD /* ValidPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362C13125D0E27C007A79AD /* ValidPalindrome.swift */; };
+		8362C13725D0E296007A79AD /* ValidPalindromeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362C13625D0E296007A79AD /* ValidPalindromeTest.swift */; };
 		8364163525C5F48C009FCBE7 /* MonotonicArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8364163425C5F48C009FCBE7 /* MonotonicArray.swift */; };
 		8364163925C5F540009FCBE7 /* MonotonicArrayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8364163825C5F540009FCBE7 /* MonotonicArrayTest.swift */; };
 		83662E6425C3DFD600D12AD1 /* SmallestDifferenceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83662E6325C3DFD600D12AD1 /* SmallestDifferenceTest.swift */; };
@@ -63,6 +65,8 @@
 		8362C11625CF1C71007A79AD /* RemoveDuplicatesFromSortedOrderLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicatesFromSortedOrderLinkedList.swift; sourceTree = "<group>"; };
 		8362C11B25CF290D007A79AD /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
 		8362C12A25CF3352007A79AD /* RemoveDuplicatesFromSortedOrderLinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicatesFromSortedOrderLinkedListTest.swift; sourceTree = "<group>"; };
+		8362C13125D0E27C007A79AD /* ValidPalindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidPalindrome.swift; sourceTree = "<group>"; };
+		8362C13625D0E296007A79AD /* ValidPalindromeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidPalindromeTest.swift; sourceTree = "<group>"; };
 		8364163425C5F48C009FCBE7 /* MonotonicArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonotonicArray.swift; sourceTree = "<group>"; };
 		8364163825C5F540009FCBE7 /* MonotonicArrayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonotonicArrayTest.swift; sourceTree = "<group>"; };
 		83662E6325C3DFD600D12AD1 /* SmallestDifferenceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallestDifferenceTest.swift; sourceTree = "<group>"; };
@@ -132,9 +136,26 @@
 			path = LinkedList;
 			sourceTree = "<group>";
 		};
+		8362C13025D0E19B007A79AD /* String */ = {
+			isa = PBXGroup;
+			children = (
+				8362C13125D0E27C007A79AD /* ValidPalindrome.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		8362C13525D0E286007A79AD /* String */ = {
+			isa = PBXGroup;
+			children = (
+				8362C13625D0E296007A79AD /* ValidPalindromeTest.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
 		836F519C25C7C07100ED0432 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				8362C13525D0E286007A79AD /* String */,
 				8362C12125CF32C4007A79AD /* LinkedList */,
 				8362C11A25CF28F2007A79AD /* Helpers */,
 				83C279B725C8F4D200FF32A4 /* Array */,
@@ -181,6 +202,7 @@
 		838087BE25C2164600D5635C /* Questions */ = {
 			isa = PBXGroup;
 			children = (
+				8362C13025D0E19B007A79AD /* String */,
 				8362C11525CF1C34007A79AD /* LinkedList */,
 				83C279B625C8F4C400FF32A4 /* Array */,
 			);
@@ -380,6 +402,7 @@
 				83AD337A25CD07DD002C9C35 /* BST.swift in Sources */,
 				83318B4725C3971100EE4612 /* ThreeSumDistinct.swift in Sources */,
 				838087BC25C2164300D5635C /* TwoSum.swift in Sources */,
+				8362C13225D0E27C007A79AD /* ValidPalindrome.swift in Sources */,
 				83318B5125C3977A00EE4612 /* ThreeSum.swift in Sources */,
 				83AD336F25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift in Sources */,
 				83E96F7225C25F77001E35DC /* ValidateSubsequence.swift in Sources */,
@@ -414,6 +437,7 @@
 				83318B4125C375C400EE4612 /* ThreeSumTest.swift in Sources */,
 				83662E6425C3DFD600D12AD1 /* SmallestDifferenceTest.swift in Sources */,
 				83E96F7C25C2632D001E35DC /* ValidateSubsequenceTest.swift in Sources */,
+				8362C13725D0E296007A79AD /* ValidPalindromeTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

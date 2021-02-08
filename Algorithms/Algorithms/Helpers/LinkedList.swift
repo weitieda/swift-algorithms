@@ -64,7 +64,7 @@ final class LinkedList<T: Comparable> {
 }
 
 extension LinkedList: CustomStringConvertible {
-    public var description: String {
+    var description: String {
         var s = "["
         var node = head
         while let nd = node {
