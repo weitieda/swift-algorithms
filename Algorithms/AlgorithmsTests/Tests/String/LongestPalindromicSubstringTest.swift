@@ -11,34 +11,14 @@ import XCTest
 class LongestPalindromicSubstringTest: XCTestCase {
 
     func test1() {
-        let input = "abaxyzzyxf"
-        expect(input: input, toBe: "xyzzyx")
-    }
-
-    func test2() {
-        let input = "a"
-        expect(input: input, toBe: "a")
-    }
-
-    func test3() {
-        let input = "aa"
-        expect(input: input, toBe: "aa")
-    }
-
-    func test4() {
-        let input = "aaa"
-        expect(input: input, toBe: "aaa")
-    }
-
-
-    func test5() {
-        let input = "aba"
-        expect(input: input, toBe: "aba")
-    }
-
-    func test6() {
-        let input = "abac"
-        expect(input: input, toBe: "aba")
+        expect(input: "abaxyzzyxf", toBe: "xyzzyx")
+        expect(input: "a", toBe: "a")
+        expect(input: "aa", toBe: "aa")
+        expect(input: "aaa", toBe: "aaa")
+        expect(input: "aba", toBe: "aba")
+        expect(input: "abac", toBe: "aba")
+        expect(input: "dabac", toBe: "aba")
+        expect(input: "aabc", toBe: "aa")
     }
 
     private func expect(input: String, toBe result: String) {

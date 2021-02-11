@@ -23,7 +23,7 @@ import Foundation
 
 final class LongestPalindromicSubstring {
 
-    // t: O(), s: O()
+    // t: O(n^2), s: O(1)
     static func solution(string: String) -> String {
         if string.count <= 1 { return string }
 
