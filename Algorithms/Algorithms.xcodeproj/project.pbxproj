@@ -33,6 +33,8 @@
 		83AD337A25CD07DD002C9C35 /* BST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD337925CD07DD002C9C35 /* BST.swift */; };
 		83AE918525D4EB8700A8242D /* LongestPalindromicSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AE918425D4EB8700A8242D /* LongestPalindromicSubstring.swift */; };
 		83AE918925D4EB9C00A8242D /* LongestPalindromicSubstringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AE918825D4EB9C00A8242D /* LongestPalindromicSubstringTest.swift */; };
+		83BB275325D612D40035A0EE /* RunLengthEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB275225D612D40035A0EE /* RunLengthEncoding.swift */; };
+		83BB275725D612E40035A0EE /* RunLengthEncodingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB275625D612E40035A0EE /* RunLengthEncodingTest.swift */; };
 		83C279AF25C8DDBB00FF32A4 /* SpiralMatrixReversed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C279AE25C8DDBB00FF32A4 /* SpiralMatrixReversed.swift */; };
 		83C279B325C8DE4600FF32A4 /* SpiralMatrixReversedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C279B225C8DE4600FF32A4 /* SpiralMatrixReversedTest.swift */; };
 		83C279BD25C9136400FF32A4 /* LongestMountainInArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C279BC25C9136400FF32A4 /* LongestMountainInArray.swift */; };
@@ -87,6 +89,8 @@
 		83AD337925CD07DD002C9C35 /* BST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BST.swift; sourceTree = "<group>"; };
 		83AE918425D4EB8700A8242D /* LongestPalindromicSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestPalindromicSubstring.swift; sourceTree = "<group>"; };
 		83AE918825D4EB9C00A8242D /* LongestPalindromicSubstringTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestPalindromicSubstringTest.swift; sourceTree = "<group>"; };
+		83BB275225D612D40035A0EE /* RunLengthEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLengthEncoding.swift; sourceTree = "<group>"; };
+		83BB275625D612E40035A0EE /* RunLengthEncodingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLengthEncodingTest.swift; sourceTree = "<group>"; };
 		83C279AE25C8DDBB00FF32A4 /* SpiralMatrixReversed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralMatrixReversed.swift; sourceTree = "<group>"; };
 		83C279B225C8DE4600FF32A4 /* SpiralMatrixReversedTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralMatrixReversedTest.swift; sourceTree = "<group>"; };
 		83C279BC25C9136400FF32A4 /* LongestMountainInArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestMountainInArray.swift; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 				8362C13125D0E27C007A79AD /* ValidPalindrome.swift */,
 				83D1C9CA25D247D000292396 /* CaesarCipherEncryptor.swift */,
 				83AE918425D4EB8700A8242D /* LongestPalindromicSubstring.swift */,
+				83BB275225D612D40035A0EE /* RunLengthEncoding.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 				8362C13625D0E296007A79AD /* ValidPalindromeTest.swift */,
 				83D1C9CE25D24C6000292396 /* CaesarCipherEncryptorTest.swift */,
 				83AE918825D4EB9C00A8242D /* LongestPalindromicSubstringTest.swift */,
+				83BB275625D612E40035A0EE /* RunLengthEncodingTest.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -414,6 +420,7 @@
 				83AD337A25CD07DD002C9C35 /* BST.swift in Sources */,
 				83D1C9CB25D247D000292396 /* CaesarCipherEncryptor.swift in Sources */,
 				83318B4725C3971100EE4612 /* ThreeSumDistinct.swift in Sources */,
+				83BB275325D612D40035A0EE /* RunLengthEncoding.swift in Sources */,
 				838087BC25C2164300D5635C /* TwoSum.swift in Sources */,
 				8362C13225D0E27C007A79AD /* ValidPalindrome.swift in Sources */,
 				83318B5125C3977A00EE4612 /* ThreeSum.swift in Sources */,
@@ -442,6 +449,7 @@
 				83C279B325C8DE4600FF32A4 /* SpiralMatrixReversedTest.swift in Sources */,
 				836F519525C7874500ED0432 /* SpiralMatrixTest.swift in Sources */,
 				83AD337325CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift in Sources */,
+				83BB275725D612E40035A0EE /* RunLengthEncodingTest.swift in Sources */,
 				83F9429D25C4C394000CCB17 /* MoveElementToEndTest.swift in Sources */,
 				83AE918925D4EB9C00A8242D /* LongestPalindromicSubstringTest.swift in Sources */,
 				83318B4D25C3973600EE4612 /* ThreeSumDistinctTest.swift in Sources */,
