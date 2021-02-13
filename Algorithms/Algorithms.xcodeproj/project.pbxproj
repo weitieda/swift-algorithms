@@ -14,6 +14,8 @@
 		83318B4D25C3973600EE4612 /* ThreeSumDistinctTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83318B4C25C3973600EE4612 /* ThreeSumDistinctTest.swift */; };
 		83318B5125C3977A00EE4612 /* ThreeSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83318B5025C3977A00EE4612 /* ThreeSum.swift */; };
 		83318B5525C3DCBB00EE4612 /* SmallestDifference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83318B5425C3DCBB00EE4612 /* SmallestDifference.swift */; };
+		8337896425D7875200526DF0 /* GroupAnagrams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8337896325D7875200526DF0 /* GroupAnagrams.swift */; };
+		8337896825D7876000526DF0 /* GroupAnagramsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8337896725D7876000526DF0 /* GroupAnagramsTest.swift */; };
 		8362C11225CF12DF007A79AD /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362C11125CF12DF007A79AD /* LinkedList.swift */; };
 		8362C11725CF1C71007A79AD /* RemoveDuplicatesFromSortedOrderLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362C11625CF1C71007A79AD /* RemoveDuplicatesFromSortedOrderLinkedList.swift */; };
 		8362C11C25CF290D007A79AD /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362C11B25CF290D007A79AD /* LinkedListTest.swift */; };
@@ -67,6 +69,8 @@
 		83318B4C25C3973600EE4612 /* ThreeSumDistinctTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSumDistinctTest.swift; sourceTree = "<group>"; };
 		83318B5025C3977A00EE4612 /* ThreeSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSum.swift; sourceTree = "<group>"; };
 		83318B5425C3DCBB00EE4612 /* SmallestDifference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallestDifference.swift; sourceTree = "<group>"; };
+		8337896325D7875200526DF0 /* GroupAnagrams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAnagrams.swift; sourceTree = "<group>"; };
+		8337896725D7876000526DF0 /* GroupAnagramsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAnagramsTest.swift; sourceTree = "<group>"; };
 		8362C11125CF12DF007A79AD /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		8362C11625CF1C71007A79AD /* RemoveDuplicatesFromSortedOrderLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicatesFromSortedOrderLinkedList.swift; sourceTree = "<group>"; };
 		8362C11B25CF290D007A79AD /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
@@ -155,6 +159,7 @@
 				83D1C9CA25D247D000292396 /* CaesarCipherEncryptor.swift */,
 				83AE918425D4EB8700A8242D /* LongestPalindromicSubstring.swift */,
 				83BB275225D612D40035A0EE /* RunLengthEncoding.swift */,
+				8337896325D7875200526DF0 /* GroupAnagrams.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 				83D1C9CE25D24C6000292396 /* CaesarCipherEncryptorTest.swift */,
 				83AE918825D4EB9C00A8242D /* LongestPalindromicSubstringTest.swift */,
 				83BB275625D612E40035A0EE /* RunLengthEncodingTest.swift */,
+				8337896725D7876000526DF0 /* GroupAnagramsTest.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -427,6 +433,7 @@
 				83AD336F25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift in Sources */,
 				83E96F7225C25F77001E35DC /* ValidateSubsequence.swift in Sources */,
 				836F519125C7870800ED0432 /* SpiralMatrix.swift in Sources */,
+				8337896425D7875200526DF0 /* GroupAnagrams.swift in Sources */,
 				83C308A625CE5BAD0046D54B /* FirstDuplicateValue.swift in Sources */,
 				8362C11225CF12DF007A79AD /* LinkedList.swift in Sources */,
 				8362C11725CF1C71007A79AD /* RemoveDuplicatesFromSortedOrderLinkedList.swift in Sources */,
@@ -444,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8364163925C5F540009FCBE7 /* MonotonicArrayTest.swift in Sources */,
+				8337896825D7876000526DF0 /* GroupAnagramsTest.swift in Sources */,
 				83081EC225CE49F50085333C /* FindDuplicateNumberTest.swift in Sources */,
 				83C279C125C913DB00FF32A4 /* LongestMountainInArrayTest.swift in Sources */,
 				83C279B325C8DE4600FF32A4 /* SpiralMatrixReversedTest.swift in Sources */,

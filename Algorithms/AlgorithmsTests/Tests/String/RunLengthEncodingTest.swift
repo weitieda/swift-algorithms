@@ -17,7 +17,6 @@ class RunLengthEncodingTest: XCTestCase {
         expect("1a1b", when: "ab")
         expect("2a1b1a", when: "aaba")
         expect("9a1a", when: "aaaaaaaaaa")
-
     }
 
     func expect(_ result: String, when input: String) {
