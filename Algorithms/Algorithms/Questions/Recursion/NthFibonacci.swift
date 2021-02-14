@@ -30,7 +30,8 @@ final class NthFibonacci {
     }
 
     private static func memoizationFib(n: Int, memoization: inout [Int: Int]) -> Int {
-        if let value = memoization[n] { return value }
+
+        if let cachedValue = memoization[n] { return cachedValue }
 
         let newValue = memoizationFib(n: n-1, memoization: &memoization) +
                        memoizationFib(n: n-2, memoization: &memoization)
@@ -38,5 +39,24 @@ final class NthFibonacci {
         memoization[n] = newValue
 
         return newValue
+    }
+
+    // t: O(n), s: O(1)
+    static func solutionIteration(n: Int) -> Int {
+        var prevValues: (Int, Int) = (0, 1)
+
+        if n == 1 { return prevValues.0 }
+        if n == 2 { return prevValues.1 }
+
+        var count = 3
+
+        while count < n {
+            let next = prevValues.0 + prevValues.1
+            prevValues.0 = prevValues.1
+            prevValues.1 = next
+            count += 1
+        }
+
+        return prevValues.0 + prevValues.1
     }
 }

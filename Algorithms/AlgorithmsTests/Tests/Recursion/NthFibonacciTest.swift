@@ -19,6 +19,8 @@ class NthFibonacciTest: XCTestCase {
 
         XCTAssertEqual(39088169,
                        NthFibonacci.solutionMemoization(n: 39))
+        XCTAssertEqual(39088169,
+                       NthFibonacci.solutionIteration(n: 39))
     }
 
     func expect(n: Int, toBe result: Int) {
@@ -27,5 +29,9 @@ class NthFibonacciTest: XCTestCase {
 
         let sut2 = NthFibonacci.solutionMemoization(n: n)
         XCTAssertEqual(result, sut2)
+
+
+        let sut3 = NthFibonacci.solutionIteration(n: n)
+        XCTAssertEqual(result, sut3)
     }
 }
