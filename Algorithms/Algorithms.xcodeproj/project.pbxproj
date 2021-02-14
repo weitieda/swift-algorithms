@@ -29,6 +29,8 @@
 		836F519525C7874500ED0432 /* SpiralMatrixTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836F519425C7874500ED0432 /* SpiralMatrixTest.swift */; };
 		837CE18225D8F73E00857363 /* ReverseWordsInString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837CE18125D8F73E00857363 /* ReverseWordsInString.swift */; };
 		837CE18625D8F81F00857363 /* ReverseWordsInStringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837CE18525D8F81F00857363 /* ReverseWordsInStringTest.swift */; };
+		837CE18B25D8FA7500857363 /* NthFibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837CE18A25D8FA7500857363 /* NthFibonacci.swift */; };
+		837CE19025D8FB4900857363 /* NthFibonacciTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837CE18F25D8FB4900857363 /* NthFibonacciTest.swift */; };
 		838087BC25C2164300D5635C /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838087BB25C2164300D5635C /* TwoSum.swift */; };
 		838087C925C2186000D5635C /* Algorithms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838087AD25C2161900D5635C /* Algorithms.framework */; };
 		838087E725C22D0400D5635C /* TwoSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838087E625C22D0400D5635C /* TwoSumTest.swift */; };
@@ -86,6 +88,8 @@
 		836F519425C7874500ED0432 /* SpiralMatrixTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralMatrixTest.swift; sourceTree = "<group>"; };
 		837CE18125D8F73E00857363 /* ReverseWordsInString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseWordsInString.swift; sourceTree = "<group>"; };
 		837CE18525D8F81F00857363 /* ReverseWordsInStringTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseWordsInStringTest.swift; sourceTree = "<group>"; };
+		837CE18A25D8FA7500857363 /* NthFibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NthFibonacci.swift; sourceTree = "<group>"; };
+		837CE18F25D8FB4900857363 /* NthFibonacciTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NthFibonacciTest.swift; sourceTree = "<group>"; };
 		838087AD25C2161900D5635C /* Algorithms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Algorithms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		838087B125C2161900D5635C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		838087BB25C2164300D5635C /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
@@ -185,12 +189,29 @@
 		836F519C25C7C07100ED0432 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				837CE18E25D8FB3B00857363 /* Recursion */,
 				8362C13525D0E286007A79AD /* String */,
 				8362C12125CF32C4007A79AD /* LinkedList */,
 				8362C11A25CF28F2007A79AD /* Helpers */,
 				83C279B725C8F4D200FF32A4 /* Array */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		837CE18925D8FA4500857363 /* Recursion */ = {
+			isa = PBXGroup;
+			children = (
+				837CE18A25D8FA7500857363 /* NthFibonacci.swift */,
+			);
+			path = Recursion;
+			sourceTree = "<group>";
+		};
+		837CE18E25D8FB3B00857363 /* Recursion */ = {
+			isa = PBXGroup;
+			children = (
+				837CE18F25D8FB4900857363 /* NthFibonacciTest.swift */,
+			);
+			path = Recursion;
 			sourceTree = "<group>";
 		};
 		838087A325C2161900D5635C = {
@@ -232,6 +253,7 @@
 		838087BE25C2164600D5635C /* Questions */ = {
 			isa = PBXGroup;
 			children = (
+				837CE18925D8FA4500857363 /* Recursion */,
 				8362C13025D0E19B007A79AD /* String */,
 				8362C11525CF1C34007A79AD /* LinkedList */,
 				83C279B625C8F4C400FF32A4 /* Array */,
@@ -433,6 +455,7 @@
 				83D1C9CB25D247D000292396 /* CaesarCipherEncryptor.swift in Sources */,
 				83318B4725C3971100EE4612 /* ThreeSumDistinct.swift in Sources */,
 				83BB275325D612D40035A0EE /* RunLengthEncoding.swift in Sources */,
+				837CE18B25D8FA7500857363 /* NthFibonacci.swift in Sources */,
 				838087BC25C2164300D5635C /* TwoSum.swift in Sources */,
 				8362C13225D0E27C007A79AD /* ValidPalindrome.swift in Sources */,
 				83318B5125C3977A00EE4612 /* ThreeSum.swift in Sources */,
@@ -472,6 +495,7 @@
 				8362C12B25CF3352007A79AD /* RemoveDuplicatesFromSortedOrderLinkedListTest.swift in Sources */,
 				8362C11C25CF290D007A79AD /* LinkedListTest.swift in Sources */,
 				83D1C9CF25D24C6000292396 /* CaesarCipherEncryptorTest.swift in Sources */,
+				837CE19025D8FB4900857363 /* NthFibonacciTest.swift in Sources */,
 				83C308AA25CE5BC30046D54B /* FirstDuplicateValueTest.swift in Sources */,
 				838087E725C22D0400D5635C /* TwoSumTest.swift in Sources */,
 				83318B4125C375C400EE4612 /* ThreeSumTest.swift in Sources */,
