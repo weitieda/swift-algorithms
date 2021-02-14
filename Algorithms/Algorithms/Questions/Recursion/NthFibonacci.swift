@@ -30,13 +30,13 @@ final class NthFibonacci {
     }
 
     private static func memoizationFib(n: Int, memoization: inout [Int: Int]) -> Int {
+        if let value = memoization[n] { return value }
 
-        if let value = memoization[n] {
-            return value
-        }
+        let newValue = memoizationFib(n: n-1, memoization: &memoization) +
+                       memoizationFib(n: n-2, memoization: &memoization)
 
-        let newValue = memoizationFib(n: n-1, memoization: &memoization) + memoizationFib(n: n-2, memoization: &memoization)
         memoization[n] = newValue
+
         return newValue
     }
 }
