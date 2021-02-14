@@ -16,7 +16,7 @@ class ReverseWordsInStringTest: XCTestCase {
     }
 
     func expect(_ string: String, toBe result: String) {
-        let sut = ReverseWordsInString.solutionO1(string: string)
+        let sut = ReverseWordsInString.solutionSpaceO1(string: string)
         XCTAssertEqual(result, sut)
     }
 }
