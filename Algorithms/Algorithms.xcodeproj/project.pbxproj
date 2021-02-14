@@ -27,6 +27,8 @@
 		83662E6425C3DFD600D12AD1 /* SmallestDifferenceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83662E6325C3DFD600D12AD1 /* SmallestDifferenceTest.swift */; };
 		836F519125C7870800ED0432 /* SpiralMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836F519025C7870800ED0432 /* SpiralMatrix.swift */; };
 		836F519525C7874500ED0432 /* SpiralMatrixTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836F519425C7874500ED0432 /* SpiralMatrixTest.swift */; };
+		837CE18225D8F73E00857363 /* ReverseWordsInString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837CE18125D8F73E00857363 /* ReverseWordsInString.swift */; };
+		837CE18625D8F81F00857363 /* ReverseWordsInStringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837CE18525D8F81F00857363 /* ReverseWordsInStringTest.swift */; };
 		838087BC25C2164300D5635C /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838087BB25C2164300D5635C /* TwoSum.swift */; };
 		838087C925C2186000D5635C /* Algorithms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838087AD25C2161900D5635C /* Algorithms.framework */; };
 		838087E725C22D0400D5635C /* TwoSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838087E625C22D0400D5635C /* TwoSumTest.swift */; };
@@ -82,6 +84,8 @@
 		83662E6325C3DFD600D12AD1 /* SmallestDifferenceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallestDifferenceTest.swift; sourceTree = "<group>"; };
 		836F519025C7870800ED0432 /* SpiralMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralMatrix.swift; sourceTree = "<group>"; };
 		836F519425C7874500ED0432 /* SpiralMatrixTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralMatrixTest.swift; sourceTree = "<group>"; };
+		837CE18125D8F73E00857363 /* ReverseWordsInString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseWordsInString.swift; sourceTree = "<group>"; };
+		837CE18525D8F81F00857363 /* ReverseWordsInStringTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseWordsInStringTest.swift; sourceTree = "<group>"; };
 		838087AD25C2161900D5635C /* Algorithms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Algorithms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		838087B125C2161900D5635C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		838087BB25C2164300D5635C /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 				83AE918425D4EB8700A8242D /* LongestPalindromicSubstring.swift */,
 				83BB275225D612D40035A0EE /* RunLengthEncoding.swift */,
 				8337896325D7875200526DF0 /* GroupAnagrams.swift */,
+				837CE18125D8F73E00857363 /* ReverseWordsInString.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 				83AE918825D4EB9C00A8242D /* LongestPalindromicSubstringTest.swift */,
 				83BB275625D612E40035A0EE /* RunLengthEncodingTest.swift */,
 				8337896725D7876000526DF0 /* GroupAnagramsTest.swift */,
+				837CE18525D8F81F00857363 /* ReverseWordsInStringTest.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -442,6 +448,7 @@
 				83318B5525C3DCBB00EE4612 /* SmallestDifference.swift in Sources */,
 				83AE918525D4EB8700A8242D /* LongestPalindromicSubstring.swift in Sources */,
 				83C279BD25C9136400FF32A4 /* LongestMountainInArray.swift in Sources */,
+				837CE18225D8F73E00857363 /* ReverseWordsInString.swift in Sources */,
 				83081EBE25CE49E30085333C /* FindDuplicateNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +459,7 @@
 			files = (
 				8364163925C5F540009FCBE7 /* MonotonicArrayTest.swift in Sources */,
 				8337896825D7876000526DF0 /* GroupAnagramsTest.swift in Sources */,
+				837CE18625D8F81F00857363 /* ReverseWordsInStringTest.swift in Sources */,
 				83081EC225CE49F50085333C /* FindDuplicateNumberTest.swift in Sources */,
 				83C279C125C913DB00FF32A4 /* LongestMountainInArrayTest.swift in Sources */,
 				83C279B325C8DE4600FF32A4 /* SpiralMatrixReversedTest.swift in Sources */,
