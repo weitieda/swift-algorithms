@@ -36,6 +36,7 @@ class BinarySearchTest: XCTestCase {
         expect(nil, input: [1, 2, 3, 4, 5], target: 0)
 
         expect(nil, input: [1, 1, 1], target: 0)
+        expect(nil, input: [1, 1], target: 0)
     }
 
     private func expect(_ result: Int?, input: [Int], target: Int) {

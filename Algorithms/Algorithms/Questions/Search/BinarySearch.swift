@@ -29,7 +29,7 @@ final class BinarySearch {
             if midNum == target {
                 return midIndex
             } else if midNum < target {
-                left = midIndex
+                left = midIndex + 1
             } else {
                 right = midIndex
             }
