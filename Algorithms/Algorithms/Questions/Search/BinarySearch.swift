@@ -7,17 +7,10 @@
 
 import Foundation
 
-/*
- 
- 
- 
- 
- */
-
 final class BinarySearch {
 
     // t: O(log(n)), s: O(1)
-    static func solution(input: [Int], target: Int) -> Int? {
+    static func solution<T: Comparable>(input: [T], target: T) -> Int? {
 
         var left = 0
         var right = input.count
