@@ -18,6 +18,14 @@ final class BinarySearchTree<T: Comparable> {
         self.value = value
     }
 
+    convenience init?(array: [T]) {
+        guard !array.isEmpty else { return nil }
+        self.init(value: array[0])
+        for i in 1..<array.count {
+            insert(array[i])
+        }
+    }
+
     func insert(_ newValue: T) {
         if newValue < value {
             if let left = left {

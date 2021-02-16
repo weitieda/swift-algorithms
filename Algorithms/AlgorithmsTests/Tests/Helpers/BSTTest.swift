@@ -35,4 +35,19 @@ class BSTTest: XCTestCase {
         XCTAssertEqual(sut.right?.value, 8)
         XCTAssertNil(sut.left)
     }
+
+    func test_initWithArray() {
+        let sut = BST(array: [4, 5, 3, 2])!
+
+        XCTAssertEqual(sut.value, 4)
+        XCTAssertEqual(sut.right?.value, 5)
+        XCTAssertEqual(sut.left?.value, 3)
+        XCTAssertEqual(sut.left?.left?.value, 2)
+        XCTAssertNil(sut.left?.right)
+    }
+
+    func test_initWithEmptyArray() {
+        let sut = BST(array: [Int]())
+        XCTAssertNil(sut)
+    }
 }
