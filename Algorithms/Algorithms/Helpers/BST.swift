@@ -7,14 +7,31 @@
 
 import Foundation
 
-final class BST {
-    var value: Int
-    var left: BST?
-    var right: BST?
+typealias BST = BinarySearchTree
 
-    init(value: Int) {
+final class BinarySearchTree<T: Comparable> {
+    private(set) var value: T
+    private(set) var left: BST<T>?
+    private(set) var right: BST<T>?
+
+    init(value: T) {
         self.value = value
-        left = nil
-        right = nil
     }
+
+    func insert(_ newValue: T) {
+        if newValue < value {
+            if let left = left {
+                left.insert(newValue)
+            } else {
+                left = BST(value: newValue)
+            }
+        } else {
+            if let right = right {
+                right.insert(newValue)
+            } else {
+                right = BST(value: newValue)
+            }
+        }
+    }
+
 }
