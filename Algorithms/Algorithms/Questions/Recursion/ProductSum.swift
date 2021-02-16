@@ -34,9 +34,21 @@ import Foundation
 
 final class ProductSum {
 
-    // t: O(), s: O()
-    static func solution() {
+    // t: O(n), s: O(depth)
+    static func solution(_ array: [Any]) -> Int {
+        return productSum(array)
+    }
 
+    private static func productSum(_ array: [Any], depth: Int = 1) -> Int {
+        var sum = 0
+        for value in array {
+            if let v = value as? Int {
+                sum += v
+            } else if let v = value as? [Any] {
+                sum += productSum(v, depth: depth + 1)
+            }
+        }
+        return sum * depth
     }
 
 }

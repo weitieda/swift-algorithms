@@ -19,6 +19,7 @@
 		8339979925DB791F0053C700 /* FindClosestValueInBST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8339979825DB791F0053C700 /* FindClosestValueInBST.swift */; };
 		833997A125DB7F450053C700 /* BSTTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833997A025DB7F450053C700 /* BSTTest.swift */; };
 		833997A725DB8ED40053C700 /* ProductSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833997A625DB8ED40053C700 /* ProductSum.swift */; };
+		833997AB25DB91920053C700 /* ProductSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833997AA25DB91920053C700 /* ProductSumTest.swift */; };
 		8362C11225CF12DF007A79AD /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362C11125CF12DF007A79AD /* LinkedList.swift */; };
 		8362C11725CF1C71007A79AD /* RemoveDuplicatesFromSortedOrderLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362C11625CF1C71007A79AD /* RemoveDuplicatesFromSortedOrderLinkedList.swift */; };
 		8362C11C25CF290D007A79AD /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362C11B25CF290D007A79AD /* LinkedListTest.swift */; };
@@ -83,6 +84,7 @@
 		8339979825DB791F0053C700 /* FindClosestValueInBST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindClosestValueInBST.swift; sourceTree = "<group>"; };
 		833997A025DB7F450053C700 /* BSTTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTTest.swift; sourceTree = "<group>"; };
 		833997A625DB8ED40053C700 /* ProductSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSum.swift; sourceTree = "<group>"; };
+		833997AA25DB91920053C700 /* ProductSumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSumTest.swift; sourceTree = "<group>"; };
 		8362C11125CF12DF007A79AD /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		8362C11625CF1C71007A79AD /* RemoveDuplicatesFromSortedOrderLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicatesFromSortedOrderLinkedList.swift; sourceTree = "<group>"; };
 		8362C11B25CF290D007A79AD /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				837CE18F25D8FB4900857363 /* NthFibonacciTest.swift */,
+				833997AA25DB91920053C700 /* ProductSumTest.swift */,
 			);
 			path = Recursion;
 			sourceTree = "<group>";
@@ -543,6 +546,7 @@
 				838087E725C22D0400D5635C /* TwoSumTest.swift in Sources */,
 				83C3B87925DB2D9000CBECDB /* BinarySearchTest.swift in Sources */,
 				83318B4125C375C400EE4612 /* ThreeSumTest.swift in Sources */,
+				833997AB25DB91920053C700 /* ProductSumTest.swift in Sources */,
 				83662E6425C3DFD600D12AD1 /* SmallestDifferenceTest.swift in Sources */,
 				83E96F7C25C2632D001E35DC /* ValidateSubsequenceTest.swift in Sources */,
 				8362C13725D0E296007A79AD /* ValidPalindromeTest.swift in Sources */,
