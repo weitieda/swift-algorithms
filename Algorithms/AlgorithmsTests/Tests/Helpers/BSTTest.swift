@@ -13,12 +13,16 @@ class BSTTest: XCTestCase {
     func test_init() {
         let sut = BST(value: 7)
         XCTAssertEqual(sut.value, 7)
+        XCTAssertEqual(sut.maxValue, 7)
+        XCTAssertEqual(sut.minValue, 7)
+        XCTAssertNil(sut.parent)
     }
 
     func test_insertLeft() {
         let sut = BST(value: 7)
         sut.insert(6)
         XCTAssertEqual(sut.left?.value, 6)
+        XCTAssertEqual(sut.left?.parent?.value, 7)
         XCTAssertNil(sut.right)
     }
 
@@ -33,6 +37,7 @@ class BSTTest: XCTestCase {
         let sut = BST(value: 7)
         sut.insert(8)
         XCTAssertEqual(sut.right?.value, 8)
+        XCTAssertEqual(sut.right?.parent?.value, 7)
         XCTAssertNil(sut.left)
     }
 
@@ -62,10 +67,10 @@ class BSTTest: XCTestCase {
     }
 
     func test_min_max_value() {
-        let sut = BST(array: [3, 1, 2, 4])!
+        let sut = BST(array: [0, 3, 1, 2, 4])!
 
         XCTAssertEqual(sut.maxValue, 4)
-        XCTAssertEqual(sut.minValue, 1)
+        XCTAssertEqual(sut.minValue, 0)
     }
 
     func test_min_max_value_onlyRoot() {

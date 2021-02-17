@@ -10,17 +10,15 @@ import Foundation
 typealias BST = BinarySearchTree
 
 final class BinarySearchTree<T: Comparable> {
+
     private(set) var value: T
     private(set) var left: BST<T>?
     private(set) var right: BST<T>?
 
-    var minValue: T {
-        left?.minValue ?? value
-    }
+    private(set) var parent: BST<T>?
 
-    var maxValue: T {
-        right?.maxValue ?? value
-    }
+    var minValue: T { left?.minValue ?? value }
+    var maxValue: T { right?.maxValue ?? value }
 
     init(value: T) {
         self.value = value
@@ -42,12 +40,14 @@ final class BinarySearchTree<T: Comparable> {
                 left.insert(newValue)
             } else {
                 left = BST(value: newValue)
+                left?.parent = self
             }
         } else {
             if let right = right {
                 right.insert(newValue)
             } else {
                 right = BST(value: newValue)
+                right?.parent = self
             }
         }
     }
