@@ -90,11 +90,46 @@ final class BinarySearchTree<T: Comparable> {
     /// 2. Removing single chide node: remove then parent points to child
     /// 3. Removing node with 2 children: replace with next biggest value (right side, left most)
     ///    then remove next biggest then next biggest parent points to its right child
-    func remove(_ value: T) -> BST<T> {
+    @discardableResult
+    func remove() -> BST<T>? {
+        let replacement: BST<T>?
 
-//        guard
+        if let right = right {
+          replacement = right.min
+        } else if let left = left {
+          replacement = left.max
+        } else {
+          replacement = nil
+        }
 
-        return self
+        replacement?.remove()
+
+        replacement?.right = right
+        replacement?.left = left
+        right?.parent = replacement
+        left?.parent = replacement
+        reconnectParentTo(node: replacement)
+
+        parent = nil
+        left = nil
+        right = nil
+
+        return replacement
+    }
+
+    private func reconnectParentTo(node: BinarySearchTree?) {
+      if let parent = parent {
+        if isLeftChild {
+          parent.left = node
+        } else {
+          parent.right = node
+        }
+      }
+      node?.parent = parent
+    }
+
+    var isLeftChild: Bool {
+      return parent?.left === self
     }
 
 }

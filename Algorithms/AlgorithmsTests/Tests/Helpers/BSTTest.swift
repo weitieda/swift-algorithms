@@ -54,25 +54,52 @@ class BSTTest: XCTestCase {
     }
 
     func test_search() {
-        let sut = makeSUT().search(70)
-        XCTAssertNotNil(sut)
-        XCTAssertEqual(sut?.parent?.value, 50)
+        let node = makeSUT().search(70)
+        XCTAssertNotNil(node)
+        XCTAssertEqual(node?.parent?.value, 50)
     }
 
     func test_searchNotExist() {
-        let sut = makeSUT().search(0)
-        XCTAssertNil(sut)
+        let node = makeSUT().search(0)
+        XCTAssertNil(node)
     }
 
     func test_searchRecursive() {
-        let sut = makeSUT().searchRecursively(70)
-        XCTAssertNotNil(sut)
-        XCTAssertEqual(sut?.parent?.value, 50)
+        let node = makeSUT().searchRecursively(70)
+        XCTAssertNotNil(node)
+        XCTAssertEqual(node?.parent?.value, 50)
     }
 
     func test_searchRecursiveNotExist() {
-        let sut = makeSUT().searchRecursively(0)
-        XCTAssertNil(sut)
+        let node = makeSUT().searchRecursively(0)
+        XCTAssertNil(node)
+    }
+
+    func test_deleteLeftLeaf() {
+        let sut = makeSUT()
+        sut.search(20)!.remove()
+        XCTAssertNil(sut.left?.left)
+    }
+
+    func test_deleteRightLeaf() {
+        let sut = makeSUT()
+        sut.search(65)!.remove()
+        XCTAssertNil(sut.right?.left?.right)
+    }
+
+    func test_deleteSingleChild() {
+        let sut = makeSUT()
+        sut.search(60)!.remove()
+        XCTAssertEqual(sut.right?.left?.value, 65)
+    }
+
+    func test_deleteWithBothNodes() {
+        let sut = makeSUT()
+        sut.search(70)!.remove()
+        XCTAssertEqual(sut.right?.value, 75)
+        XCTAssertEqual(sut.right?.right?.value, 80)
+        XCTAssertEqual(sut.right?.right?.right?.value, 85)
+        XCTAssertNil(sut.right?.right?.left)
     }
 
     ///                       50
