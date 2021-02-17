@@ -17,8 +17,8 @@ final class BinarySearchTree<T: Comparable> {
 
     private(set) var parent: BST<T>?
 
-    var minValue: T { left?.minValue ?? value }
-    var maxValue: T { right?.maxValue ?? value }
+    var min: BST<T> { left?.min ?? self }
+    var max: BST<T> { right?.max ?? self }
 
     init(value: T) {
         self.value = value
@@ -85,11 +85,16 @@ final class BinarySearchTree<T: Comparable> {
         return nil
     }
 
-//    func remove(_ value: T) -> BST<T> {
-//
+    /// There are 3 cases to consider:
+    /// 1. Removing leaf node: remove directly, no need to "repair" the tree
+    /// 2. Removing single chide node: remove then parent points to child
+    /// 3. Removing node with 2 children: replace with next biggest value (right side, left most)
+    ///    then remove next biggest then next biggest parent points to its right child
+    func remove(_ value: T) -> BST<T> {
+
 //        guard
-//
-//        return self
-//    }
+
+        return self
+    }
 
 }
