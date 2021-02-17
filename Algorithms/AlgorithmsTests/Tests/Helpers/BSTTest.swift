@@ -50,4 +50,14 @@ class BSTTest: XCTestCase {
         let sut = BST(array: [Int]())
         XCTAssertNil(sut)
     }
+
+    func test_contain() {
+        let sut = BST(array: [3, 1, 2, 4])!
+        XCTAssertTrue(sut.contains(1))
+        XCTAssertTrue(sut.contains(2))
+        XCTAssertTrue(sut.contains(4))
+        XCTAssertTrue(sut.contains(3))
+        
+        XCTAssertFalse(sut.contains(5))
+    }
 }

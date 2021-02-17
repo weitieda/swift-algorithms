@@ -15,7 +15,6 @@ class ProductSumTest: XCTestCase {
         let sut = ProductSum.solution(array)
 
         XCTAssertEqual(12, sut)
-
     }
 
 }

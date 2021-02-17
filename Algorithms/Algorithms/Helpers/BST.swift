@@ -26,6 +26,8 @@ final class BinarySearchTree<T: Comparable> {
         }
     }
 
+    // Average: time: O(log(n)) | space: O(log(n))
+    // Worst: time: O(n) | space: O(n)
     func insert(_ newValue: T) {
         if newValue < value {
             if let left = left {
@@ -40,6 +42,17 @@ final class BinarySearchTree<T: Comparable> {
                 right = BST(value: newValue)
             }
         }
+    }
+
+    // Average: time: O(log(n)) | space: O(log(n))
+    // Worst: time: O(n) | space: O(n)
+    func contains(_ value: T) -> Bool {
+        if value < self.value {
+            return left?.contains(value) ?? false
+        } else if value > self.value {
+            return right?.contains(value) ?? false
+        }
+        return true
     }
 
 }
