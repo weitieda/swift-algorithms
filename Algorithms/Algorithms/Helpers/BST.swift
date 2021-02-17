@@ -85,13 +85,18 @@ final class BinarySearchTree<T: Comparable> {
         return nil
     }
 
+    ///
+    /// https://www.youtube.com/watch?v=wcIRPqTR3Kc
+    ///
     /// There are 3 cases to consider:
     /// 1. Removing leaf node: remove directly, no need to "repair" the tree
     /// 2. Removing single chide node: remove then parent points to child
     /// 3. Removing node with 2 children: replace with next biggest value (right side, left most)
     ///    then remove next biggest then next biggest parent points to its right child
+    ///
     @discardableResult
     func remove() -> BST<T>? {
+
         let replacement: BST<T>?
 
         if let right = right {
