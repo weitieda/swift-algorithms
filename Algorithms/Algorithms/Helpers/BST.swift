@@ -14,6 +14,14 @@ final class BinarySearchTree<T: Comparable> {
     private(set) var left: BST<T>?
     private(set) var right: BST<T>?
 
+    var minValue: T {
+        left?.minValue ?? value
+    }
+
+    var maxValue: T {
+        right?.maxValue ?? value
+    }
+
     init(value: T) {
         self.value = value
     }

@@ -60,4 +60,18 @@ class BSTTest: XCTestCase {
         
         XCTAssertFalse(sut.contains(5))
     }
+
+    func test_min_max_value() {
+        let sut = BST(array: [3, 1, 2, 4])!
+
+        XCTAssertEqual(sut.maxValue, 4)
+        XCTAssertEqual(sut.minValue, 1)
+    }
+
+    func test_min_max_value_onlyRoot() {
+        let sut = BST(array: [3])!
+
+        XCTAssertEqual(sut.maxValue, 3)
+        XCTAssertEqual(sut.minValue, 3)
+    }
 }
