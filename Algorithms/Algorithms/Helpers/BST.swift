@@ -42,7 +42,7 @@ final class BinarySearchTree<T: Comparable> {
                 left = BST(value: newValue)
                 left?.parent = self
             }
-        } else {
+        } else if newValue > value {
             if let right = right {
                 right.insert(newValue)
             } else {
@@ -55,12 +55,41 @@ final class BinarySearchTree<T: Comparable> {
     // Average: time: O(log(n)) | space: O(log(n))
     // Worst: time: O(n) | space: O(n)
     func contains(_ value: T) -> Bool {
-        if value < self.value {
-            return left?.contains(value) ?? false
-        } else if value > self.value {
-            return right?.contains(value) ?? false
-        }
-        return true
+        return search(value) != nil
     }
+
+    func search(_ target: T) -> BST<T>? {
+        var node: BST<T>? = self
+
+        while let n = node {
+            if n.value == target {
+                return n
+            } else if n.value < target {
+                node = n.right
+            } else if n.value > target {
+                node = n.left
+            }
+        }
+
+        return nil
+    }
+
+    func searchRecursively(_ target: T) -> BST<T>? {
+        if value == target {
+            return self
+        } else if value < target {
+            return right?.search(target)
+        } else if value > target {
+            return left?.search(target)
+        }
+        return nil
+    }
+
+//    func remove(_ value: T) -> BST<T> {
+//
+//        guard
+//
+//        return self
+//    }
 
 }

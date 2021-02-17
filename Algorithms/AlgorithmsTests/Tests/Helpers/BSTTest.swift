@@ -26,13 +26,6 @@ class BSTTest: XCTestCase {
         XCTAssertNil(sut.right)
     }
 
-    func test_insertRightEqual() {
-        let sut = BST(value: 7)
-        sut.insert(7)
-        XCTAssertEqual(sut.right?.value, 7)
-        XCTAssertNil(sut.left)
-    }
-
     func test_insertRightLarger() {
         let sut = BST(value: 7)
         sut.insert(8)
@@ -78,5 +71,25 @@ class BSTTest: XCTestCase {
 
         XCTAssertEqual(sut.maxValue, 3)
         XCTAssertEqual(sut.minValue, 3)
+    }
+
+    func test_search() {
+        let sut = BST(array: [3, 1, 2, 4])!.search(2)
+        XCTAssertEqual(sut?.parent?.value, 1)
+    }
+
+    func test_searchRecursive() {
+        let sut = BST(array: [3, 1, 2, 4])!.searchRecursively(2)
+        XCTAssertEqual(sut?.parent?.value, 1)
+    }
+
+    func test_searchNotExist() {
+        let sut = BST(array: [3, 1, 2, 4])!.search(7)
+        XCTAssertNil(sut)
+    }
+
+    func test_searchRecursiveNotExist() {
+        let sut = BST(array: [3, 1, 2, 4])!.searchRecursively(7)
+        XCTAssertNil(sut)
     }
 }
