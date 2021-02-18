@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		83081EBE25CE49E30085333C /* FindDuplicateNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83081EBD25CE49E30085333C /* FindDuplicateNumber.swift */; };
 		83081EC225CE49F50085333C /* FindDuplicateNumberTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83081EC125CE49F50085333C /* FindDuplicateNumberTest.swift */; };
+		832E3E7825DDFB6900A3D661 /* BinarySearchTreeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832E3E7725DDFB6900A3D661 /* BinarySearchTreeTest.swift */; };
 		83318B4125C375C400EE4612 /* ThreeSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83318B4025C375C400EE4612 /* ThreeSumTest.swift */; };
 		83318B4725C3971100EE4612 /* ThreeSumDistinct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83318B4625C3971100EE4612 /* ThreeSumDistinct.swift */; };
 		83318B4D25C3973600EE4612 /* ThreeSumDistinctTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83318B4C25C3973600EE4612 /* ThreeSumDistinctTest.swift */; };
@@ -74,6 +75,7 @@
 /* Begin PBXFileReference section */
 		83081EBD25CE49E30085333C /* FindDuplicateNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDuplicateNumber.swift; sourceTree = "<group>"; };
 		83081EC125CE49F50085333C /* FindDuplicateNumberTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDuplicateNumberTest.swift; sourceTree = "<group>"; };
+		832E3E7725DDFB6900A3D661 /* BinarySearchTreeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTreeTest.swift; sourceTree = "<group>"; };
 		83318B4025C375C400EE4612 /* ThreeSumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSumTest.swift; sourceTree = "<group>"; };
 		83318B4625C3971100EE4612 /* ThreeSumDistinct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSumDistinct.swift; sourceTree = "<group>"; };
 		83318B4C25C3973600EE4612 /* ThreeSumDistinctTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSumDistinctTest.swift; sourceTree = "<group>"; };
@@ -148,6 +150,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		832E3E7225DDF96100A3D661 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				83C279B725C8F4D200FF32A4 /* Array */,
+				83C3B87725DB2D8700CBECDB /* Search */,
+				837CE18E25D8FB3B00857363 /* Recursion */,
+				8362C13525D0E286007A79AD /* String */,
+				8362C12125CF32C4007A79AD /* LinkedList */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
 		8339979725DB78DF0053C700 /* BST */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,13 +178,14 @@
 			path = LinkedList;
 			sourceTree = "<group>";
 		};
-		8362C11A25CF28F2007A79AD /* Helpers */ = {
+		8362C11A25CF28F2007A79AD /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
 				8362C11B25CF290D007A79AD /* LinkedListTest.swift */,
 				833997A025DB7F450053C700 /* BSTTest.swift */,
+				832E3E7725DDFB6900A3D661 /* BinarySearchTreeTest.swift */,
 			);
-			path = Helpers;
+			path = DataStructures;
 			sourceTree = "<group>";
 		};
 		8362C12125CF32C4007A79AD /* LinkedList */ = {
@@ -210,12 +225,8 @@
 		836F519C25C7C07100ED0432 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				83C3B87725DB2D8700CBECDB /* Search */,
-				837CE18E25D8FB3B00857363 /* Recursion */,
-				8362C13525D0E286007A79AD /* String */,
-				8362C12125CF32C4007A79AD /* LinkedList */,
-				8362C11A25CF28F2007A79AD /* Helpers */,
-				83C279B725C8F4D200FF32A4 /* Array */,
+				832E3E7225DDF96100A3D661 /* Questions */,
+				8362C11A25CF28F2007A79AD /* DataStructures */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -259,7 +270,7 @@
 		838087AF25C2161900D5635C /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
-				83AD337825CD07CC002C9C35 /* Helpers */,
+				83AD337825CD07CC002C9C35 /* DataStructures */,
 				838087BE25C2164600D5635C /* Questions */,
 				838087B925C2161D00D5635C /* SupportingFiles */,
 			);
@@ -296,13 +307,13 @@
 			path = AlgorithmsTests;
 			sourceTree = "<group>";
 		};
-		83AD337825CD07CC002C9C35 /* Helpers */ = {
+		83AD337825CD07CC002C9C35 /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
 				83AD337925CD07DD002C9C35 /* BST.swift */,
 				8362C11125CF12DF007A79AD /* LinkedList.swift */,
 			);
-			path = Helpers;
+			path = DataStructures;
 			sourceTree = "<group>";
 		};
 		83C279B625C8F4C400FF32A4 /* Array */ = {
@@ -545,6 +556,7 @@
 				833997A125DB7F450053C700 /* BSTTest.swift in Sources */,
 				838087E725C22D0400D5635C /* TwoSumTest.swift in Sources */,
 				83C3B87925DB2D9000CBECDB /* BinarySearchTest.swift in Sources */,
+				832E3E7825DDFB6900A3D661 /* BinarySearchTreeTest.swift in Sources */,
 				83318B4125C375C400EE4612 /* ThreeSumTest.swift in Sources */,
 				833997AB25DB91920053C700 /* ProductSumTest.swift in Sources */,
 				83662E6425C3DFD600D12AD1 /* SmallestDifferenceTest.swift in Sources */,
