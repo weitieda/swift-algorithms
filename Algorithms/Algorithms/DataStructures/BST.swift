@@ -9,60 +9,65 @@ import Foundation
 
 final class BinarySearchTree<T: Comparable> {
 
-    private(set) var root: Node
-
-    class Node {
+    class BinaryNode<T: Comparable> {
         var value: T
-        var left: Node?
-        var right: Node?
+        var left: BinaryNode?
+        var right: BinaryNode?
 
-        init(value: T, left: Node? = nil, right: Node? = nil) {
+        init(value: T, left: BinaryNode? = nil, right: BinaryNode? = nil) {
             self.value = value
             self.left = left
             self.right = right
         }
     }
 
-    init(rootValue: T) {
-        self.root = .init(value: rootValue)
-    }
+    typealias Node = BinaryNode<T>
 
-    func add(_ value: T) {
-        let newNode = Node(value: value)
-        add(parent: root, new: newNode)
-    }
+    private(set) var root: Node?
 
-    private func add(parent: Node, new: Node) {
-        if parent.value > new.value {
-            if let left = parent.left {
-                add(parent: left, new: new)
-            } else {
-                parent.left = new
-            }
-        } else if parent.value < new.value {
-            if let right = parent.right {
-                add(parent: right, new: new)
-            } else {
-                parent.right = new
-            }
+    init(rootValue: T? = nil) {
+        if let value = rootValue {
+            self.root = Node(value: value)
         }
+    }
+
+    func insert(_ value: T) {
+        guard let root = root else {
+            self.root = Node(value: value)
+            return
+        }
+        insert(parent: root, newValue: value)
+    }
+
+    @discardableResult
+    private func insert(parent: Node?, newValue: T) -> Node {
+        guard let parent = parent else {
+            return BinaryNode(value: newValue)
+        }
+
+        if parent.value > newValue {
+            parent.left = insert(parent: parent.left, newValue: newValue)
+        } else if parent.value < newValue {
+            parent.right = insert(parent: parent.right, newValue: newValue)
+        }
+
+        return parent
     }
 
     func search(_ value: T) -> Node? {
-        let t = Node(value: value)
-        if value > root.value {
-            search(parent: root.right, target: t)
-        } else if value < root.value {
-            search(parent: root.left, target: t)
-        } else {
-            return root
-        }
-
-        return nil
+        guard let root = root else { return nil }
+        return search(parent: root, target: value)
     }
 
-    private func search(parent: Node?, target: Node) {
-
+    private func search(parent: Node?, target: T) -> Node? {
+        guard let parent = parent else { return nil }
+        if target > parent.value {
+            return search(parent: parent.right, target: target)
+        } else if target < parent.value {
+            return search(parent: parent.left, target: target)
+        } else {
+            return parent
+        }
     }
 
 
