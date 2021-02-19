@@ -18,18 +18,14 @@ class BinaryNode<T: Comparable>: CustomStringConvertible {
         self.value = value
     }
 
-    public var description: String {
+    /// Ref:
+    /// https://github.com/raywenderlich/alg-materials/blob/editions/3.0/14-binary-search-tree/projects/final/BinarySearchTree.playground/Sources/BinaryNode.swift
+    var description: String {
         diagram(for: self)
     }
 
-    // https://github.com/raywenderlich/alg-materials/blob/editions/3.0/14-binary-search-tree/projects/final/BinarySearchTree.playground/Sources/BinaryNode.swift
-    private func diagram(for node: BinaryNode?,
-                         _ top: String = "",
-                         _ root: String = "",
-                         _ bottom: String = "") -> String {
-        guard let node = node else {
-            return root + "nil\n"
-        }
+    private func diagram(for node: BinaryNode?, _ top: String = "", _ root: String = "", _ bottom: String = "") -> String {
+        guard let node = node else { return root + "nil\n" }
         if node.left == nil && node.right == nil {
             return root + "\(node.value)\n"
         }
