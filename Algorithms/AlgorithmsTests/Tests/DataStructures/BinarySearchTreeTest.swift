@@ -18,6 +18,7 @@ class BinarySearchTreeTest: XCTestCase {
     func test_insert() {
         let sut = makeSUT()
 
+        XCTAssertFalse(sut.insert(2))
         let root = sut.root
         XCTAssertEqual(2, root?.value)
         XCTAssertEqual(3, root?.right?.value)

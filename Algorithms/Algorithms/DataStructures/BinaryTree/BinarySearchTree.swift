@@ -14,17 +14,19 @@ final class BinarySearchTree<T: Comparable> {
     private(set) var root: Node?
 
     init(rootValue: T? = nil) {
-        if let value = rootValue {
-            self.root = Node(value: value)
-        }
+        guard let value = rootValue else { return }
+        self.root = Node(value: value)
     }
 
-    func insert(_ value: T) {
+    @discardableResult
+    func insert(_ value: T) -> Bool {
+        guard !contains(value) else { return false }
         guard let root = root else {
             self.root = Node(value: value)
-            return
+            return true
         }
         insert(parent: root, newValue: value)
+        return true
     }
 
     func search(_ value: T) -> Node? {
@@ -47,15 +49,15 @@ final class BinarySearchTree<T: Comparable> {
     @discardableResult
     func remove(_ value: T) -> Bool {
         guard contains(value) else { return false }
-        _ = remove(node: root, value: value)
+        remove(node: root, value: value)
         return true
     }
 
+    // MARK: - Private
+
     @discardableResult
     private func insert(parent: Node?, newValue: T) -> Node {
-        guard let parent = parent else {
-            return BinaryNode(value: newValue)
-        }
+        guard let parent = parent else { return BinaryNode(value: newValue) }
 
         if parent.value > newValue {
             parent.left = insert(parent: parent.left, newValue: newValue)
@@ -77,6 +79,7 @@ final class BinarySearchTree<T: Comparable> {
         }
     }
 
+    @discardableResult
     private func remove(node: Node?, value: T) -> Node? {
         guard let node = node else {return nil}
 
@@ -96,5 +99,12 @@ final class BinarySearchTree<T: Comparable> {
         }
 
         return node
+    }
+}
+
+extension BinarySearchTree: CustomStringConvertible {
+    public var description: String {
+        guard let root = root else { return "empty tree" }
+        return String(describing: root)
     }
 }
