@@ -88,9 +88,7 @@ class BinarySearchTreeTest: XCTestCase {
 
         XCTAssertEqual(3, sut.root?.value)
         XCTAssertEqual(4, sut.root?.right?.value)
-        XCTAssertEqual(4, sut.root?.right?.right?.value)
-//        XCTAssertNil(sut.root?.value)
-//        XCTAssertNil(sut.root?.left)
+        XCTAssertNil(sut.root?.right?.right?.value)
     }
 
     ///      2
