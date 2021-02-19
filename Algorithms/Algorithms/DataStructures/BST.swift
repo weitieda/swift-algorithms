@@ -7,19 +7,25 @@
 
 import Foundation
 
+class BinaryNode<T: Comparable> {
+    var value: T
+    var left: BinaryNode?
+    var right: BinaryNode?
+
+
+    var min: BinaryNode {
+        left?.min ?? self
+    }
+
+    init(value: T, left: BinaryNode? = nil, right: BinaryNode? = nil) {
+        self.value = value
+        self.left = left
+        self.right = right
+    }
+}
+
 final class BinarySearchTree<T: Comparable> {
 
-    class BinaryNode<T: Comparable> {
-        var value: T
-        var left: BinaryNode?
-        var right: BinaryNode?
-
-        init(value: T, left: BinaryNode? = nil, right: BinaryNode? = nil) {
-            self.value = value
-            self.left = left
-            self.right = right
-        }
-    }
 
     typealias Node = BinaryNode<T>
 
@@ -70,8 +76,6 @@ final class BinarySearchTree<T: Comparable> {
         }
     }
 
-
-
     /// https://www.youtube.com/watch?v=wcIRPqTR3Kc
     ///
     /// There are 3 cases to consider:
@@ -80,8 +84,37 @@ final class BinarySearchTree<T: Comparable> {
     /// 3. Removing node with 2 children: replace with next biggest value (right side, left most || left side, right most)
     /// then remove next biggest then next biggest parent points to its right child
     @discardableResult
-    func remove() -> Int {
-        return 0
+    func remove(_ value: T) -> Bool {
+        guard contains(value) else { return false }
+        _ = remove(node: root, value: value)
+        return true
     }
 
+    func contains(_ value: T) -> Bool {
+        search(value) != nil
+    }
+
+    private func remove(node: Node?, value: T) -> Node? {
+        guard let node = node else {return nil}
+
+        if value < node.value {
+            node.left = remove(node: node.left, value: value)
+        } else if value > node.value {
+            node.right = remove(node: node.right, value: value)
+        } else {
+//            if node.left == nil && node.right == nil {
+//                return nil
+//            }
+            if node.left == nil {
+                return node.right
+            } else if node.right == nil {
+                return node.left
+            } else {
+                node.value = node.right!.min.value
+                node.right = remove(node: node.right, value: value)
+            }
+        }
+
+        return node
+    }
 }
