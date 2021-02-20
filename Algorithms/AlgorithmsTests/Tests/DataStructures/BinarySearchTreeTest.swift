@@ -10,23 +10,26 @@ import XCTest
 
 class BinarySearchTreeTest: XCTestCase {
 
+    let tree2314 = """
+                          ┌──4
+                        ┌──3
+                        │ └──nil
+                        2
+                        └──1
+
+                        """
+
     func test_init() {
         let sut = BinarySearchTree<Int>()
         XCTAssertNil(sut.root)
+
+        let sut2 = BinarySearchTree(array: [Int]())
+        XCTAssertNil(sut2.root)
     }
 
-    func test_insert() {
-        let sut = makeSUT()
-
-        XCTAssertFalse(sut.insert(2))
-        let root = sut.root
-        XCTAssertEqual(2, root?.value)
-        XCTAssertEqual(3, root?.right?.value)
-        XCTAssertEqual(4, root?.right?.right?.value)
-        XCTAssertEqual(1, root?.left?.value)
-        XCTAssertEqual(1, root?.min.value)
-        XCTAssertNil(root?.left?.left)
-        XCTAssertNil(root?.left?.right)
+    func test_initWithArray() {
+        let sut = BinarySearchTree(array: [2, 3, 1, 4])
+        XCTAssertEqual(tree2314, sut.description)
     }
 
     func test_searchEmptyTree() {
@@ -36,7 +39,7 @@ class BinarySearchTreeTest: XCTestCase {
     }
 
     func test_search() {
-        let sut = makeSUT()
+        let sut = makeSUT([2, 3, 1, 4])
 
         let node1 = sut.search(1)
         let node2 = sut.search(2)
@@ -57,7 +60,7 @@ class BinarySearchTreeTest: XCTestCase {
     }
 
     func test_contains() {
-        let sut = makeSUT()
+        let sut = makeSUT([2, 3, 1, 4])
 
         XCTAssertTrue(sut.contains(2))
         XCTAssertTrue(sut.contains(3))
@@ -67,7 +70,7 @@ class BinarySearchTreeTest: XCTestCase {
     }
 
     func test_remove() {
-        let sut = makeSUT()
+        let sut = makeSUT([2, 3, 1, 4])
 
         let remove4 = sut.remove(4)
         let remove5 = sut.remove(5)
@@ -82,7 +85,7 @@ class BinarySearchTreeTest: XCTestCase {
     }
 
     func test_removeTwoChildren() {
-        let sut = makeSUT()
+        let sut = makeSUT([2, 3, 1, 4])
 
         let remove2 = sut.remove(2)
         XCTAssertTrue(remove2)
@@ -93,27 +96,12 @@ class BinarySearchTreeTest: XCTestCase {
     }
 
     func test_description() {
-        let sut = makeSUT()
-
-        let result = """
-                          ┌──4
-                        ┌──3
-                        │ └──nil
-                        2
-                        └──1
-
-                        """
-        XCTAssertEqual(result, sut.description)
+        let sut = makeSUT([2, 3, 1, 4])
+        XCTAssertEqual(tree2314, sut.description)
     }
 
-    ///      2
-    ///    1   3
-    ///          4
-    private func makeSUT() -> BinarySearchTree<Int> {
-        let sut = BinarySearchTree(rootValue: 2)
-        sut.insert(3)
-        sut.insert(1)
-        sut.insert(4)
+    private func makeSUT(_ array: [Int]) -> BinarySearchTree<Int> {
+        let sut = BinarySearchTree(array: array)
         return sut
     }
 }

@@ -20,8 +20,8 @@ final class BinarySearchTree<T: Comparable> {
 
     convenience init(array: [T]) {
         self.init(rootValue: array.first)
-        for i in 1..<array.count {
-            insert(array[i])
+        for item in array.dropFirst() {
+            insert(item)
         }
     }
 
