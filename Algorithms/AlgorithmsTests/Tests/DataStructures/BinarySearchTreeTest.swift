@@ -95,6 +95,83 @@ class BinarySearchTreeTest: XCTestCase {
         XCTAssertNil(sut.root?.right?.right?.value)
     }
 
+    func test_removeTwoChildren2() {
+        /*
+                 ┌──nil
+               ┌──33
+               │ └──28
+             ┌──25
+             │ └──nil
+            ┌──20
+            │ │ ┌──19
+            │ └──18
+            │   │   ┌──15
+            │   │ ┌──14
+            │   │ │ └──12
+            │   └──11
+            │     └──nil
+            7
+            │ ┌──nil
+            └──5
+             └──4
+         */
+        let sut = makeSUT([7, 5, 4, 20, 18, 11, 19, 14, 12, 15, 25, 33, 28])
+
+        sut.remove(7)
+
+        /* result:
+                     ┌──nil
+                   ┌──33
+                   │ └──28
+                 ┌──25
+                 │ └──nil
+               ┌──20
+               │ │ ┌──19
+               │ └──18
+               │   │ ┌──15
+               │   └──14
+               │     └──12
+               11
+               │ ┌──nil
+               └──5
+                 └──4
+         */
+
+        XCTAssertEqual(11, sut.root?.value)
+        XCTAssertEqual(18, sut.root?.right?.left?.value)
+        XCTAssertEqual(14, sut.root?.right?.left?.left?.value)
+    }
+
+    func test_removeSingleChild() {
+        /*
+                 ┌──nil
+               ┌──33
+               │ └──28
+             ┌──25
+             │ └──nil
+            ┌──20
+            │ │ ┌──19
+            │ └──18
+            │   │   ┌──15
+            │   │ ┌──14
+            │   │ │ └──12
+            │   └──11
+            │     └──nil
+            7
+            │ ┌──nil
+            └──5
+             └──4
+         */
+        let sut = makeSUT([7, 5, 4, 20, 18, 11, 19, 14, 12, 15, 25, 33, 28])
+
+        let remove11 = sut.remove(11)
+        XCTAssertTrue(remove11)
+
+        XCTAssertEqual(20, sut.root?.right?.value)
+        XCTAssertEqual(18, sut.root?.right?.left?.value)
+        XCTAssertEqual(14, sut.root?.right?.left?.left?.value)
+    }
+
     func test_description() {
         let sut = makeSUT([2, 3, 1, 4])
         XCTAssertEqual(tree2314, sut.description)
