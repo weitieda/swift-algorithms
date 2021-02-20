@@ -59,16 +59,6 @@ class BinarySearchTreeTest: XCTestCase {
         XCTAssertNil(node6)
     }
 
-    func test_contains() {
-        let sut = makeSUT([2, 3, 1, 4])
-
-        XCTAssertTrue(sut.contains(2))
-        XCTAssertTrue(sut.contains(3))
-        XCTAssertTrue(sut.contains(1))
-        XCTAssertTrue(sut.contains(4))
-        XCTAssertFalse(sut.contains(5))
-    }
-
     func test_remove() {
         let sut = makeSUT([2, 3, 1, 4])
 
