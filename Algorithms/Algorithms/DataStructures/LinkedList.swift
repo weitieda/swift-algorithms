@@ -34,9 +34,7 @@ final class LinkedList<T: Comparable> {
     convenience init(array: [T]) {
         self.init()
 
-        guard let first = array.first else {
-            return
-        }
+        guard let first = array.first else { return }
         
         var node = Node(value: first)
         
@@ -54,11 +52,10 @@ final class LinkedList<T: Comparable> {
     }
 
     func append(_ node: Node) {
-        let newNode = node
         if let lastNode = last {
-            lastNode.next = newNode
+            lastNode.next = node
         } else {
-            head = newNode
+            head = node
         }
     }
 }
