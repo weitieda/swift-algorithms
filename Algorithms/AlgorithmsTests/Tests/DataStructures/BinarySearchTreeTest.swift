@@ -92,6 +92,20 @@ class BinarySearchTreeTest: XCTestCase {
         XCTAssertNil(sut.root?.right?.right?.value)
     }
 
+    func test_description() {
+        let sut = makeSUT()
+
+        let result = """
+                          ┌──4
+                        ┌──3
+                        │ └──nil
+                        2
+                        └──1
+
+                        """
+        XCTAssertEqual(result, sut.description)
+    }
+
     ///      2
     ///    1   3
     ///          4

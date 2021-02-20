@@ -42,8 +42,9 @@ import Foundation
 final class FindClosestValueInBST {
 
     // t: O(), s: O()
-    static func solution() {
+    static func solution(_ tree: BinarySearchTree<Int>) -> Int {
 
+        return 0
     }
 
 }

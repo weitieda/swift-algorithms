@@ -18,6 +18,13 @@ final class BinarySearchTree<T: Comparable> {
         self.root = Node(value: value)
     }
 
+    convenience init(array: [T]) {
+        self.init(rootValue: array.first)
+        for i in 1..<array.count {
+            insert(array[i])
+        }
+    }
+
     @discardableResult
     func insert(_ value: T) -> Bool {
         guard !contains(value) else { return false }

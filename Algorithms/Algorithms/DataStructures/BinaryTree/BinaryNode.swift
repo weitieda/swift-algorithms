@@ -31,6 +31,6 @@ class BinaryNode<T: Comparable>: CustomStringConvertible {
         }
         return diagram(for: node.right, top + "  ", top + "┌──", top + "│ ")
             + root + "\(node.value)\n"
-            + diagram(for: node.left, bottom + "│ ", bottom + "└──", bottom + " ")
+            + diagram(for: node.left, bottom + "│ ", bottom + "└──", bottom + "  ")
     }
 }
