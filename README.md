@@ -1,7 +1,6 @@
 # algorithms
 
-Solve [LeetCode](https://www.leetcode.com) problems in `Swift`, covered by Unit Test.
+Solve [LeetCode](https://www.leetcode.com) and [HackerRank](https://www.hackerrank.com) algorithm problems in `Swift`, covered by Unit Test.
 
-- Written in `Swift 5.3`
-- Utilize `Swift` language features, e.g. `inout`, `guard`, `optional`, `computed property`, `tuple`.
-- Implemented helper Data Structure, including `Binary Search Tree`, `Linked List`.
+- Written with `Swift` specific features in mind, e.g. `inout`, `guard`, `optional`, `computed property`, `tuple`.
+- Implemented commonly used Data Structure, including `Binary Search Tree`, `Linked List`.
