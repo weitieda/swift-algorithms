@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class BinarySearchTree<T: Comparable> {
+struct BinarySearchTree<T: Comparable> {
 
     typealias Node = BinaryNode<T>
 
@@ -18,7 +18,7 @@ final class BinarySearchTree<T: Comparable> {
         self.root = Node(value: value)
     }
 
-    convenience init(array: [T]) {
+    init(array: [T]) {
         self.init(rootValue: array.first)
         for item in array.dropFirst() {
             insert(item)
@@ -26,7 +26,7 @@ final class BinarySearchTree<T: Comparable> {
     }
 
     @discardableResult
-    func insert(_ value: T) -> Bool {
+    mutating func insert(_ value: T) -> Bool {
         guard !contains(value) else { return false }
         guard let root = root else {
             self.root = Node(value: value)
@@ -88,6 +88,7 @@ final class BinarySearchTree<T: Comparable> {
 
     @discardableResult
     private func remove(node: Node?, value: T) -> Node? {
+
         guard let node = node else {return nil}
 
         if value < node.value {
@@ -100,12 +101,21 @@ final class BinarySearchTree<T: Comparable> {
             } else if node.right == nil {
                 return node.left
             } else {
-                node.value = node.right!.min.value
+                let min = getMin(from: node.right)!
+                node.value = min.value
                 node.right = remove(node: node.right, value: node.value)
             }
         }
 
         return node
+    }
+
+    private func getMin(from node: Node?) -> Node? {
+        var nd = node
+        while let n = nd?.left {
+            nd = n
+        }
+        return nd
     }
 }
 

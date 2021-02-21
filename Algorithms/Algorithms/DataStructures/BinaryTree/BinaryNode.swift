@@ -12,8 +12,6 @@ class BinaryNode<T: Comparable>: CustomStringConvertible {
     var left: BinaryNode?
     var right: BinaryNode?
 
-    var min: BinaryNode { left?.min ?? self }
-
     init(value: T) {
         self.value = value
     }
