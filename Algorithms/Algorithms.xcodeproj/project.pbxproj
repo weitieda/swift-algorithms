@@ -21,6 +21,8 @@
 		8339979925DB791F0053C700 /* FindClosestValueInBST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8339979825DB791F0053C700 /* FindClosestValueInBST.swift */; };
 		833997A725DB8ED40053C700 /* ProductSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833997A625DB8ED40053C700 /* ProductSum.swift */; };
 		833997AB25DB91920053C700 /* ProductSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833997AA25DB91920053C700 /* ProductSumTest.swift */; };
+		83489ABB25E2049200D13804 /* BinaryHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83489ABA25E2049200D13804 /* BinaryHeap.swift */; };
+		83489AC525E204C200D13804 /* BinaryHeapTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83489AC425E204C200D13804 /* BinaryHeapTest.swift */; };
 		8362C11225CF12DF007A79AD /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362C11125CF12DF007A79AD /* LinkedList.swift */; };
 		8362C11725CF1C71007A79AD /* RemoveDuplicatesFromSortedOrderLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362C11625CF1C71007A79AD /* RemoveDuplicatesFromSortedOrderLinkedList.swift */; };
 		8362C11C25CF290D007A79AD /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362C11B25CF290D007A79AD /* LinkedListTest.swift */; };
@@ -87,6 +89,8 @@
 		8339979825DB791F0053C700 /* FindClosestValueInBST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindClosestValueInBST.swift; sourceTree = "<group>"; };
 		833997A625DB8ED40053C700 /* ProductSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSum.swift; sourceTree = "<group>"; };
 		833997AA25DB91920053C700 /* ProductSumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSumTest.swift; sourceTree = "<group>"; };
+		83489ABA25E2049200D13804 /* BinaryHeap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryHeap.swift; sourceTree = "<group>"; };
+		83489AC425E204C200D13804 /* BinaryHeapTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryHeapTest.swift; sourceTree = "<group>"; };
 		8362C11125CF12DF007A79AD /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		8362C11625CF1C71007A79AD /* RemoveDuplicatesFromSortedOrderLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicatesFromSortedOrderLinkedList.swift; sourceTree = "<group>"; };
 		8362C11B25CF290D007A79AD /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 			children = (
 				8362C11B25CF290D007A79AD /* LinkedListTest.swift */,
 				832E3E7725DDFB6900A3D661 /* BinarySearchTreeTest.swift */,
+				83489AC425E204C200D13804 /* BinaryHeapTest.swift */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -320,6 +325,7 @@
 			children = (
 				832E3E8325DF809800A3D661 /* BinaryTree */,
 				8362C11125CF12DF007A79AD /* LinkedList.swift */,
+				83489ABA25E2049200D13804 /* BinaryHeap.swift */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -525,6 +531,7 @@
 				83318B5125C3977A00EE4612 /* ThreeSum.swift in Sources */,
 				83AD336F25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift in Sources */,
 				83E96F7225C25F77001E35DC /* ValidateSubsequence.swift in Sources */,
+				83489ABB25E2049200D13804 /* BinaryHeap.swift in Sources */,
 				836F519125C7870800ED0432 /* SpiralMatrix.swift in Sources */,
 				832E3E8525DF80AE00A3D661 /* BinaryNode.swift in Sources */,
 				8337896425D7875200526DF0 /* GroupAnagrams.swift in Sources */,
@@ -563,6 +570,7 @@
 				837CE19025D8FB4900857363 /* NthFibonacciTest.swift in Sources */,
 				83C308AA25CE5BC30046D54B /* FirstDuplicateValueTest.swift in Sources */,
 				838087E725C22D0400D5635C /* TwoSumTest.swift in Sources */,
+				83489AC525E204C200D13804 /* BinaryHeapTest.swift in Sources */,
 				83C3B87925DB2D9000CBECDB /* BinarySearchTest.swift in Sources */,
 				832E3E7825DDFB6900A3D661 /* BinarySearchTreeTest.swift in Sources */,
 				83318B4125C375C400EE4612 /* ThreeSumTest.swift in Sources */,

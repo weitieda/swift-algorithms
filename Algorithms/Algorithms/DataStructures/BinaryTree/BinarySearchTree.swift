@@ -120,7 +120,7 @@ struct BinarySearchTree<T: Comparable> {
 }
 
 extension BinarySearchTree: CustomStringConvertible {
-    public var description: String {
+    var description: String {
         guard let root = root else { return "empty tree" }
         return String(describing: root)
     }
