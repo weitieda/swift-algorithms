@@ -85,6 +85,30 @@ class BinarySearchTreeTest: XCTestCase {
         XCTAssertNil(sut.root?.right?.right?.value)
     }
 
+    func test_inOrderTraverse() {
+        let sut = makeSUT([2, 3, 1, 4, 0, 5])
+        var result = [Int]()
+        sut.inOrderTraverse { result.append($0) }
+
+        XCTAssertEqual(result, [0, 1, 2, 3, 4, 5])
+    }
+
+    func test_preOrderTraverse() {
+        let sut = makeSUT([2, 3, 1, 4, 0, 5])
+        var result = [Int]()
+        sut.preOrderTraverse { result.append($0) }
+
+        XCTAssertEqual(result, [2, 1, 0, 3, 4, 5])
+    }
+
+    func test_postOrderTraverse() {
+        let sut = makeSUT([2, 3, 1, 4, 0, 5])
+        var result = [Int]()
+        sut.postOrderTraverse { result.append($0) }
+
+        XCTAssertEqual(result, [0, 1, 5, 4, 3, 2])
+    }
+
     func test_removeTwoChildren2() {
         /*
                  ┌──nil

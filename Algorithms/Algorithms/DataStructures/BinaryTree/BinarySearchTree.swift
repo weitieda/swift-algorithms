@@ -60,6 +60,18 @@ struct BinarySearchTree<T: Comparable> {
         return true
     }
 
+    func inOrderTraverse(completion: (T) -> Void) {
+        inOrder(node: root) { completion($0) }
+    }
+
+    func preOrderTraverse(completion: (T) -> Void) {
+        preOrder(node: root) { completion($0) }
+    }
+
+    func postOrderTraverse(completion: (T) -> Void) {
+        postOrder(node: root) { completion($0) }
+    }
+
     // MARK: - Private
 
     @discardableResult
@@ -117,7 +129,30 @@ struct BinarySearchTree<T: Comparable> {
         }
         return nd
     }
+
+    private func postOrder(node: Node?, completion: (T) -> Void) {
+        guard let n = node else {return}
+        postOrder(node: n.left, completion: completion)
+        postOrder(node: n.right, completion: completion)
+        completion(n.value)
+    }
+
+    private func preOrder(node: Node?, completion: (T) -> Void) {
+        guard let n = node else {return}
+        completion(n.value)
+        preOrder(node: n.left, completion: completion)
+        preOrder(node: n.right, completion: completion)
+    }
+
+    private func inOrder(node: Node?, completion: (T) -> Void) {
+        guard let n = node else {return}
+        inOrder(node: n.left, completion: completion)
+        completion(n.value)
+        inOrder(node: n.right, completion: completion)
+    }
 }
+
+// MARK: - CustomStringConvertible
 
 extension BinarySearchTree: CustomStringConvertible {
     var description: String {
