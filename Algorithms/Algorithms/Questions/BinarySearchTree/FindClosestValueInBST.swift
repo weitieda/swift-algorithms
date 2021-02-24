@@ -41,10 +41,29 @@ import Foundation
 
 final class FindClosestValueInBST {
 
-    // t: O(), s: O()
-    static func solution(_ tree: BinarySearchTree<Int>) -> Int {
+    // t: O(n), s: O(1)
+    static func solution(_ tree: BST<Int>, target: Int) -> Int {
+        var closest = Int.max
 
-        return 0
+        tree.traverse { value in
+            if abs(target - value) < abs(closest - target) {
+                closest = value
+            }
+        }
+
+        return closest
+    }
+}
+
+extension BST {
+    func traverse(completion: (T) -> Void) {
+        inOrderTraverse(bst: self, completion: completion)
     }
 
+    func inOrderTraverse(bst: BST<T>?, completion: (T) -> Void) {
+        guard let bst = bst else {return}
+        inOrderTraverse(bst: bst.left, completion: completion)
+        completion(bst.value)
+        inOrderTraverse(bst: bst.right, completion: completion)
+    }
 }
