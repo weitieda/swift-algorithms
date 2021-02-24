@@ -41,7 +41,7 @@ import Foundation
 
 final class FindClosestValueInBST {
 
-    // t: O(n), s: O(1)
+    // t: O(n), s: O(depth)
     static func solution(_ tree: BST<Int>, target: Int) -> Int {
         var closest = Int.max
 
