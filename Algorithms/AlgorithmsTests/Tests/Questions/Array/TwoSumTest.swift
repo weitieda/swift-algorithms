@@ -14,8 +14,10 @@ class TwoSumTest: XCTestCase {
         let input1 = [3, 5, -4, 8, 11, 1, -1, 6]
         let target1 = 10
 
-        XCTAssertEqual([4, 6].sorted(),
-                       TwoSum.solution(input: input1, target: target1).sorted())
+        XCTAssertTrue(
+            isSameArrayIgnoreOrder([6, 4],
+                                   TwoSum.solution(input: input1, target: target1))
+        )
 
         let input2 = [4, 6, 1, -3]
         let target2 = 11

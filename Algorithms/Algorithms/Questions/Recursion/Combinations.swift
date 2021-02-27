@@ -49,8 +49,8 @@ final class Combinations {
     static func solution(array: [String]) -> [[String]] {
         if array.isEmpty { return [[]] }
 
-        let firstLetter = array[0]
-        let restLetters = Array(array[1...])
+        let firstLetter = array.first!
+        let restLetters = Array(array.dropFirst())
 
         // left node
         let combsWithoutFirstLetter = solution(array: restLetters)

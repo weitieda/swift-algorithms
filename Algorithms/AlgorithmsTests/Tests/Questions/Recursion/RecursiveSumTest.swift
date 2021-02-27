@@ -10,7 +10,7 @@ import XCTest
 
 class RecursiveSumTest: XCTestCase {
 
-    func test1() {
+    func test() {
         expect(sum: 0, when: [])
         expect(sum: 1, when: [1])
         expect(sum: 3, when: [1, 2])
