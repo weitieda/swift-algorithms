@@ -26,6 +26,9 @@ final class RecursiveSum {
     /// sum([1, 8, 4]) = 13
     /// sum([1, 8, 4, -1] = 12
     ///
+    /// sum (of any array) equals `array[0]` + `sum(array[1...])`, keep reducing array size by putting
+    /// putting first number in call stack until array is empty, starts to return and collect back `array[0]`
+    ///
     /// t: O(n^2), s: O(n)
     /// array.dropFirst() is O(n)
     static func sum(array: [Int]) -> Int {
