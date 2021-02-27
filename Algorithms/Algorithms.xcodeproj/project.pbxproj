@@ -50,6 +50,8 @@
 		8380FD0425E9EEE700DEE7E5 /* RecursiveSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380FD0325E9EEE700DEE7E5 /* RecursiveSumTest.swift */; };
 		8380FD0825EA097100DEE7E5 /* Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380FD0725EA097100DEE7E5 /* Combinations.swift */; };
 		8380FD1425EA1A8900DEE7E5 /* CombinationsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380FD1325EA1A8900DEE7E5 /* CombinationsTest.swift */; };
+		8380FD1825EAAF3200DEE7E5 /* ReverseStringRecursively.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380FD1725EAAF3200DEE7E5 /* ReverseStringRecursively.swift */; };
+		8380FD2025EAB01900DEE7E5 /* ReverseStringRecursivelyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380FD1F25EAB01900DEE7E5 /* ReverseStringRecursivelyTest.swift */; };
 		83AD336F25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD336E25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift */; };
 		83AD337325CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD337225CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift */; };
 		83AD337A25CD07DD002C9C35 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD337925CD07DD002C9C35 /* BinarySearchTree.swift */; };
@@ -132,6 +134,8 @@
 		8380FD0325E9EEE700DEE7E5 /* RecursiveSumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecursiveSumTest.swift; sourceTree = "<group>"; };
 		8380FD0725EA097100DEE7E5 /* Combinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combinations.swift; sourceTree = "<group>"; };
 		8380FD1325EA1A8900DEE7E5 /* CombinationsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationsTest.swift; sourceTree = "<group>"; };
+		8380FD1725EAAF3200DEE7E5 /* ReverseStringRecursively.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseStringRecursively.swift; sourceTree = "<group>"; };
+		8380FD1F25EAB01900DEE7E5 /* ReverseStringRecursivelyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseStringRecursivelyTest.swift; sourceTree = "<group>"; };
 		83AD336E25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOfArrayExceptSelf.swift; sourceTree = "<group>"; };
 		83AD337225CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOfArrayExcepSelfTest.swift; sourceTree = "<group>"; };
 		83AD337925CD07DD002C9C35 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
@@ -302,6 +306,7 @@
 				833997A625DB8ED40053C700 /* ProductSum.swift */,
 				8380FCFF25E9EB7200DEE7E5 /* RecursiveSum.swift */,
 				8380FD0725EA097100DEE7E5 /* Combinations.swift */,
+				8380FD1725EAAF3200DEE7E5 /* ReverseStringRecursively.swift */,
 			);
 			path = Recursion;
 			sourceTree = "<group>";
@@ -313,6 +318,7 @@
 				833997AA25DB91920053C700 /* ProductSumTest.swift */,
 				8380FD0325E9EEE700DEE7E5 /* RecursiveSumTest.swift */,
 				8380FD1325EA1A8900DEE7E5 /* CombinationsTest.swift */,
+				8380FD1F25EAB01900DEE7E5 /* ReverseStringRecursivelyTest.swift */,
 			);
 			path = Recursion;
 			sourceTree = "<group>";
@@ -631,6 +637,7 @@
 				83AE918525D4EB8700A8242D /* LongestPalindromicSubstring.swift in Sources */,
 				83C279BD25C9136400FF32A4 /* LongestMountainInArray.swift in Sources */,
 				837CE18225D8F73E00857363 /* ReverseWordsInString.swift in Sources */,
+				8380FD1825EAAF3200DEE7E5 /* ReverseStringRecursively.swift in Sources */,
 				83081EBE25CE49E30085333C /* FindDuplicateNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -640,6 +647,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8364163925C5F540009FCBE7 /* MonotonicArrayTest.swift in Sources */,
+				8380FD2025EAB01900DEE7E5 /* ReverseStringRecursivelyTest.swift in Sources */,
 				8337896825D7876000526DF0 /* GroupAnagramsTest.swift in Sources */,
 				8380FD0425E9EEE700DEE7E5 /* RecursiveSumTest.swift in Sources */,
 				837CE18625D8F81F00857363 /* ReverseWordsInStringTest.swift in Sources */,

@@ -60,7 +60,7 @@ final class RecursiveSum {
     /// sum equals sum of `prev`+ currentArray last number
     static func sum2(array: [Int]) -> Int {
         if array.isEmpty { return 0 }
-        let numbersExceptLast = Array(array[..<(array.endIndex-1)])
+        let numbersExceptLast = Array(array.dropLast())
         return array.last! + sum2(array: numbersExceptLast)
     }
 
