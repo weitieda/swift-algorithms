@@ -38,12 +38,13 @@ final class RecursiveSum {
     ///
     /// Kind of like iteration way: collecting each number from `index 0`, then use `index + 1`
     /// to collect next number. Once running index is out of bound(`index == array.count`),
-    /// we know we've collected all the numbers then start to return and pop call stack
+    /// we know we've collected all the numbers(on the call stack) then start to return and pop call stack
     ///
-    /// i = 0: a[0] + sumFaster(1)              = 1 + 8 + 4 + (-1) + 0
-    /// i = 1: a[1] + sumFaster(2)              = 8 + 4 + (-1) + 0
-    /// i = 2: a[2] + sumFaster(3)              = 4 + (-1) + 0
-    /// i = 3: a[3] + sumFaster(4)              = (-1) + 0
+    /// i = 0: a[0] + sum(array, index: 1)              = 1 + 8 + 4 + (-1) + 0
+    /// i = 1: a[1] + sum(array, index: 2)              = 8 + 4 + (-1) + 0
+    /// i = 2: a[2] + sum(array, index: 3)              = 4 + (-1) + 0
+    /// i = 3: a[3] + sum(array, index: 4)              = (-1) + 0
+    /// i = 4: 4 == count, return 0                     = 0
     ///
     /// t: O(n), s: O(n)
     static func sumRunningIndex(array: [Int], index: Int = 0) -> Int {
