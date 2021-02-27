@@ -23,5 +23,8 @@ class RecursiveSumTest: XCTestCase {
 
         let sut2 = RecursiveSum.sumRunningIndex(array: array)
         XCTAssertEqual(sut2, sum)
+
+        let sut3 = RecursiveSum.sum2(array: array)
+        XCTAssertEqual(sut3, sum)
     }
 }

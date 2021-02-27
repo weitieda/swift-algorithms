@@ -55,4 +55,12 @@ final class RecursiveSum {
         return array[index] + sumRunningIndex(array: array, index: index + 1)
     }
 
+
+    /// sum([1,3,5]) = sum([1,3]) + 5
+    static func sum2(array: [Int]) -> Int {
+        if array.isEmpty { return 0 }
+        let numbersExceptLast = Array(array[..<(array.endIndex-1)])
+        return array.last! + sum2(array: numbersExceptLast)
+    }
+
 }
