@@ -20,12 +20,6 @@ final class RecursiveSum {
     ///
     /// [1, 8, 4, -1]
     ///
-    /// sum([]) = 0
-    /// sum([1]) = 1
-    /// sum([1, 8]) = 9
-    /// sum([1, 8, 4]) = 13
-    /// sum([1, 8, 4, -1] = 12
-    ///
     /// sum (of any array) equals `array[0]` + `sum(array[1...])`, keep reducing array size by putting
     /// putting first number in call stack until array is empty, starts to return and collect back `array[0]`
     ///
@@ -55,8 +49,15 @@ final class RecursiveSum {
         return array[index] + sumRunningIndex(array: array, index: index + 1)
     }
 
-
+    /// sum([]) = 0
+    /// sum([1]) = 1
+    /// sum([1, 8]) = 9
+    /// sum([1, 8, 4]) = 13
+    /// sum([1, 8, 4, -1] = 12
+    ///
     /// sum([1,3,5]) = sum([1,3]) + 5
+    ///
+    /// sum equals sum of `prev`+ currentArray last number
     static func sum2(array: [Int]) -> Int {
         if array.isEmpty { return 0 }
         let numbersExceptLast = Array(array[..<(array.endIndex-1)])
