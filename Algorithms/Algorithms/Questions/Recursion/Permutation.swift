@@ -32,12 +32,12 @@ final class Permutation {
     ///
     /// Insert new number at each index(0...count) of prev permutation
     ///
-    /// t: O(), s: O()
-    static func solution(_ input: [Int]) -> [[Int]] {
-        if input.isEmpty { return [[]] }
+    /// t: O(n!), s: O(n^2)
+    static func solution(_ array: [Int]) -> [[Int]] {
+        if array.isEmpty { return [[]] }
 
-        let last = input.last!
-        let rest = Array(input.dropLast())
+        let last = array.last!
+        let rest = Array(array.dropLast())
 
         var allPerms = [[Int]]()
 
