@@ -44,7 +44,8 @@ import Foundation
 ///
 final class Combinations {
 
-    // t: O(n^2), s: O(2^n)
+    /// t: O(2^n)  growing like Binary Tree
+    /// s: O(n^2)  call stack x n, each call stack `let restLetters = Array(array[1...])`
     static func solution(array: [String]) -> [[String]] {
         if array.isEmpty { return [[]] }
 
