@@ -27,9 +27,26 @@ import Foundation
 
 final class BranchSum {
 
-    // t: O(), s: O()
+    // t: O(n), s: O(n)
     static func solution(_ root: BST<Int>) -> [Int] {
-        return []
+
+        var result = [Int]()
+
+        func dfs(_ root: BST<Int>?, _ runningSum: Int) {
+            guard let root = root else {return}
+
+            let sum = runningSum + root.value
+
+            if root.left == nil && root.right == nil {
+                result.append(sum)
+            }
+            dfs(root.left, sum)
+            dfs(root.right, sum)
+        }
+
+        dfs(root, 0)
+
+        return result
     }
 
 }

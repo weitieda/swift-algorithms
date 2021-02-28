@@ -23,7 +23,16 @@ class BranchSumTest: XCTestCase {
                └──1
          */
 
-        let tree = BinarySearchTree(array: [5, 3, 10, 2, 4, 1, 12])
-        print(tree)
+        let tree = BST(array: [5, 3, 10, 2, 4, 1, 12])!
+        let sut = BranchSum.solution(tree)
+
+        XCTAssertEqual([11, 12, 27], sut)
+    }
+
+    func test2() {
+        let tree = BST(array: [5])!
+        let sut = BranchSum.solution(tree)
+
+        XCTAssertEqual([5], sut)
     }
 }
