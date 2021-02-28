@@ -42,4 +42,23 @@ final class DepthFirstTraversal {
         return result
     }
 
+    // t: O(n), s: O(n)
+    // This is also pre-order traversal
+    static func recursiveSolution(_ root: BST<Int>?) -> [Int] {
+        guard let root = root else { return [] }
+        var result = [Int]()
+
+        func dfs(_ root: BST<Int>?) {
+            guard let root = root else { return }
+            result.append(root.value)
+            dfs(root.left)
+            dfs(root.right)
+        }
+
+        dfs(root)
+
+        return result
+    }
+
+
 }
