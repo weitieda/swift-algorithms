@@ -35,13 +35,13 @@ final class BranchSum {
         func dfs(_ root: BST<Int>?, _ runningSum: Int) {
             guard let root = root else {return}
 
-            let sum = runningSum + root.value
+            let newSum = runningSum + root.value
 
             if root.left == nil && root.right == nil {
-                result.append(sum)
+                result.append(newSum)
             }
-            dfs(root.left, sum)
-            dfs(root.right, sum)
+            dfs(root.left, newSum)
+            dfs(root.right, newSum)
         }
 
         dfs(root, 0)
