@@ -25,7 +25,7 @@ import Foundation
 final class BreadthFirstTraversal {
 
     // t: O(n), s: O(n)
-    static func stackSolution(_ root: BST<Int>) -> [Int] {
+    static func queueSolution(_ root: BST<Int>) -> [Int] {
 
         var result = [Int]()
 
