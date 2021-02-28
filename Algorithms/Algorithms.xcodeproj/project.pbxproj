@@ -61,6 +61,8 @@
 		8380FD4B25EB33D700DEE7E5 /* DepthFirstTraversalTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380FD4A25EB33D700DEE7E5 /* DepthFirstTraversalTest.swift */; };
 		8380FD4F25EB426C00DEE7E5 /* BinaryTreeSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380FD4E25EB426C00DEE7E5 /* BinaryTreeSum.swift */; };
 		8380FD5525EB432B00DEE7E5 /* BinaryTreeSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380FD5425EB432B00DEE7E5 /* BinaryTreeSumTest.swift */; };
+		8380FD5925EB5F3200DEE7E5 /* BranchSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380FD5825EB5F3200DEE7E5 /* BranchSum.swift */; };
+		8380FD5D25EB5F4900DEE7E5 /* BranchSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380FD5C25EB5F4900DEE7E5 /* BranchSumTest.swift */; };
 		83AD336F25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD336E25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift */; };
 		83AD337325CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD337225CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift */; };
 		83AD337A25CD07DD002C9C35 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD337925CD07DD002C9C35 /* BinarySearchTree.swift */; };
@@ -154,6 +156,8 @@
 		8380FD4A25EB33D700DEE7E5 /* DepthFirstTraversalTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthFirstTraversalTest.swift; sourceTree = "<group>"; };
 		8380FD4E25EB426C00DEE7E5 /* BinaryTreeSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeSum.swift; sourceTree = "<group>"; };
 		8380FD5425EB432B00DEE7E5 /* BinaryTreeSumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeSumTest.swift; sourceTree = "<group>"; };
+		8380FD5825EB5F3200DEE7E5 /* BranchSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchSum.swift; sourceTree = "<group>"; };
+		8380FD5C25EB5F4900DEE7E5 /* BranchSumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchSumTest.swift; sourceTree = "<group>"; };
 		83AD336E25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOfArrayExceptSelf.swift; sourceTree = "<group>"; };
 		83AD337225CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOfArrayExcepSelfTest.swift; sourceTree = "<group>"; };
 		83AD337925CD07DD002C9C35 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
@@ -228,6 +232,7 @@
 				8339979825DB791F0053C700 /* FindClosestValueInBST.swift */,
 				8380FD4625EB27D000DEE7E5 /* DepthFirstTraversal.swift */,
 				8380FD4E25EB426C00DEE7E5 /* BinaryTreeSum.swift */,
+				8380FD5825EB5F3200DEE7E5 /* BranchSum.swift */,
 			);
 			path = BinarySearchTree;
 			sourceTree = "<group>";
@@ -440,6 +445,7 @@
 				8380FD4025EB1A6000DEE7E5 /* BreadthFirstTraversalTest.swift */,
 				8380FD4A25EB33D700DEE7E5 /* DepthFirstTraversalTest.swift */,
 				8380FD5425EB432B00DEE7E5 /* BinaryTreeSumTest.swift */,
+				8380FD5C25EB5F4900DEE7E5 /* BranchSumTest.swift */,
 			);
 			path = BinarySearchTree;
 			sourceTree = "<group>";
@@ -652,6 +658,7 @@
 				8380FD4F25EB426C00DEE7E5 /* BinaryTreeSum.swift in Sources */,
 				8362C13225D0E27C007A79AD /* ValidPalindrome.swift in Sources */,
 				83C3B87425DB2CCE00CBECDB /* BinarySearch.swift in Sources */,
+				8380FD5925EB5F3200DEE7E5 /* BranchSum.swift in Sources */,
 				83318B5125C3977A00EE4612 /* ThreeSum.swift in Sources */,
 				83AD336F25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift in Sources */,
 				83E96F7225C25F77001E35DC /* ValidateSubsequence.swift in Sources */,
@@ -692,6 +699,7 @@
 				8380FD0425E9EEE700DEE7E5 /* RecursiveSumTest.swift in Sources */,
 				837CE18625D8F81F00857363 /* ReverseWordsInStringTest.swift in Sources */,
 				8380FD5525EB432B00DEE7E5 /* BinaryTreeSumTest.swift in Sources */,
+				8380FD5D25EB5F4900DEE7E5 /* BranchSumTest.swift in Sources */,
 				83081EC225CE49F50085333C /* FindDuplicateNumberTest.swift in Sources */,
 				83C279C125C913DB00FF32A4 /* LongestMountainInArrayTest.swift in Sources */,
 				83C279B325C8DE4600FF32A4 /* SpiralMatrixReversedTest.swift in Sources */,
