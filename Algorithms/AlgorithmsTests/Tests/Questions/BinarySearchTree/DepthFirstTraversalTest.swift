@@ -10,7 +10,7 @@ import XCTest
 
 class DepthFirstTraversalTest: XCTestCase {
 
-    func test1() {
+    func test() {
         /*
                        40
                   30       50
@@ -30,13 +30,5 @@ class DepthFirstTraversalTest: XCTestCase {
 
         let sut2 = DepthFirstTraversal.recursiveSolution(tree)
         XCTAssertEqual(sut2, result)
-    }
-
-    func test2() {
-
-    }
-
-    func test3() {
-
     }
 }
