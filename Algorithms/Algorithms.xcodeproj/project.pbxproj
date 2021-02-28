@@ -55,6 +55,8 @@
 		8380FD2A25EAB79700DEE7E5 /* Permutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380FD2925EAB79700DEE7E5 /* Permutation.swift */; };
 		8380FD2E25EAC0FD00DEE7E5 /* PermutationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380FD2D25EAC0FD00DEE7E5 /* PermutationTest.swift */; };
 		8380FD3325EAC9AE00DEE7E5 /* Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380FD3225EAC9AE00DEE7E5 /* Compare.swift */; };
+		8380FD3B25EB17D600DEE7E5 /* BreadthFirstTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380FD3A25EB17D600DEE7E5 /* BreadthFirstTraversal.swift */; };
+		8380FD4125EB1A6000DEE7E5 /* BreadthFirstTraversalTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380FD4025EB1A6000DEE7E5 /* BreadthFirstTraversalTest.swift */; };
 		83AD336F25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD336E25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift */; };
 		83AD337325CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD337225CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift */; };
 		83AD337A25CD07DD002C9C35 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD337925CD07DD002C9C35 /* BinarySearchTree.swift */; };
@@ -142,6 +144,8 @@
 		8380FD2925EAB79700DEE7E5 /* Permutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permutation.swift; sourceTree = "<group>"; };
 		8380FD2D25EAC0FD00DEE7E5 /* PermutationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationTest.swift; sourceTree = "<group>"; };
 		8380FD3225EAC9AE00DEE7E5 /* Compare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compare.swift; sourceTree = "<group>"; };
+		8380FD3A25EB17D600DEE7E5 /* BreadthFirstTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreadthFirstTraversal.swift; sourceTree = "<group>"; };
+		8380FD4025EB1A6000DEE7E5 /* BreadthFirstTraversalTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreadthFirstTraversalTest.swift; sourceTree = "<group>"; };
 		83AD336E25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOfArrayExceptSelf.swift; sourceTree = "<group>"; };
 		83AD337225CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOfArrayExcepSelfTest.swift; sourceTree = "<group>"; };
 		83AD337925CD07DD002C9C35 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
@@ -212,6 +216,7 @@
 		8339979725DB78DF0053C700 /* BinarySearchTree */ = {
 			isa = PBXGroup;
 			children = (
+				8380FD3A25EB17D600DEE7E5 /* BreadthFirstTraversal.swift */,
 				8339979825DB791F0053C700 /* FindClosestValueInBST.swift */,
 			);
 			path = BinarySearchTree;
@@ -422,6 +427,7 @@
 			isa = PBXGroup;
 			children = (
 				83B28E3C25E60B610035D470 /* FindClosestValueInBSTTest.swift */,
+				8380FD4025EB1A6000DEE7E5 /* BreadthFirstTraversalTest.swift */,
 			);
 			path = BinarySearchTree;
 			sourceTree = "<group>";
@@ -636,6 +642,7 @@
 				83318B5125C3977A00EE4612 /* ThreeSum.swift in Sources */,
 				83AD336F25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift in Sources */,
 				83E96F7225C25F77001E35DC /* ValidateSubsequence.swift in Sources */,
+				8380FD3B25EB17D600DEE7E5 /* BreadthFirstTraversal.swift in Sources */,
 				83489ABB25E2049200D13804 /* BinaryHeap.swift in Sources */,
 				836F519125C7870800ED0432 /* SpiralMatrix.swift in Sources */,
 				83644E1825E6DEFA0035531A /* InsertionSort.swift in Sources */,
@@ -666,6 +673,7 @@
 			files = (
 				8364163925C5F540009FCBE7 /* MonotonicArrayTest.swift in Sources */,
 				8380FD2025EAB01900DEE7E5 /* ReverseStringRecursivelyTest.swift in Sources */,
+				8380FD4125EB1A6000DEE7E5 /* BreadthFirstTraversalTest.swift in Sources */,
 				8337896825D7876000526DF0 /* GroupAnagramsTest.swift in Sources */,
 				8380FD0425E9EEE700DEE7E5 /* RecursiveSumTest.swift in Sources */,
 				837CE18625D8F81F00857363 /* ReverseWordsInStringTest.swift in Sources */,
