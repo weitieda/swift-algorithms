@@ -63,6 +63,8 @@
 		8380FD5525EB432B00DEE7E5 /* BinaryTreeSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380FD5425EB432B00DEE7E5 /* BinaryTreeSumTest.swift */; };
 		8380FD5925EB5F3200DEE7E5 /* BranchSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380FD5825EB5F3200DEE7E5 /* BranchSum.swift */; };
 		8380FD5D25EB5F4900DEE7E5 /* BranchSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380FD5C25EB5F4900DEE7E5 /* BranchSumTest.swift */; };
+		8380FD6125EC848500DEE7E5 /* GridTravelerUniquePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380FD6025EC848500DEE7E5 /* GridTravelerUniquePaths.swift */; };
+		8380FD6525EC925300DEE7E5 /* GridTravelerUniquePathsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380FD6425EC925300DEE7E5 /* GridTravelerUniquePathsTest.swift */; };
 		83AD336F25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD336E25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift */; };
 		83AD337325CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD337225CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift */; };
 		83AD337A25CD07DD002C9C35 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD337925CD07DD002C9C35 /* BinarySearchTree.swift */; };
@@ -158,6 +160,8 @@
 		8380FD5425EB432B00DEE7E5 /* BinaryTreeSumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeSumTest.swift; sourceTree = "<group>"; };
 		8380FD5825EB5F3200DEE7E5 /* BranchSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchSum.swift; sourceTree = "<group>"; };
 		8380FD5C25EB5F4900DEE7E5 /* BranchSumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchSumTest.swift; sourceTree = "<group>"; };
+		8380FD6025EC848500DEE7E5 /* GridTravelerUniquePaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridTravelerUniquePaths.swift; sourceTree = "<group>"; };
+		8380FD6425EC925300DEE7E5 /* GridTravelerUniquePathsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridTravelerUniquePathsTest.swift; sourceTree = "<group>"; };
 		83AD336E25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOfArrayExceptSelf.swift; sourceTree = "<group>"; };
 		83AD337225CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOfArrayExcepSelfTest.swift; sourceTree = "<group>"; };
 		83AD337925CD07DD002C9C35 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
@@ -335,6 +339,7 @@
 				8380FD0725EA097100DEE7E5 /* Combinations.swift */,
 				8380FD1725EAAF3200DEE7E5 /* ReverseStringRecursively.swift */,
 				8380FD2925EAB79700DEE7E5 /* Permutation.swift */,
+				8380FD6025EC848500DEE7E5 /* GridTravelerUniquePaths.swift */,
 			);
 			path = Recursion;
 			sourceTree = "<group>";
@@ -348,6 +353,7 @@
 				8380FD1325EA1A8900DEE7E5 /* CombinationsTest.swift */,
 				8380FD1F25EAB01900DEE7E5 /* ReverseStringRecursivelyTest.swift */,
 				8380FD2D25EAC0FD00DEE7E5 /* PermutationTest.swift */,
+				8380FD6425EC925300DEE7E5 /* GridTravelerUniquePathsTest.swift */,
 			);
 			path = Recursion;
 			sourceTree = "<group>";
@@ -648,6 +654,7 @@
 				83F9429925C4C32A000CCB17 /* MoveElementToEnd.swift in Sources */,
 				83AD337A25CD07DD002C9C35 /* BinarySearchTree.swift in Sources */,
 				83D1C9CB25D247D000292396 /* CaesarCipherEncryptor.swift in Sources */,
+				8380FD6125EC848500DEE7E5 /* GridTravelerUniquePaths.swift in Sources */,
 				83644E0725E6B36B0035531A /* BubbleSort.swift in Sources */,
 				83318B4725C3971100EE4612 /* ThreeSumDistinct.swift in Sources */,
 				83BB275325D612D40035A0EE /* RunLengthEncoding.swift in Sources */,
@@ -730,6 +737,7 @@
 				83E96F7C25C2632D001E35DC /* ValidateSubsequenceTest.swift in Sources */,
 				8362C13725D0E296007A79AD /* ValidPalindromeTest.swift in Sources */,
 				8380FD1425EA1A8900DEE7E5 /* CombinationsTest.swift in Sources */,
+				8380FD6525EC925300DEE7E5 /* GridTravelerUniquePathsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
