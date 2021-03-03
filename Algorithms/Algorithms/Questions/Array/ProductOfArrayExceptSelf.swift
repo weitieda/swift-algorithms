@@ -36,39 +36,39 @@ final class ProductOfArrayExceptSelf {
 
         var leftProducts = Array(repeating: 1, count: array.count)
 
-        var currentLeftProduct = 1
+        var leftRunningProduct = 1
         for i in array.indices {
-            leftProducts[i] = currentLeftProduct
-            currentLeftProduct *= array[i]
+            leftProducts[i] = leftRunningProduct
+            leftRunningProduct *= array[i]
         }
 
         var rightProducts = Array(repeating: 1, count: array.count)
 
-        var currentRightProduct = 1
+        var rightRunningProduct = 1
         for i in stride(from: array.count-1, through: 0, by: -1) {
-            rightProducts[i] = currentRightProduct
-            currentRightProduct *= array[i]
+            rightProducts[i] = rightRunningProduct
+            rightRunningProduct *= array[i]
         }
 
         return zip(leftProducts, rightProducts).map {$0 * $1}
     }
 
-    // Follow up question answer, inlined one products array
     // t: O(n), s: O(1)
     static func solution2(array: [Int]) -> [Int] {
+        let count = array.count
 
-        var result = Array(repeating: 1, count: array.count)
+        var result = Array(repeating: 1, count: count)
 
-        var currentProduct = 1
+        var runningProduct = 1
         for i in array.indices {
-            result[i] = currentProduct
-            currentProduct *= array[i]
+            result[i] = runningProduct
+            runningProduct *= array[i]
         }
 
-        currentProduct = 1
-        for i in stride(from: array.count-1, through: 0, by: -1) {
-            result[i] *= currentProduct
-            currentProduct *= array[i]
+        runningProduct = 1
+        for i in stride(from: count-1, through: 0, by: -1) {
+            result[i] *= runningProduct
+            runningProduct *= array[i]
         }
 
         return result
