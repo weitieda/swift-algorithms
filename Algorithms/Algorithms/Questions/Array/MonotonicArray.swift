@@ -54,18 +54,20 @@ final class MonotonicArray {
         var isMonotoneDecreasing = true
         
         for i in 0..<input.count - 1 {
-            
-            let shouldBeMonotoneIncreasingButFoundDecreasing = isMonotoneIncreasing && input[i] > input[i+1]
-            if shouldBeMonotoneIncreasingButFoundDecreasing {
+
+            // found decreasing
+            if input[i] > input[i+1] {
                 isMonotoneIncreasing = false
             }
-            
-            let shouldBeMonotoneDecreasingButFoundIncreasing = isMonotoneDecreasing && input[i] < input[i+1] 
-            if shouldBeMonotoneDecreasingButFoundIncreasing {
+
+            // found increasing
+            if input[i] < input[i+1] {
                 isMonotoneDecreasing = false
             }
-            
-            if !isMonotoneIncreasing && !isMonotoneDecreasing {
+
+            let hasDecreased = !isMonotoneIncreasing
+            let hasIncreased = !isMonotoneDecreasing
+            if hasDecreased && hasIncreased {
                 return false
             }
         }

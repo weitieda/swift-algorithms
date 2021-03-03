@@ -10,7 +10,7 @@ import XCTest
 
 class MonotonicArrayTest: XCTestCase {
 
-    func test1() {
+    func test() {
         let monotoneIncreasingArrays = [
             [1, 1, 2, 2],
             [1, 1, 1],
