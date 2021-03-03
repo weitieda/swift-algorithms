@@ -27,7 +27,11 @@ import Foundation
 
 final class ProductOfArrayExceptSelf {
 
-    // t: O(n), s: O(n)
+    /// Product except self equals numbers on the left * all number on the right
+    /// So we can create two array with running product from left to right and
+    /// right to left. Then zip them.
+    ///
+    /// t: O(n), s: O(n)
     static func solution(array: [Int]) -> [Int] {
 
         var leftProducts = Array(repeating: 1, count: array.count)
