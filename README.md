@@ -1,6 +1,6 @@
 # algorithms
 
-![banner](asset/banner.png)
+![banner](asset/banner.jpeg)
 
 Solve [LeetCode](https://www.leetcode.com) and [HackerRank](https://www.hackerrank.com) algorithm problems in `Swift`
 
@@ -8,12 +8,12 @@ Solve [LeetCode](https://www.leetcode.com) and [HackerRank](https://www.hackerra
 - Covered by `Unit Test`
 - Implemented commonly used Data Structure, including `Binary Search Tree`, `Linked List`, `Binary Heap`
 
-Work in progress...
+🧑🏻‍💻 Work in progress...
 
 ## Questions
 
 ### **Array**
-- [SmallestDifference](Algorithms/Algorithms/Questions/Array/SmallestDifference.swift)
+[SmallestDifference](Algorithms/Algorithms/Questions/Array/SmallestDifference.swift)
 
 [MonotonicArray](Algorithms/Algorithms/Questions/Array/MonotonicArray.swift)
 
