@@ -4,7 +4,7 @@
 
 Solve [LeetCode](https://www.leetcode.com) and [HackerRank](https://www.hackerrank.com) algorithm problems in `Swift`
 
-- Written as Swifty as possible
+- Written as *Swiftly* as possible
 - Covered by `Unit Test`
 - Implemented commonly used Data Structure, including `Binary Search Tree`, `Linked List`, `Binary Heap`
 
