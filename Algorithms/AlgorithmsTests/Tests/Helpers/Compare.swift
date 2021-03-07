@@ -7,11 +7,18 @@
 
 import Foundation
 
-func isSame2DArray<T: Equatable>(_ lhs: [[T]], _ rhs: [[T]]) -> Bool {
+func isSame2DArray<T: Comparable>(_ lhs: [[T]], _ rhs: [[T]]) -> Bool {
     if lhs.count != rhs.count {return false}
+    
+    var l = lhs
+    var r = rhs
+    for i in lhs.indices {
+        l[i].sort()
+        r[i].sort()
+    }
 
     for i in 0..<lhs.count {
-        if !rhs.contains(lhs[i]) {
+        if !r.contains(l[i]) {
             return false
         }
     }

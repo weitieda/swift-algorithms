@@ -41,16 +41,43 @@ import Foundation
  Input: candidates = [1], target = 2
  Output: [[1,1]]
 
- 
+ Constraints:
+ 1 <= candidates.length <= 30
+ 1 <= candidates[i] <= 200
+ All elements of candidates are distinct.
+ 1 <= target <= 500
  */
 
-// todo
 final class CombinationSum {
 
     /// t: O(), s: O()
     /// https://youtu.be/oBt53YbR9Kk?t=5819
-    static func solution() {
-
+    static func solution(input: [Int], target: Int) -> [[Int]] {
+        var result = [[Int]]()
+        
+        var sum = 0
+        var currentCombination = [Int]()
+        
+        func dfs(baseIndex: Int) {
+            if sum > target {
+                return
+            } else if sum == target {
+                result.append(currentCombination)
+                return
+            }
+            
+            // keep exploring rest numbers
+            for i in baseIndex..<input.count {
+                let currentNumber = input[i]
+                sum += currentNumber
+                currentCombination.append(currentNumber)
+                dfs(baseIndex: i)
+                sum -= currentCombination.removeLast()
+            }
+        }
+        
+        dfs(baseIndex: 0)
+        
+        return result
     }
-
 }

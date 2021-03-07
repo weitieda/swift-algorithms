@@ -89,6 +89,7 @@
 		83E96F7C25C2632D001E35DC /* ValidateSubsequenceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E96F7B25C2632D001E35DC /* ValidateSubsequenceTest.swift */; };
 		83F9429925C4C32A000CCB17 /* MoveElementToEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F9429825C4C32A000CCB17 /* MoveElementToEnd.swift */; };
 		83F9429D25C4C394000CCB17 /* MoveElementToEndTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F9429C25C4C394000CCB17 /* MoveElementToEndTest.swift */; };
+		83FEACB925F49F3D001C6C53 /* CombinationSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FEACB825F49F3D001C6C53 /* CombinationSumTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -187,6 +188,7 @@
 		83E96F7B25C2632D001E35DC /* ValidateSubsequenceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateSubsequenceTest.swift; sourceTree = "<group>"; };
 		83F9429825C4C32A000CCB17 /* MoveElementToEnd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveElementToEnd.swift; sourceTree = "<group>"; };
 		83F9429C25C4C394000CCB17 /* MoveElementToEndTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveElementToEndTest.swift; sourceTree = "<group>"; };
+		83FEACB825F49F3D001C6C53 /* CombinationSumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationSumTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -357,6 +359,7 @@
 				8380FD1F25EAB01900DEE7E5 /* ReverseStringRecursivelyTest.swift */,
 				8380FD2D25EAC0FD00DEE7E5 /* PermutationTest.swift */,
 				8380FD6425EC925300DEE7E5 /* GridTravelerUniquePathsTest.swift */,
+				83FEACB825F49F3D001C6C53 /* CombinationSumTest.swift */,
 			);
 			path = Recursion;
 			sourceTree = "<group>";
@@ -722,6 +725,7 @@
 				83BB275725D612E40035A0EE /* RunLengthEncodingTest.swift in Sources */,
 				83F9429D25C4C394000CCB17 /* MoveElementToEndTest.swift in Sources */,
 				83AE918925D4EB9C00A8242D /* LongestPalindromicSubstringTest.swift in Sources */,
+				83FEACB925F49F3D001C6C53 /* CombinationSumTest.swift in Sources */,
 				83318B4D25C3973600EE4612 /* ThreeSumDistinctTest.swift in Sources */,
 				8362C12B25CF3352007A79AD /* RemoveDuplicatesFromSortedOrderLinkedListTest.swift in Sources */,
 				8362C11C25CF290D007A79AD /* LinkedListTest.swift in Sources */,
