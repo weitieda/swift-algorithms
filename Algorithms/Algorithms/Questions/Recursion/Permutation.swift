@@ -32,24 +32,29 @@ final class Permutation {
     ///
     /// Insert new number at each index(0...count) of prev permutation
     ///
-    /// t: O(n!), s: O(n^2)
+    /// t: O(n! * n * n), s: O(n! * n)
     static func solution(_ array: [Int]) -> [[Int]] {
-        if array.isEmpty { return [[]] }
-
-        let last = array.last!
-        let rest = Array(array.dropLast())
-
-        var allPerms = [[Int]]()
-
-        let prevPerms = solution(rest)
-        prevPerms.forEach { (perm) in
-            for i in (0...perm.count) {
-                var cp = perm
-                cp.insert(last, at: i)
-                allPerms.append(cp)
+        
+        func getPermutation(of array: [Int]) -> [[Int]] {
+            if array.isEmpty { return [[]] }
+            
+            var allPerms = [[Int]]()
+            
+            let last = array.last!
+            let rest = Array(array.dropLast())
+            
+            let prevPerms = getPermutation(of: rest)
+            prevPerms.forEach { (perm) in
+                for i in (0...perm.count) {
+                    var cp = perm
+                    cp.insert(last, at: i)
+                    allPerms.append(cp)
+                }
             }
+            
+            return allPerms
         }
-
-        return allPerms
+        
+        return getPermutation(of: array)
     }
 }
