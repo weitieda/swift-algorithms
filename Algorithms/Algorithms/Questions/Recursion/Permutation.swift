@@ -57,4 +57,30 @@ final class Permutation {
         
         return getPermutation(of: array)
     }
+    
+    static func solution2(_ array: [Int]) -> [[Int]] {
+        
+        var result = [[Int]]()
+        
+        var nums = array
+        
+        func dfs(startIndex: Int) {
+            if startIndex == array.count {
+                result.append(nums)
+                return
+            }
+            
+            for i in startIndex..<array.count {
+                nums.swapAt(i, startIndex)
+                dfs(startIndex: startIndex + 1)
+                nums.swapAt(i, startIndex)
+            }
+        }
+        
+        dfs(startIndex: 0)
+        
+        return result
+    }
+    
+    
 }

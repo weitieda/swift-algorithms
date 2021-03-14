@@ -11,16 +11,12 @@ import XCTest
 class PermutationTest: XCTestCase {
 
     func test1() {
-        let sut = Permutation.solution([1, 2])
-        let expected = [[1, 2], [2, 1]]
-
-        XCTAssertTrue(isSame2DArray(sut, expected))
+        let result = [[1, 2], [2, 1]]
+        expect(result, when: [1, 2])
     }
 
     func test2() {
-        let sut = Permutation.solution([1, 2, 3])
-
-        let expected = [
+        let result = [
             [1, 2, 3],
             [1, 3, 2],
             [2, 1, 3],
@@ -28,7 +24,14 @@ class PermutationTest: XCTestCase {
             [3, 1, 2],
             [3, 2, 1]
         ]
-        
-        XCTAssertTrue(isSame2DArray(sut, expected))
+        expect(result, when: [1, 2, 3])
+    }
+    
+    private func expect(_ result: [[Int]], when input: [Int]) {
+        let sut = Permutation.solution(input)
+        XCTAssertTrue(isSame2DArray(sut, result))
+
+        let sut2 = Permutation.solution2(input)
+        XCTAssertTrue(isSame2DArray(sut2, result))
     }
 }
