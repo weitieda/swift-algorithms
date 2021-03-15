@@ -58,29 +58,28 @@ final class Permutation {
         return getPermutation(of: array)
     }
     
+    /// t: O(n! * n), s: O(n! * n)
     static func solution2(_ array: [Int]) -> [[Int]] {
         
         var result = [[Int]]()
         
         var nums = array
         
-        func dfs(startIndex: Int) {
-            if startIndex == array.count {
+        func dfs(baseIndex: Int) {
+            if baseIndex == array.count {
                 result.append(nums)
                 return
             }
             
-            for i in startIndex..<array.count {
-                nums.swapAt(i, startIndex)
-                dfs(startIndex: startIndex + 1)
-                nums.swapAt(i, startIndex)
+            for i in baseIndex..<array.count {
+                nums.swapAt(i, baseIndex)
+                dfs(baseIndex: baseIndex + 1)
+                nums.swapAt(i, baseIndex)
             }
         }
         
-        dfs(startIndex: 0)
+        dfs(baseIndex: 0)
         
         return result
     }
-    
-    
 }
