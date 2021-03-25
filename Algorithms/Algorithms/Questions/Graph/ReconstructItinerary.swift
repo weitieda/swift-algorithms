@@ -39,32 +39,35 @@ final class ReconstructItinerary {
         
         var path = [String]()
         dfs("JFK")
-        path.reverse() // Imporve by using LinkedList to avoid reverse()
+        path.reverse() // Could imporve by using LinkedList to avoid reverse()
         
         return path
     }
     
     static func solutionIterative(_ tickets: [[String]]) -> [String] {
         var graph = sortDestination(buildGraph(tickets))
-        
         var path = [String]()
         var stack = ["JFK"]
         
-        while !stack.isEmpty {
-            let last = stack.removeLast()
-            while graph.keys.contains(last) && !graph[last]!.isEmpty {
-                stack.append(graph[last]!.removeLast())
+        while !stack.isEmpty, let lastAirport = stack.last {
+            // no ticket depture from `lastAirport` OR all tickets have been used
+            if graph[lastAirport] == nil || graph[lastAirport]!.isEmpty {
+                path.append(lastAirport)
+                stack.removeLast()
+            } else { // still have tickets not used yet
+                let first = graph[lastAirport]!.removeFirst()
+                stack.append(first)
             }
-            path.append(last)
         }
-        return path
+        
+        return path.reversed()
     }
 
     static private func buildGraph(_ tickets: [[String]]) -> Graph {
         var graph = Graph()
         for t in tickets {
-            let dep = t[0], dest = t[1]
-            graph[dep, default: []].append(dest)
+            let from = t[0], to = t[1]
+            graph[from, default: []].append(to)
         }
         return graph
     }

@@ -10,18 +10,33 @@ import XCTest
 
 class ReconstructItineraryTest: XCTestCase {
 
-    func test1() {
-        let tickets1 = [["MUC", "LHR"], ["JFK", "MUC"], ["SFO", "SJC"], ["LHR", "SFO"]]
-        expect(tickets1, when: ["JFK", "MUC", "LHR", "SFO", "SJC"])
+    func test() {
+        expect(["JFK", "MUC", "LHR", "SFO", "SJC"],
+               when: [["MUC", "LHR"],
+                      ["JFK", "MUC"],
+                      ["SFO", "SJC"],
+                      ["LHR", "SFO"]]
+        )
 
-        let tickets2 = [["JFK", "SFO"], ["JFK", "ATL"], ["SFO", "ATL"], ["ATL", "JFK"], ["ATL", "SFO"]]
-        expect(tickets2, when: ["JFK", "ATL", "JFK", "SFO", "ATL", "SFO"])
+        expect(["JFK", "ATL", "JFK", "SFO", "ATL", "SFO"],
+               when: [["JFK", "SFO"],
+                      ["JFK", "ATL"],
+                      ["SFO", "ATL"],
+                      ["ATL", "JFK"],
+                      ["ATL", "SFO"]]
+        )
+
+        expect(["JFK", "NRT", "JFK", "KUL"],
+               when: [["JFK", "KUL"],
+                      ["JFK", "NRT"],
+                      ["NRT", "JFK"]]
+        )
     }
 
-    private func expect(_ tickets: [[String]], when result: [String]) {
+    private func expect(_ result: [String], when tickets: [[String]]) {
         let sut = ReconstructItinerary.solutionDFS(tickets)
         XCTAssertEqual(sut, result)
-        
+
         let sut2 = ReconstructItinerary.solutionIterative(tickets)
         XCTAssertEqual(sut2, result)
     }
