@@ -1,16 +1,15 @@
-# algorithms
+# Swift Algorithms
 
 ![banner](asset/banner.jpeg)
 
 Solve [LeetCode](https://www.leetcode.com) and [HackerRank](https://www.hackerrank.com) algorithm problems in `Swift`
 
 - Written as *Swiftly* as possible
-- Covered by `Unit Test`
-- Implemented commonly used Data Structure, including `Binary Search Tree`, `Linked List`, `Binary Heap`
+- Covered by `Unit Test` with timeout validation
 
 🧑🏻‍💻 Work in progress...
 
-## Questions
+## Question List
 
 ### **Array**
 [SmallestDifference](Algorithms/Algorithms/Questions/Array/SmallestDifference.swift)
@@ -96,3 +95,11 @@ Solve [LeetCode](https://www.leetcode.com) and [HackerRank](https://www.hackerra
 [GroupAnagrams](Algorithms/Algorithms/Questions/String/GroupAnagrams.swift)
 
 [LongestPalindromicSubstring](Algorithms/Algorithms/Questions/String/LongestPalindromicSubstring.swift)
+
+## Author
+
+[Tieda Wei](https://tiedawei.com)
+
+## License
+
+Swift Algorithms is available under the MIT license. See [the LICENSE file](LICENSE) for more information.
