@@ -16,10 +16,10 @@ import Foundation
 final class NthFibonacci {
 
     // t: O(2^n), s: O(n)
-    static func solutionTime2n(n: Int) -> Int {
+    static func solution2toN(n: Int) -> Int {
         if n == 1 { return 0 }
         if n == 2 { return 1 }
-        return solutionTime2n(n: n - 1) + solutionTime2n(n: n - 2)
+        return solution2toN(n: n - 1) + solution2toN(n: n - 2)
     }
 
 

@@ -15,12 +15,4 @@ class CourseScheduleTest: XCTestCase {
 //        let pre = [[1, 0], [2, 0], [3, 1], [3, 2]]
 //        let sut = CourseSchedule.solution(4, pre)
     }
-
-    func test2() {
-
-    }
-
-    func test3() {
-
-    }
 }

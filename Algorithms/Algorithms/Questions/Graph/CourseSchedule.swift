@@ -12,7 +12,10 @@ import Foundation
  */
 
 final class CourseSchedule {
-
+    static func fib(_ i: Int) -> Int {
+        if i == 0 || i == 1 {return 1}
+        return fib(i-1) + fib(i-2)
+    }
     // t: O(), s: O()
     static func solution(_ numCourses: Int, _ prerequisites: [[Int]]) -> [Int] {
 
