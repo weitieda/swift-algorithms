@@ -11,7 +11,6 @@ import XCTest
 class ReconstructItineraryTest: XCTestCase {
 
     func test() {
-        
         [
             (["JFK", "MUC", "LHR", "SFO", "SJC"],
              [

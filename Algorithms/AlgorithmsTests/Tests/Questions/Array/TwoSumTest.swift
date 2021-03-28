@@ -11,16 +11,11 @@ import XCTest
 class TwoSumTest: XCTestCase {
 
     func test() {
-        let input1 = [3, 5, -4, 8, 11, 1, -1, 6]
-        let target1 = 10
-
-        XCTAssertTrue(
-            isSameArrayIgnoreOrder([6, 4],
-                                   TwoSum.solution(input: input1, target: target1))
-        )
-
-        let input2 = [4, 6, 1, -3]
-        let target2 = 11
-        XCTAssertEqual([], TwoSum.solution(input: input2, target: target2))
+        [
+            ([3, 5, -4, 8, 11, 1, -1, 6], 10, [6, 4]),
+            ([4, 6, 1, -3], 11, [])
+        ].forEach { (array, target, result) in
+            expect(result, when: TwoSum.solution(input: array, target: target))
+        }
     }
 }
