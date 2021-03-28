@@ -10,27 +10,15 @@ import XCTest
 
 class InsertionSortTest: XCTestCase {
 
-    func test1() {
-        var input = [2, 1, 0]
-        let sut = InsertionSort.solution(array: &input)
-        XCTAssertEqual([0, 1, 2], sut)
-    }
-
-    func test2() {
-        var input = [2, 1]
-        let sut = InsertionSort.solution(array: &input)
-        XCTAssertEqual([1, 2], sut)
-    }
-
-    func test3() {
-        var input = [2]
-        let sut = InsertionSort.solution(array: &input)
-        XCTAssertEqual([2], sut)
-    }
-
-    func test4() {
-        var input = Array(0...100).shuffled()
-        let sut = InsertionSort.solution(array: &input)
-        XCTAssertEqual(Array(0...100), sut)
+    func test() {
+        [
+            ([], []),
+            ([0], [0]),
+            ([2, 1], [1, 2]),
+            ([2, 1, 0], [0, 1, 2]),
+            (Array(0...100).shuffled(), Array(0...100))
+        ].forEach { (arr, sorted) in
+            expect(sorted, when: InsertionSort.solution(array: arr))
+        }
     }
 }

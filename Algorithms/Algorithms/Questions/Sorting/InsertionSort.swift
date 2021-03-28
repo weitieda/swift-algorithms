@@ -14,8 +14,8 @@ import Foundation
 final class InsertionSort {
 
     // t: O(n^2), s: O(1)
-    static func solution(array: inout [Int]) -> [Int] {
-
+    static func solution(array: [Int]) -> [Int] {
+        var array = array
         for i in 1..<array.endIndex where array[i-1] > array[i] {
             var j = i
             while j > 0, array[j] < array[j-1] {
@@ -23,7 +23,6 @@ final class InsertionSort {
                 j -= 1
             }
         }
-
         return array
     }
 
