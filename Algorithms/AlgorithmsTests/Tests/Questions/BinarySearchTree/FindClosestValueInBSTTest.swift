@@ -10,17 +10,12 @@ import XCTest
 
 class FindClosestValueInBSTTest: XCTestCase {
 
-    func test1() {
-        let bst = BST(array: [10, 5, 2, 15, 1, 13, 22, 14])!
-        let sut = FindClosestValueInBST.solution(bst, target: 12)
-
-        XCTAssertEqual(sut, 13)
-    }
-
-    func test2() {
-        let bst = BST(array: [10, 5])!
-        let sut = FindClosestValueInBST.solution(bst, target: 6)
-
-        XCTAssertEqual(sut, 5)
+    func test() {
+        [
+            (BST(array: [10, 5, 2, 15, 1, 13, 22, 14])!, 12, 13),
+            (BST(array: [10, 5])!, 6, 5)
+        ].forEach { (bst, target, result) in
+            expect(result, when: FindClosestValueInBST.solution(bst, target: target))
+        }
     }
 }
