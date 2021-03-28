@@ -8,15 +8,14 @@
 import Foundation
 
 /*
+ 
  https://leetcode.com/problems/course-schedule-ii/
+ 
  */
 
 final class CourseSchedule {
-    static func fib(_ i: Int) -> Int {
-        if i == 0 || i == 1 {return 1}
-        return fib(i-1) + fib(i-2)
-    }
-    // t: O(), s: O()
+    
+    // t: O(), s: O()  todo
     static func solution(_ numCourses: Int, _ prerequisites: [[Int]]) -> [Int] {
 
         // index->course, value->prerequistesCount
