@@ -19,7 +19,6 @@ class BinaryTreeSumTest: XCTestCase {
         */
 
         let tree = BST(array: [40, 50, 30, 20, 35, 45, 10, 4])!
-        let sut = BinaryTreeSum.solution(tree)
-        XCTAssertEqual(sut, 234)
+        expect(234, when: BinaryTreeSum.solution(tree))
     }
 }

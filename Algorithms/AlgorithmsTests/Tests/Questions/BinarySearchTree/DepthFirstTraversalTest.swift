@@ -21,14 +21,7 @@ class DepthFirstTraversalTest: XCTestCase {
         let tree = BST(array: [40, 50, 30, 20, 35, 45, 10])!
         let expectedResult = [40, 30, 20, 10, 35, 50, 45]
 
-        expect(expectedResult, when: tree)
-    }
-
-    private func expect(_ result: [Int], when tree: BST<Int>) {
-        let sut = DepthFirstTraversal.stackSolution(tree)
-        XCTAssertEqual(sut, result)
-
-        let sut2 = DepthFirstTraversal.recursiveSolution(tree)
-        XCTAssertEqual(sut2, result)
+        expect(expectedResult, when: DepthFirstTraversal.stackSolution(tree))
+        expect(expectedResult, when: DepthFirstTraversal.recursiveSolution(tree))
     }
 }

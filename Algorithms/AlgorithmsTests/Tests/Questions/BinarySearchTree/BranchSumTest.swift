@@ -20,19 +20,14 @@ class BranchSumTest: XCTestCase {
            └──3
              │ ┌──nil
              └──2
-               └──1
+         └──1
          */
-
-        let tree = BST(array: [5, 3, 10, 2, 4, 1, 12])!
-        let sut = BranchSum.solution(tree)
-
-        XCTAssertEqual([11, 12, 27], sut)
-    }
-
-    func test2() {
-        let tree = BST(array: [5])!
-        let sut = BranchSum.solution(tree)
-
-        XCTAssertEqual([5], sut)
+        
+        [
+            (BST(array: [5, 3, 10, 2, 4, 1, 12])!, [11, 12, 27]),
+            (BST(array: [5])!, [5])
+        ].forEach { (bst, result) in
+            expect(result, when: BranchSum.solution(bst))
+        }
     }
 }
