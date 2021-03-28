@@ -10,25 +10,20 @@ import XCTest
 
 class SmallestDifferenceTest: XCTestCase {
 
-    func test1() {
-        var arr1 = [-1, 5, 10, 20, 28, 3]
-        var arr2 = [26, 134, 135, 15, 17]
-
-        let exp = [28, 26]
-
-        let sut = SmallestDifference.solution(arrayOne: &arr1, arrayTwo: &arr2)
-
-        XCTAssertEqual(sut.sorted(), exp.sorted())
-    }
-
-    func test2() {
-        var arr1 = [240, 124, 86, 111, 2, 84, 954, 27, 89]
-        var arr2 = [1, 3, 954, 19, 8]
-
-        let exp = [954, 954]
-
-        let sut = SmallestDifference.solution(arrayOne: &arr1, arrayTwo: &arr2)
-
-        XCTAssertEqual(sut.sorted(), exp.sorted())
+    func test() {
+        [
+            ([-1, 5, 10, 20, 28, 3],
+             [26, 134, 135, 15, 17],
+             [26, 28]),
+            ([240, 124, 86, 111, 2, 84, 954, 27, 89],
+             [1, 3, 954, 19, 8],
+             [954, 954])
+        ].forEach { (a1, a2, result) in
+            let isSameArr = isSameArrayIgnoreOrder(
+                SmallestDifference.solution(arrayOne: a1, arrayTwo: a2),
+                result
+            )
+            expect(true, when: isSameArr)
+        }
     }
 }

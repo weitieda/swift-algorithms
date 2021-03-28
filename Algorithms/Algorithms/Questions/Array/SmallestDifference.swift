@@ -19,8 +19,8 @@ import Foundation
  You can assume that there will only be one pair of numbers with the smallest difference.
  
  
- arrayTwo = [-1, 5, 10, 20, 28, 3]
  arrayOne = [26, 134, 135, 15, 17]
+ arrayTwo = [-1, 5, 10, 20, 28, 3]
  -> [28, 26]
  
  */
@@ -28,8 +28,11 @@ import Foundation
 final class SmallestDifference {
 
     // t: O(nlog(n) + mlog(m)), s: O(1)
-    static func solution(arrayOne: inout [Int], arrayTwo: inout [Int]) -> [Int] {
+    static func solution(arrayOne: [Int], arrayTwo: [Int]) -> [Int] {
 
+        var arrayOne = arrayOne
+        var arrayTwo = arrayTwo
+        
         arrayOne.sort()
         arrayTwo.sort()
 
