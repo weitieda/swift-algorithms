@@ -1,4 +1,4 @@
-# Swift Algorithms
+# Algorithms
 
 ![banner](asset/banner.jpeg)
 
@@ -49,6 +49,12 @@ Solve [LeetCode](https://www.leetcode.com) and [HackerRank](https://www.hackerra
 [FindClosestValueInBST](Algorithms/Algorithms/Questions/BinarySearchTree/FindClosestValueInBST.swift)
 
 [BreadthFirstTraversal](Algorithms/Algorithms/Questions/BinarySearchTree/BreadthFirstTraversal.swift)
+
+
+### **Graph**
+[CourseSchedule](Algorithms/Algorithms/Questions/Graph/CourseSchedule.swift)
+
+[ReconstructItinerary](Algorithms/Algorithms/Questions/Graph/ReconstructItinerary.swift)
 
 
 ### **LinkedList**
@@ -102,4 +108,4 @@ Solve [LeetCode](https://www.leetcode.com) and [HackerRank](https://www.hackerra
 
 ## License
 
-Swift Algorithms is available under the MIT license. See [the LICENSE file](LICENSE) for more information.
+Algorithms is available under the MIT license. See [the LICENSE file](LICENSE) for more information.
