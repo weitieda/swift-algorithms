@@ -28,9 +28,9 @@ import DataStructure
 final class RemoveDuplicatesFromSortedOrderLinkedList {
 
     // t: O(n), s: O(1)
-    static func solution(input: inout LinkedList<Int>) -> LinkedList<Int> {
-
-        var node = input.head
+    static func solution(list: LinkedList<Int>) -> LinkedList<Int> {
+        let cpList = list
+        var node = cpList.first
 
         while node?.next != nil {
             while node?.value == node?.next?.value {
@@ -39,7 +39,7 @@ final class RemoveDuplicatesFromSortedOrderLinkedList {
             node = node?.next
         }
 
-        return input
+        return cpList
     }
 
 }
