@@ -6,7 +6,6 @@
 //
 
 import XCTest
-import DataStructure
 @testable import Algorithms
 
 class RemoveDuplicatesFromSortedOrderLinkedListTest: XCTestCase {
