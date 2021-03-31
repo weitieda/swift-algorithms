@@ -27,7 +27,7 @@ import Foundation
 
 final class Subsets {
 
-    // t: O(2^n), s: O(2^n)
+    // t: O(n*2^n), s: O(2^n)
     static func solutionIterative(array: [Int]) -> [[Int]] {
         
         var result: [[Int]] = [[]]
