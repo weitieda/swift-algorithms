@@ -65,6 +65,8 @@
 		8380FD6F25ECA08600DEE7E5 /* CombinationSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380FD6E25ECA08600DEE7E5 /* CombinationSum.swift */; };
 		838868862612E40B0048B174 /* KadaneAlgorithmsMaximumSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838868852612E40B0048B174 /* KadaneAlgorithmsMaximumSubarray.swift */; };
 		8388688A2612E4450048B174 /* KadaneAlgorithmsMaximumSubarrayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838868892612E4450048B174 /* KadaneAlgorithmsMaximumSubarrayTest.swift */; };
+		83886894261416340048B174 /* Subsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83886893261416340048B174 /* Subsets.swift */; };
+		8388689A261416FF0048B174 /* SubsetsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83886899261416FF0048B174 /* SubsetsTest.swift */; };
 		83AD336F25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD336E25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift */; };
 		83AD337325CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD337225CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift */; };
 		83AE918525D4EB8700A8242D /* LongestPalindromicSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AE918425D4EB8700A8242D /* LongestPalindromicSubstring.swift */; };
@@ -163,6 +165,8 @@
 		8380FD6E25ECA08600DEE7E5 /* CombinationSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationSum.swift; sourceTree = "<group>"; };
 		838868852612E40B0048B174 /* KadaneAlgorithmsMaximumSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KadaneAlgorithmsMaximumSubarray.swift; sourceTree = "<group>"; };
 		838868892612E4450048B174 /* KadaneAlgorithmsMaximumSubarrayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KadaneAlgorithmsMaximumSubarrayTest.swift; sourceTree = "<group>"; };
+		83886893261416340048B174 /* Subsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subsets.swift; sourceTree = "<group>"; };
+		83886899261416FF0048B174 /* SubsetsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsetsTest.swift; sourceTree = "<group>"; };
 		83AD336E25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOfArrayExceptSelf.swift; sourceTree = "<group>"; };
 		83AD337225CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOfArrayExcepSelfTest.swift; sourceTree = "<group>"; };
 		83AE918425D4EB8700A8242D /* LongestPalindromicSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestPalindromicSubstring.swift; sourceTree = "<group>"; };
@@ -317,6 +321,7 @@
 				8380FD2925EAB79700DEE7E5 /* Permutation.swift */,
 				8380FD6025EC848500DEE7E5 /* GridTravelerUniquePaths.swift */,
 				8380FD6E25ECA08600DEE7E5 /* CombinationSum.swift */,
+				83886893261416340048B174 /* Subsets.swift */,
 			);
 			path = Recursion;
 			sourceTree = "<group>";
@@ -463,6 +468,7 @@
 				83081EC125CE49F50085333C /* FindDuplicateNumberTest.swift */,
 				83C308A925CE5BC30046D54B /* FirstDuplicateValueTest.swift */,
 				838868892612E4450048B174 /* KadaneAlgorithmsMaximumSubarrayTest.swift */,
+				83886899261416FF0048B174 /* SubsetsTest.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -661,6 +667,7 @@
 				836F519125C7870800ED0432 /* SpiralMatrix.swift in Sources */,
 				83644E1825E6DEFA0035531A /* InsertionSort.swift in Sources */,
 				8380FD4725EB27D000DEE7E5 /* DepthFirstTraversal.swift in Sources */,
+				83886894261416340048B174 /* Subsets.swift in Sources */,
 				8380FD2A25EAB79700DEE7E5 /* Permutation.swift in Sources */,
 				83E886492607C17400DD995E /* CourseSchedule.swift in Sources */,
 				8337896425D7875200526DF0 /* GroupAnagrams.swift in Sources */,
@@ -710,6 +717,7 @@
 				83318B4D25C3973600EE4612 /* ThreeSumDistinctTest.swift in Sources */,
 				8362C12B25CF3352007A79AD /* RemoveDuplicatesFromSortedOrderLinkedListTest.swift in Sources */,
 				83D1C9CF25D24C6000292396 /* CaesarCipherEncryptorTest.swift in Sources */,
+				8388689A261416FF0048B174 /* SubsetsTest.swift in Sources */,
 				837CE19025D8FB4900857363 /* NthFibonacciTest.swift in Sources */,
 				83C308AA25CE5BC30046D54B /* FirstDuplicateValueTest.swift in Sources */,
 				838087E725C22D0400D5635C /* TwoSumTest.swift in Sources */,
