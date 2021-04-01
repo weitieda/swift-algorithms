@@ -28,7 +28,7 @@ final class KadaneAlgorithmsMaximumSubarray {
     static func solution(nums: [Int]) -> Int {
         var maxSum = Int.min
         
-        for i in 0..<nums.count {
+        for i in nums.indices {
             var currentRunningSum = 0
             for j in i..<nums.count {
                 currentRunningSum += nums[j]

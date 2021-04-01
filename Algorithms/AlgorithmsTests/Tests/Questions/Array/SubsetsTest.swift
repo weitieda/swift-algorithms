@@ -17,7 +17,8 @@ class SubsetsTest: XCTestCase {
             ([1, 2], [[], [1], [2], [1, 2]]),
             ([1, 2, 3], [[], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 2, 3]])
         ].forEach { (array, result) in
-            let isSameArray = isSame2DArray(Subsets.solutionIterative(array: array), result)
+            let sut = Subsets.solutionIterative(array: array)
+            let isSameArray = isSame2DArray(sut, result)
             expect(true, when: isSameArray)
         }
 
