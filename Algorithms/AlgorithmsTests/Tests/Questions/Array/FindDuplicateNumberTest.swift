@@ -9,25 +9,14 @@ import XCTest
 @testable import Algorithms
 
 class FindDuplicateNumberTest: XCTestCase {
-
-    func test1() {
-        let array = [1, 3, 4, 2, 2]
-        let sut = FindDuplicateNumber.solution(array: array)
-
-        XCTAssertEqual(sut, 2)
-    }
-
-    func test2() {
-        let array = [1, 2, 2, 3, 4]
-        let sut = FindDuplicateNumber.solution(array: array)
-
-        XCTAssertEqual(sut, 2)
-    }
-
-    func test_solution2() {
-        let array = [1, 2, 2, 3, 4]
-        let sut = FindDuplicateNumber.solution2(array: array)
-
-        XCTAssertEqual(sut, 2)
+    
+    func test() {
+        [
+            ([1, 3, 4, 2, 2], 2),
+            ([1, 2, 2, 3, 4], 2)
+        ].forEach { (input, result) in
+            expect(result, when: FindDuplicateNumber.solution(array: input))
+            expect(result, when: FindDuplicateNumber.solution2(array: input))
+        }
     }
 }

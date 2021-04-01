@@ -10,15 +10,12 @@ import XCTest
 
 class ProductOfArrayExcepSelfTest: XCTestCase {
 
-    func test1() {
-        let input = [1, 2, 3, 4]
-        let sut = ProductOfArrayExceptSelf.solution(array: input)
-        XCTAssertEqual([24, 12, 8, 6], sut)
-    }
-
-    func test2() {
-        let input = [1, 2, 3, 4]
-        let sut = ProductOfArrayExceptSelf.solution2(array: input)
-        XCTAssertEqual([24, 12, 8, 6], sut)
+    func test() {
+        [
+            ([1, 2, 3, 4], [24, 12, 8, 6])
+        ].forEach { (input, result) in
+            expect(result, when: ProductOfArrayExceptSelf.solution(array: input))
+            expect(result, when: ProductOfArrayExceptSelf.solution2(array: input))
+        }
     }
 }

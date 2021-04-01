@@ -36,7 +36,8 @@ import Foundation
 final class FirstDuplicateValue {
 
     // t: O(n), s: O(1)
-    static func solution(array: inout [Int]) -> Int {
+    static func solution(array: [Int]) -> Int {
+        var array = array
         for v in array {
             
             /// Because each number is in [1, n],
