@@ -46,7 +46,7 @@ final class Combinations {
 
     /// t: O(2^n)  growing like Binary Tree
     /// s: O(n^2)  call stack x n, each call stack `let restLetters = Array(array[1...])`
-    static func solution(array: [String]) -> [[String]] {
+    static func solution<T: Equatable>(array: [T]) -> [[T]] {
         if array.isEmpty { return [[]] }
 
         let firstLetter = array.first!
@@ -56,7 +56,7 @@ final class Combinations {
         let combsWithoutFirstLetter = solution(array: restLetters)
 
         // right node: add first letter in each left node
-        let combsWithFirst = combsWithoutFirstLetter.map { comb -> [String] in
+        let combsWithFirst = combsWithoutFirstLetter.map { comb -> [T] in
             var c = comb
             c.append(firstLetter)
             return c

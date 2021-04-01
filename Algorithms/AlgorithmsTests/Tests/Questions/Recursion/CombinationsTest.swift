@@ -26,7 +26,7 @@ class CombinationsTest: XCTestCase {
     }
 
     func test4() {
-        let sut = Combinations.solution(array: [])
+        let sut = Combinations.solution(array: [String]())
         XCTAssertEqual(sut, [[]])
     }
 }

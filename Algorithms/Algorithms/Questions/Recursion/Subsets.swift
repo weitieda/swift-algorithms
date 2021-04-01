@@ -41,5 +41,8 @@ final class Subsets {
         
         return subsets
     }
-
+    
+    static func solutionRecursive(array: [Int]) -> [[Int]] {
+        return Combinations.solution(array: array)
+    }
 }
