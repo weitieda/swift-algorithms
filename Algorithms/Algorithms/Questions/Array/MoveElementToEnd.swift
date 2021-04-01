@@ -25,7 +25,8 @@ import Foundation
 final class MoveElementToEnd {
 
     // t: O(n), s: O(1)
-    static func solution(_ array: inout [Int], _ toMove: Int) -> [Int] {
+    static func solution(_ array: [Int], _ toMove: Int) -> [Int] {
+        var array = array
         var head = 0
         var tail = array.count - 1
 
