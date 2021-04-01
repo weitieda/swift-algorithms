@@ -30,16 +30,16 @@ final class Subsets {
     // t: O(n*2^n), s: O(2^n)
     static func solutionIterative(array: [Int]) -> [[Int]] {
         
-        var result: [[Int]] = [[]]
+        var subsets: [[Int]] = [[]]
 
-        for i in array.indices {
-            for var subset in result {
-                subset.append(array[i])
-                result.append(subset)
+        for number in array {
+            for existingSubset in subsets {
+                let newSubset = existingSubset + [number]
+                subsets.append(newSubset)
             }
         }
         
-        return result
+        return subsets
     }
 
 }
