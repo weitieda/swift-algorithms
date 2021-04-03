@@ -9,14 +9,13 @@ import XCTest
 @testable import Algorithms
 
 class ReverseWordsInStringTest: XCTestCase {
-
     func test() {
-        expect("London bridge is falling down!",
-               toBe: "down! falling is bridge London")
-    }
-
-    func expect(_ string: String, toBe result: String) {
-        let sut = ReverseWordsInString.solutionSpaceO1(string: string)
-        XCTAssertEqual(result, sut)
+        [
+            ("London bridge is falling down!", "down! falling is bridge London"),
+            ("", ""),
+            ("ab", "ab")
+        ].forEach { (string, result) in
+            expect(result, when: ReverseWordsInString.solutionSpaceO1(string: string))
+        }
     }
 }

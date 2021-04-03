@@ -9,42 +9,16 @@ import XCTest
 @testable import Algorithms
 
 class ValidPalindromeTest: XCTestCase {
-
-    func test1() {
-        let str = "12321"
-        expect(true, when: str)
-    }
-
-    func test2() {
-        let str = "A man, a plan, a canal: Panama"
-        expect(true, when: str)
-    }
-
-    func test3() {
-        let str = "123"
-        expect(false, when: str)
-    }
-
-    func test4() {
-        let str = "race a car"
-        expect(false, when: str)
-    }
-
-    func test5() {
-        let str = ""
-        expect(true, when: str)
-    }
-
-    func expect(_ bool: Bool, when input: String) {
-        let sut = ValidPalindrome.solution(string: input)
-        let sut2 = ValidPalindrome.solution2(string: input)
-
-        if bool {
-            XCTAssertTrue(sut)
-            XCTAssertTrue(sut2)
-        } else {
-            XCTAssertFalse(sut)
-            XCTAssertFalse(sut2)
+    func test() {
+        [
+            ("12321", true),
+            ("A man, a plan, a canal: Panama", true),
+            ("", true),
+            ("face a car", false),
+            ("123", false)
+        ].forEach { (str, result) in
+            expect(result, when: ValidPalindrome.solution(string: str))
+            expect(result, when: ValidPalindrome.solution2(string: str))
         }
     }
 }

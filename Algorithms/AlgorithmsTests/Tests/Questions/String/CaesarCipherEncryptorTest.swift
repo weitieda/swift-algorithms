@@ -9,16 +9,12 @@ import XCTest
 @testable import Algorithms
 
 class CaesarCipherEncryptorTest: XCTestCase {
-
-    func test1() {
-        let str = "az"
-        let sut = CaesarCipherEncryptor.solution(string: str, key: 3)
-        XCTAssertEqual(sut, "dc")
-    }
-
-    func test2() {
-        let str = "az"
-        let sut = CaesarCipherEncryptor.solution(string: str, key: 27)
-        XCTAssertEqual(sut, "ba")
+    func test() {
+        [
+            ("az", 3, "dc"),
+            ("az", 27, "ba")
+        ].forEach { (str, key, result) in
+            expect(result, when: CaesarCipherEncryptor.solution(string: str, key: key))
+        }
     }
 }
