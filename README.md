@@ -4,7 +4,7 @@
 
 Solve [LeetCode](https://www.leetcode.com) and [HackerRank](https://www.hackerrank.com) algorithm problems in `Swift`
 
-- Written as *Swiftly* as possible
+- *Swifty* in mind
 - Covered by `Unit Test` with timeout validation
 
 🧑🏻‍💻 Work in progress...
@@ -23,6 +23,8 @@ Solve [LeetCode](https://www.leetcode.com) and [HackerRank](https://www.hackerra
 [FindDuplicateNumber](Algorithms/Algorithms/Questions/Array/FindDuplicateNumber.swift)
 
 [ThreeSum](Algorithms/Algorithms/Questions/Array/ThreeSum.swift)
+
+[KadaneAlgorithmsMaximumSubarray](Algorithms/Algorithms/Questions/Array/KadaneAlgorithmsMaximumSubarray.swift)
 
 [ProductOfArrayExceptSelf](Algorithms/Algorithms/Questions/Array/ProductOfArrayExceptSelf.swift)
 
@@ -62,6 +64,8 @@ Solve [LeetCode](https://www.leetcode.com) and [HackerRank](https://www.hackerra
 
 
 ### **Recursion**
+[Subsets](Algorithms/Algorithms/Questions/Recursion/Subsets.swift)
+
 [ProductSum](Algorithms/Algorithms/Questions/Recursion/ProductSum.swift)
 
 [ReverseStringRecursively](Algorithms/Algorithms/Questions/Recursion/ReverseStringRecursively.swift)
