@@ -11,20 +11,15 @@ import XCTest
 class RecursiveSumTest: XCTestCase {
 
     func test() {
-        expect(sum: 0, when: [])
-        expect(sum: 1, when: [1])
-        expect(sum: 3, when: [1, 2])
-        expect(sum: 2, when: [1, 2, -1])
-    }
-
-    private func expect(sum: Int, when array: [Int]) {
-        let sut = RecursiveSum.sum(array: array)
-        XCTAssertEqual(sut, sum)
-
-        let sut2 = RecursiveSum.sumRunningIndex(array: array)
-        XCTAssertEqual(sut2, sum)
-
-        let sut3 = RecursiveSum.sum2(array: array)
-        XCTAssertEqual(sut3, sum)
+        [
+            ([], 0),
+            ([1], 1),
+            ([1, 2], 3),
+            ([1, 2, -1], 2)
+        ].forEach { (array, result) in
+            expect(result, when: RecursiveSum.sum(array: array))
+            expect(result, when: RecursiveSum.sumRunningIndex(array: array))
+            expect(result, when: RecursiveSum.sum2(array: array))
+        }
     }
 }
