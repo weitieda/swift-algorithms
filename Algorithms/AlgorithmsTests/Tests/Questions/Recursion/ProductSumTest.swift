@@ -10,11 +10,14 @@ import XCTest
 
 class ProductSumTest: XCTestCase {
 
-    func test1() {
-        let array: [Any] = [5, 2, [7, -1], 3, [6, [-13, 8], 4]]
-        let sut = ProductSum.solution(array)
-
-        XCTAssertEqual(12, sut)
+    func test() {
+        [
+            ([5, 2, [7, -1], 3, [6, [-13, 8], 4]], 12),
+            ([5, 2], 7),
+            ([1, [1, -1]], 1)
+        ].forEach { (array, result) in
+            expect(result, when: ProductSum.solution(array))
+        }
     }
 
 }
