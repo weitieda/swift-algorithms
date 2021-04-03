@@ -11,15 +11,14 @@ import XCTest
 class ReverseStringRecursivelyTest: XCTestCase {
 
     func test() {
-        expect("123", when: "321")
-        expect("", when: "")
-        expect("1", when: "1")
-        expect("21", when: "12")
-        expect("11", when: "11")
-    }
-
-    private func expect(_ result: String, when input: String) {
-        let sut = ReverseStringRecursively.solution(input)
-        XCTAssertEqual(sut, result)
+        [
+            ("", ""),
+            ("321", "123"),
+            ("1", "1"),
+            ("11", "11"),
+            ("21", "12")
+        ].forEach { (string, result) in
+            expect(result, when: ReverseStringRecursively.solution(string))
+        }
     }
 }
