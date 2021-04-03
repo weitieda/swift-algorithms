@@ -9,24 +9,26 @@ import XCTest
 @testable import Algorithms
 
 class CombinationsTest: XCTestCase {
-
-    func test1() {
-        let sut = Combinations.solution(array: ["a", "b", "c"])
-        XCTAssertEqual(sut, [[], ["c"], ["b"], ["c", "b"], ["a"], ["c", "a"], ["b", "a"], ["c", "b", "a"]])
-    }
-
-    func test2() {
-        let sut = Combinations.solution(array: ["a", "b"])
-        XCTAssertEqual(sut, [[], ["b"], ["a"], ["b", "a"]])
-    }
-
-    func test3() {
-        let sut = Combinations.solution(array: ["a"])
-        XCTAssertEqual(sut, [[], ["a"]])
-    }
-
-    func test4() {
-        let sut = Combinations.solution(array: [String]())
-        XCTAssertEqual(sut, [[]])
+    func test() {
+        [
+            (
+                ["a", "b", "c"],
+                [[], ["c"], ["b"], ["c", "b"], ["a"], ["c", "a"], ["b", "a"], ["c", "b", "a"]]
+            ),
+            (
+                ["a", "b"],
+                [[], ["b"], ["a"], ["b", "a"]]
+            ),
+            (
+                ["a"],
+                [[], ["a"]]
+            ),
+            (
+                [String](),
+                [[]]
+            )
+        ].forEach { (input, result) in
+            expect(result, when: Combinations.solution(array: input))
+        }
     }
 }
