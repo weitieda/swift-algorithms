@@ -9,7 +9,7 @@ import XCTest
 @testable import Algorithms
 
 class FindDuplicateNumberTest: XCTestCase {
-    
+
     func test() {
         [
             ([1, 3, 4, 2, 2], 2),

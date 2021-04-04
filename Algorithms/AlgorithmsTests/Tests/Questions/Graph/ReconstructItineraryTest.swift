@@ -19,7 +19,7 @@ class ReconstructItineraryTest: XCTestCase {
                 ["SFO", "SJC"],
                 ["LHR", "SFO"]
              ]),
-            
+
             (["JFK", "ATL", "JFK", "SFO", "ATL", "SFO"],
              [
                 ["JFK", "SFO"],
@@ -28,7 +28,7 @@ class ReconstructItineraryTest: XCTestCase {
                 ["ATL", "JFK"],
                 ["ATL", "SFO"]
              ]),
-            
+
             (["JFK", "NRT", "JFK", "KUL"],
              [
                 ["JFK", "KUL"],

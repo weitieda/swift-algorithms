@@ -29,8 +29,6 @@ final class MergeIntervals {
 
     // t: O(n), s: O(1)
     static func solution(_ intervals: [[Int]]) -> [[Int]] {
-        guard intervals.count < 2 else { return intervals }
-        
         let sortedIntervals = intervals.sorted(by: { $0[0] < $1[0] })
         
         var mergedIntervals = [sortedIntervals.first!]

@@ -22,7 +22,7 @@ class BranchSumTest: XCTestCase {
              └──2
          └──1
          */
-        
+
         [
             (BST(array: [5, 3, 10, 2, 4, 1, 12])!, [11, 12, 27]),
             (BST(array: [5])!, [5])

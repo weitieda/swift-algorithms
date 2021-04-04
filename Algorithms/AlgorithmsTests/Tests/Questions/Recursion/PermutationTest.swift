@@ -9,7 +9,7 @@ import XCTest
 @testable import Algorithms
 
 class PermutationTest: XCTestCase {
-    
+
     func test() {
         [
             (
@@ -33,7 +33,7 @@ class PermutationTest: XCTestCase {
         ].forEach { (array, result) in
             let isSameSolution1 = isSame2DArray(result, Permutation.solution(array))
             expect(true, when: isSameSolution1)
-            
+
             let isSameSolution2 = isSame2DArray(result, Permutation.solution2(array))
             expect(true, when: isSameSolution2)
         }

@@ -9,21 +9,21 @@ import XCTest
 @testable import Algorithms
 
 class CombinationSumTest: XCTestCase {
-    
+
     func test() {
         [
             (
                 [7, 14], 300,
                 [[Int]]()
             ),
-            
+
             (
                 [2, 3], 7,
                 [
                     [2, 3, 2]
                 ]
             ),
-            
+
             (
                 [5, 3, 4, 7], 7,
                 [
@@ -31,7 +31,7 @@ class CombinationSumTest: XCTestCase {
                     [7]
                 ]
             ),
-            
+
             (
                 [5, 2, 3, 10], 10,
                 [

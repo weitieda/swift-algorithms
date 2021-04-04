@@ -9,7 +9,7 @@ import XCTest
 @testable import Algorithms
 
 class RunLengthEncodingTest: XCTestCase {
-    
+
     func test() {
         [
             ("9A4A2B4C2D", "AAAAAAAAAAAAABBCCCCDD"),

@@ -20,7 +20,7 @@ class MonotonicArrayTest: XCTestCase {
             expect(true, when: MonotonicArray.solution(array))
             expect(true, when: MonotonicArray.solution2(array))
         }
-        
+
         [
             [1, 0, 2, 2],
             [1, 0, 1],

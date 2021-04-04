@@ -37,6 +37,7 @@
 		836F519125C7870800ED0432 /* SpiralMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836F519025C7870800ED0432 /* SpiralMatrix.swift */; };
 		836F519525C7874500ED0432 /* SpiralMatrixTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836F519425C7874500ED0432 /* SpiralMatrixTest.swift */; };
 		8378482E2618BDC300D121DB /* MergeIntervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8378482D2618BDC300D121DB /* MergeIntervals.swift */; };
+		837848322619693400D121DB /* MergeIntervalsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837848312619693400D121DB /* MergeIntervalsTest.swift */; };
 		837CE18225D8F73E00857363 /* ReverseWordsInString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837CE18125D8F73E00857363 /* ReverseWordsInString.swift */; };
 		837CE18625D8F81F00857363 /* ReverseWordsInStringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837CE18525D8F81F00857363 /* ReverseWordsInStringTest.swift */; };
 		837CE18B25D8FA7500857363 /* NthFibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837CE18A25D8FA7500857363 /* NthFibonacci.swift */; };
@@ -135,6 +136,7 @@
 		836F519025C7870800ED0432 /* SpiralMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralMatrix.swift; sourceTree = "<group>"; };
 		836F519425C7874500ED0432 /* SpiralMatrixTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralMatrixTest.swift; sourceTree = "<group>"; };
 		8378482D2618BDC300D121DB /* MergeIntervals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeIntervals.swift; sourceTree = "<group>"; };
+		837848312619693400D121DB /* MergeIntervalsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeIntervalsTest.swift; sourceTree = "<group>"; };
 		837CE18125D8F73E00857363 /* ReverseWordsInString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseWordsInString.swift; sourceTree = "<group>"; };
 		837CE18525D8F81F00857363 /* ReverseWordsInStringTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseWordsInStringTest.swift; sourceTree = "<group>"; };
 		837CE18A25D8FA7500857363 /* NthFibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NthFibonacci.swift; sourceTree = "<group>"; };
@@ -472,6 +474,7 @@
 				83C308A925CE5BC30046D54B /* FirstDuplicateValueTest.swift */,
 				838868892612E4450048B174 /* KadaneAlgorithmsMaximumSubarrayTest.swift */,
 				83886899261416FF0048B174 /* SubsetsTest.swift */,
+				837848312619693400D121DB /* MergeIntervalsTest.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -711,6 +714,7 @@
 				83644E1225E6B48A0035531A /* BubbleSortTest.swift in Sources */,
 				83AD337325CCFB04002C9C35 /* ProductOfArrayExcepSelfTest.swift in Sources */,
 				836603AC261023E000C3FBDD /* XCTestCase+Expect.swift in Sources */,
+				837848322619693400D121DB /* MergeIntervalsTest.swift in Sources */,
 				83B28E3D25E60B610035D470 /* FindClosestValueInBSTTest.swift in Sources */,
 				83644E1C25E6E1500035531A /* InsertionSortTest.swift in Sources */,
 				83BB275725D612E40035A0EE /* RunLengthEncodingTest.swift in Sources */,
