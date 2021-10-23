@@ -39,7 +39,7 @@ let bottomSection = """
 
 ## License
 
-Algorithms is available under the MIT license. See [the LICENSE](LICENSE) for more information.
+Algorithms is available under the MIT license. See [the LICENSE file](LICENSE) for more information.
 """
 
 var questionList = ""
