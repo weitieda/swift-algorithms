@@ -10,7 +10,6 @@ Solve [LeetCode](https://www.leetcode.com) and [HackerRank](https://www.hackerra
 🧑🏻‍💻 Work in progress...
 
 ## Question List
-
 ### **Array**
 [SmallestDifference](Algorithms/Algorithms/Questions/Array/SmallestDifference.swift)
 
@@ -27,6 +26,8 @@ Solve [LeetCode](https://www.leetcode.com) and [HackerRank](https://www.hackerra
 [KadaneAlgorithmsMaximumSubarray](Algorithms/Algorithms/Questions/Array/KadaneAlgorithmsMaximumSubarray.swift)
 
 [ProductOfArrayExceptSelf](Algorithms/Algorithms/Questions/Array/ProductOfArrayExceptSelf.swift)
+
+[MergeIntervals](Algorithms/Algorithms/Questions/Array/MergeIntervals.swift)
 
 [TwoSum](Algorithms/Algorithms/Questions/Array/TwoSum.swift)
 
@@ -92,6 +93,8 @@ Solve [LeetCode](https://www.leetcode.com) and [HackerRank](https://www.hackerra
 
 [BubbleSort](Algorithms/Algorithms/Questions/Sorting/BubbleSort.swift)
 
+[QuickSort](Algorithms/Algorithms/Questions/Sorting/QuickSort.swift)
+
 
 ### **String**
 [ReverseWordsInString](Algorithms/Algorithms/Questions/String/ReverseWordsInString.swift)
@@ -105,6 +108,7 @@ Solve [LeetCode](https://www.leetcode.com) and [HackerRank](https://www.hackerra
 [GroupAnagrams](Algorithms/Algorithms/Questions/String/GroupAnagrams.swift)
 
 [LongestPalindromicSubstring](Algorithms/Algorithms/Questions/String/LongestPalindromicSubstring.swift)
+
 
 ## Author
 
