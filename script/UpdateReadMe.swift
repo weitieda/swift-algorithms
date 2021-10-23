@@ -32,7 +32,7 @@ Solve [LeetCode](https://www.leetcode.com) and [HackerRank](https://www.hackerra
 
 """
 
-let bottomSection = """
+let footer = """
 ## Author
 
 [Tieda Wei](https://tiedawei.com)
@@ -55,10 +55,10 @@ questionsDict.keys.sorted().forEach {
     questionList += "\n"
 }
 
-let url = URL(fileURLWithPath: "../README.md")
-let result = header + questionList + bottomSection
+let readMePath = URL(fileURLWithPath: "../README.md")
+let result = header + questionList + footer
 do {
-    try result.write(to: url, atomically: true, encoding: .utf8)
+    try result.write(to: readMePath, atomically: true, encoding: .utf8)
 } catch {
     print("failed to create file at: \(url)")
 }
