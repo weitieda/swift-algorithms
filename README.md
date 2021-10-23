@@ -116,4 +116,4 @@ Solve [LeetCode](https://www.leetcode.com) and [HackerRank](https://www.hackerra
 
 ## License
 
-Algorithms is available under the MIT license. See [the LICENSE file](LICENSE) for more information.
+Algorithms is available under the MIT license. See [the LICENSE](LICENSE) for more information.
