@@ -10,6 +10,7 @@ Solve [LeetCode](https://www.leetcode.com) and [HackerRank](https://www.hackerra
 - Covered by `Unit Test` with timeout validation
 
 🧑🏻‍💻 Work in progress...
+> run `make readme` to update
 
 ## Question List
 ### **Array**

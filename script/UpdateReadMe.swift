@@ -1,8 +1,10 @@
 import Foundation
 
+print("Start generating README...")
+
 let fm = FileManager.default
 
-let questionPath = "../Algorithms/Algorithms/Questions"
+let questionPath = "Algorithms/Algorithms/Questions"
 let dirEnum = fm.enumerator(atPath: questionPath)
 
 var questionsDict = [String: [String]]()
@@ -29,6 +31,7 @@ Solve [LeetCode](https://www.leetcode.com) and [HackerRank](https://www.hackerra
 - Covered by `Unit Test` with timeout validation
 
 🧑🏻‍💻 Work in progress...
+> run `make readme` to update
 
 ## Question List
 
@@ -56,12 +59,13 @@ questionsDict.keys.sorted().forEach {
     questionList += "\n"
 }
 
-let readMePath = URL(fileURLWithPath: "../README.md")
+let readMePath = URL(fileURLWithPath: "README.md")
 
 let result = header + questionList + footer
 
 do {
     try result.write(to: readMePath, atomically: true, encoding: .utf8)
+    print("README generation completed")
 } catch {
     print("failed to create file at: \(readMePath)")
 }
