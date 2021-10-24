@@ -19,6 +19,8 @@ while let file = dirEnum?.nextObject() as? String {
 let header = """
 # Algorithms
 
+![example workflow](https://github.com/weitieda/swift-algorithms/actions/workflows/main.yml/badge.svg)
+
 ![banner](asset/banner.jpeg)
 
 Solve [LeetCode](https://www.leetcode.com) and [HackerRank](https://www.hackerrank.com) algorithm problems in `Swift`
@@ -43,7 +45,6 @@ Algorithms is available under the MIT license. See [the LICENSE file](LICENSE) f
 """
 
 var questionList = ""
-
 questionsDict.keys.sorted().forEach {
     let title = "### **\($0)**\n"
     questionList += title
@@ -56,10 +57,12 @@ questionsDict.keys.sorted().forEach {
 }
 
 let readMePath = URL(fileURLWithPath: "../README.md")
+
 let result = header + questionList + footer
+
 do {
     try result.write(to: readMePath, atomically: true, encoding: .utf8)
 } catch {
-    print("failed to create file at: \(url)")
+    print("failed to create file at: \(readMePath)")
 }
 
