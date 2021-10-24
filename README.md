@@ -1,6 +1,6 @@
 # Algorithms
 
-![example workflow](https://github.com/weitieda/swift-algorithms/actions/workflows/swift.yml/badge.svg)
+![example workflow](https://github.com/weitieda/swift-algorithms/actions/workflows/main.yml/badge.svg)
 
 ![banner](asset/banner.jpeg)
 
