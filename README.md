@@ -1,5 +1,7 @@
 # Algorithms
 
+![example workflow](https://github.com/weitieda/swift-algorithms/actions/workflows/swift/badge.svg)
+
 ![banner](asset/banner.jpeg)
 
 Solve [LeetCode](https://www.leetcode.com) and [HackerRank](https://www.hackerrank.com) algorithm problems in `Swift`
