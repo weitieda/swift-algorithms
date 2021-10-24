@@ -10,4 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run tests
-      run: swift test -v
+      working-directory: ./Algorithms
+      run: |
+        xcodebuild test -project Algorithms.xcodeproj -scheme AlgorithmsTests
