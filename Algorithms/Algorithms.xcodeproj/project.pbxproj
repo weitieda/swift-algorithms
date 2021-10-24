@@ -21,7 +21,7 @@
 		8339979925DB791F0053C700 /* FindClosestValueInBST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8339979825DB791F0053C700 /* FindClosestValueInBST.swift */; };
 		833997A725DB8ED40053C700 /* ProductSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833997A625DB8ED40053C700 /* ProductSum.swift */; };
 		833997AB25DB91920053C700 /* ProductSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833997AA25DB91920053C700 /* ProductSumTest.swift */; };
-		8352F213261114F90093EF46 /* DataStructure in Frameworks */ = {isa = PBXBuildFile; productRef = 8352F212261114F90093EF46 /* DataStructure */; };
+		835EF95E2724EBB000FDC5DF /* DataStructure in Frameworks */ = {isa = PBXBuildFile; productRef = 835EF95D2724EBB000FDC5DF /* DataStructure */; };
 		8362C11725CF1C71007A79AD /* RemoveDuplicatesFromSortedOrderLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362C11625CF1C71007A79AD /* RemoveDuplicatesFromSortedOrderLinkedList.swift */; };
 		8362C12B25CF3352007A79AD /* RemoveDuplicatesFromSortedOrderLinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362C12A25CF3352007A79AD /* RemoveDuplicatesFromSortedOrderLinkedListTest.swift */; };
 		8362C13225D0E27C007A79AD /* ValidPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362C13125D0E27C007A79AD /* ValidPalindrome.swift */; };
@@ -205,7 +205,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8352F213261114F90093EF46 /* DataStructure in Frameworks */,
+				835EF95E2724EBB000FDC5DF /* DataStructure in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,7 +545,7 @@
 			);
 			name = Algorithms;
 			packageProductDependencies = (
-				8352F212261114F90093EF46 /* DataStructure */,
+				835EF95D2724EBB000FDC5DF /* DataStructure */,
 			);
 			productName = Algorithms;
 			productReference = 838087AD25C2161900D5635C /* Algorithms.framework */;
@@ -598,7 +598,7 @@
 			);
 			mainGroup = 838087A325C2161900D5635C;
 			packageReferences = (
-				8352F211261114F90093EF46 /* XCRemoteSwiftPackageReference "swift-data-structure" */,
+				835EF95C2724EBB000FDC5DF /* XCRemoteSwiftPackageReference "swift-data-structure" */,
 			);
 			productRefGroup = 838087AE25C2161900D5635C /* Products */;
 			projectDirPath = "";
@@ -1006,20 +1006,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		8352F211261114F90093EF46 /* XCRemoteSwiftPackageReference "swift-data-structure" */ = {
+		835EF95C2724EBB000FDC5DF /* XCRemoteSwiftPackageReference "swift-data-structure" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:weitieda/swift-data-structure.git";
+			repositoryURL = "https://github.com/weitieda/swift-data-structure.git";
 			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 1.0.0;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8352F212261114F90093EF46 /* DataStructure */ = {
+		835EF95D2724EBB000FDC5DF /* DataStructure */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8352F211261114F90093EF46 /* XCRemoteSwiftPackageReference "swift-data-structure" */;
+			package = 835EF95C2724EBB000FDC5DF /* XCRemoteSwiftPackageReference "swift-data-structure" */;
 			productName = DataStructure;
 		};
 /* End XCSwiftPackageProductDependency section */
