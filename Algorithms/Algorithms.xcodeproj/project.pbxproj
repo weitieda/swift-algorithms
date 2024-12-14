@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -88,6 +88,7 @@
 		83C3B87925DB2D9000CBECDB /* BinarySearchTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C3B87825DB2D9000CBECDB /* BinarySearchTest.swift */; };
 		83D1C9CB25D247D000292396 /* CaesarCipherEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1C9CA25D247D000292396 /* CaesarCipherEncryptor.swift */; };
 		83D1C9CF25D24C6000292396 /* CaesarCipherEncryptorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1C9CE25D24C6000292396 /* CaesarCipherEncryptorTest.swift */; };
+		83D8B8E12D0E3DEF006562BF /* BoyerMooreAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8B8E02D0E3DEF006562BF /* BoyerMooreAlgorithms.swift */; };
 		83E886492607C17400DD995E /* CourseSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E886482607C17400DD995E /* CourseSchedule.swift */; };
 		83E8864E2607C1DB00DD995E /* CourseScheduleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8864D2607C1DB00DD995E /* CourseScheduleTest.swift */; };
 		83E96F7225C25F77001E35DC /* ValidateSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E96F7125C25F77001E35DC /* ValidateSubsequence.swift */; };
@@ -191,6 +192,7 @@
 		83C3B87825DB2D9000CBECDB /* BinarySearchTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTest.swift; sourceTree = "<group>"; };
 		83D1C9CA25D247D000292396 /* CaesarCipherEncryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaesarCipherEncryptor.swift; sourceTree = "<group>"; };
 		83D1C9CE25D24C6000292396 /* CaesarCipherEncryptorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaesarCipherEncryptorTest.swift; sourceTree = "<group>"; };
+		83D8B8E02D0E3DEF006562BF /* BoyerMooreAlgorithms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoyerMooreAlgorithms.swift; sourceTree = "<group>"; };
 		83E886482607C17400DD995E /* CourseSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSchedule.swift; sourceTree = "<group>"; };
 		83E8864D2607C1DB00DD995E /* CourseScheduleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseScheduleTest.swift; sourceTree = "<group>"; };
 		83E96F7125C25F77001E35DC /* ValidateSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateSubsequence.swift; sourceTree = "<group>"; };
@@ -486,6 +488,7 @@
 			isa = PBXGroup;
 			children = (
 				83C3B87325DB2CCE00CBECDB /* BinarySearch.swift */,
+				83D8B8E02D0E3DEF006562BF /* BoyerMooreAlgorithms.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -663,6 +666,7 @@
 				83BB275325D612D40035A0EE /* RunLengthEncoding.swift in Sources */,
 				8339979925DB791F0053C700 /* FindClosestValueInBST.swift in Sources */,
 				837CE18B25D8FA7500857363 /* NthFibonacci.swift in Sources */,
+				83D8B8E12D0E3DEF006562BF /* BoyerMooreAlgorithms.swift in Sources */,
 				833997A725DB8ED40053C700 /* ProductSum.swift in Sources */,
 				838087BC25C2164300D5635C /* TwoSum.swift in Sources */,
 				8380FD4F25EB426C00DEE7E5 /* BinaryTreeSum.swift in Sources */,
