@@ -7,6 +7,8 @@
 
 import Foundation
 
-struct BoyerMooreAlgorithms {
-	
+public extension String {
+	func findIndex(of pattern: String) -> Int? {
+		nil
+	}
 }

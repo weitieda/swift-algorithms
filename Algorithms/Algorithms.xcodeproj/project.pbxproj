@@ -89,6 +89,7 @@
 		83D1C9CB25D247D000292396 /* CaesarCipherEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1C9CA25D247D000292396 /* CaesarCipherEncryptor.swift */; };
 		83D1C9CF25D24C6000292396 /* CaesarCipherEncryptorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1C9CE25D24C6000292396 /* CaesarCipherEncryptorTest.swift */; };
 		83D8B8E12D0E3DEF006562BF /* BoyerMooreAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8B8E02D0E3DEF006562BF /* BoyerMooreAlgorithms.swift */; };
+		83D8B8E52D0E493F006562BF /* BoyerMooreAlgorithmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8B8E42D0E493F006562BF /* BoyerMooreAlgorithmsTests.swift */; };
 		83E886492607C17400DD995E /* CourseSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E886482607C17400DD995E /* CourseSchedule.swift */; };
 		83E8864E2607C1DB00DD995E /* CourseScheduleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8864D2607C1DB00DD995E /* CourseScheduleTest.swift */; };
 		83E96F7225C25F77001E35DC /* ValidateSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E96F7125C25F77001E35DC /* ValidateSubsequence.swift */; };
@@ -193,6 +194,7 @@
 		83D1C9CA25D247D000292396 /* CaesarCipherEncryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaesarCipherEncryptor.swift; sourceTree = "<group>"; };
 		83D1C9CE25D24C6000292396 /* CaesarCipherEncryptorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaesarCipherEncryptorTest.swift; sourceTree = "<group>"; };
 		83D8B8E02D0E3DEF006562BF /* BoyerMooreAlgorithms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoyerMooreAlgorithms.swift; sourceTree = "<group>"; };
+		83D8B8E42D0E493F006562BF /* BoyerMooreAlgorithmsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoyerMooreAlgorithmsTests.swift; sourceTree = "<group>"; };
 		83E886482607C17400DD995E /* CourseSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSchedule.swift; sourceTree = "<group>"; };
 		83E8864D2607C1DB00DD995E /* CourseScheduleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseScheduleTest.swift; sourceTree = "<group>"; };
 		83E96F7125C25F77001E35DC /* ValidateSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateSubsequence.swift; sourceTree = "<group>"; };
@@ -497,6 +499,7 @@
 			isa = PBXGroup;
 			children = (
 				83C3B87825DB2D9000CBECDB /* BinarySearchTest.swift */,
+				83D8B8E42D0E493F006562BF /* BoyerMooreAlgorithmsTests.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -726,6 +729,7 @@
 				837848322619693400D121DB /* MergeIntervalsTest.swift in Sources */,
 				83B28E3D25E60B610035D470 /* FindClosestValueInBSTTest.swift in Sources */,
 				83644E1C25E6E1500035531A /* InsertionSortTest.swift in Sources */,
+				83D8B8E52D0E493F006562BF /* BoyerMooreAlgorithmsTests.swift in Sources */,
 				83BB275725D612E40035A0EE /* RunLengthEncodingTest.swift in Sources */,
 				83F9429D25C4C394000CCB17 /* MoveElementToEndTest.swift in Sources */,
 				83AE918925D4EB9C00A8242D /* LongestPalindromicSubstringTest.swift in Sources */,
