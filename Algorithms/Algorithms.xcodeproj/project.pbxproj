@@ -90,6 +90,8 @@
 		83D1C9CF25D24C6000292396 /* CaesarCipherEncryptorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1C9CE25D24C6000292396 /* CaesarCipherEncryptorTest.swift */; };
 		83D8B8E12D0E3DEF006562BF /* BoyerMooreAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8B8E02D0E3DEF006562BF /* BoyerMooreAlgorithms.swift */; };
 		83D8B8E52D0E493F006562BF /* BoyerMooreAlgorithmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8B8E42D0E493F006562BF /* BoyerMooreAlgorithmsTests.swift */; };
+		83D8B8E82D0E5D93006562BF /* Difference in Frameworks */ = {isa = PBXBuildFile; productRef = 83D8B8E72D0E5D93006562BF /* Difference */; };
+		83D8B8EA2D0E5DC4006562BF /* Assert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8B8E92D0E5DC4006562BF /* Assert.swift */; };
 		83E886492607C17400DD995E /* CourseSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E886482607C17400DD995E /* CourseSchedule.swift */; };
 		83E8864E2607C1DB00DD995E /* CourseScheduleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8864D2607C1DB00DD995E /* CourseScheduleTest.swift */; };
 		83E96F7225C25F77001E35DC /* ValidateSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E96F7125C25F77001E35DC /* ValidateSubsequence.swift */; };
@@ -195,6 +197,7 @@
 		83D1C9CE25D24C6000292396 /* CaesarCipherEncryptorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaesarCipherEncryptorTest.swift; sourceTree = "<group>"; };
 		83D8B8E02D0E3DEF006562BF /* BoyerMooreAlgorithms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoyerMooreAlgorithms.swift; sourceTree = "<group>"; };
 		83D8B8E42D0E493F006562BF /* BoyerMooreAlgorithmsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoyerMooreAlgorithmsTests.swift; sourceTree = "<group>"; };
+		83D8B8E92D0E5DC4006562BF /* Assert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assert.swift; sourceTree = "<group>"; };
 		83E886482607C17400DD995E /* CourseSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSchedule.swift; sourceTree = "<group>"; };
 		83E8864D2607C1DB00DD995E /* CourseScheduleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseScheduleTest.swift; sourceTree = "<group>"; };
 		83E96F7125C25F77001E35DC /* ValidateSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateSubsequence.swift; sourceTree = "<group>"; };
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				838087C925C2186000D5635C /* Algorithms.framework in Frameworks */,
+				83D8B8E82D0E5D93006562BF /* Difference in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +421,7 @@
 			children = (
 				8380FD3225EAC9AE00DEE7E5 /* Compare.swift */,
 				836603AB261023E000C3FBDD /* XCTestCase+Expect.swift */,
+				83D8B8E92D0E5DC4006562BF /* Assert.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -606,6 +611,7 @@
 			mainGroup = 838087A325C2161900D5635C;
 			packageReferences = (
 				835EF95C2724EBB000FDC5DF /* XCRemoteSwiftPackageReference "swift-data-structure" */,
+				83D8B8E62D0E5D93006562BF /* XCRemoteSwiftPackageReference "Difference" */,
 			);
 			productRefGroup = 838087AE25C2161900D5635C /* Products */;
 			projectDirPath = "";
@@ -719,6 +725,7 @@
 				837CE18625D8F81F00857363 /* ReverseWordsInStringTest.swift in Sources */,
 				8380FD5525EB432B00DEE7E5 /* BinaryTreeSumTest.swift in Sources */,
 				8380FD5D25EB5F4900DEE7E5 /* BranchSumTest.swift in Sources */,
+				83D8B8EA2D0E5DC4006562BF /* Assert.swift in Sources */,
 				83081EC225CE49F50085333C /* FindDuplicateNumberTest.swift in Sources */,
 				83C279C125C913DB00FF32A4 /* LongestMountainInArrayTest.swift in Sources */,
 				83C279B325C8DE4600FF32A4 /* SpiralMatrixReversedTest.swift in Sources */,
@@ -1043,6 +1050,14 @@
 				minimumVersion = 1.0.2;
 			};
 		};
+		83D8B8E62D0E5D93006562BF /* XCRemoteSwiftPackageReference "Difference" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzysztofzablocki/Difference.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1050,6 +1065,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 835EF95C2724EBB000FDC5DF /* XCRemoteSwiftPackageReference "swift-data-structure" */;
 			productName = DataStructure;
+		};
+		83D8B8E72D0E5D93006562BF /* Difference */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83D8B8E62D0E5D93006562BF /* XCRemoteSwiftPackageReference "Difference" */;
+			productName = Difference;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
