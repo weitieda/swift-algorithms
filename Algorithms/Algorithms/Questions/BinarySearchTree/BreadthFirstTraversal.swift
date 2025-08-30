@@ -10,7 +10,7 @@ import Foundation
 /*
 
  Traverse a tree layer by layer
- 
+
                    40
                30       50
              20  35   45
@@ -19,19 +19,16 @@ import Foundation
  ->
 
   [40, 30, 50, 20, 35, 45, 10]
- 
+
  */
 
-final class BreadthFirstTraversal {
-
+enum BreadthFirstTraversal {
     // t: O(n), s: O(n)
     static func queueSolution(_ root: BST<Int>) -> [Int] {
-
         var result = [Int]()
 
         var queue = [root]
         while !queue.isEmpty {
-
             let current = queue.removeFirst()
 
             result.append(current.value)
@@ -47,5 +44,4 @@ final class BreadthFirstTraversal {
 
         return result
     }
-
 }

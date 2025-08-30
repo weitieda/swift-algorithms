@@ -16,12 +16,10 @@ import Foundation
 
  */
 
-final class ReverseStringRecursively {
-
+enum ReverseStringRecursively {
     // t: O(), s: O()
     static func solution(_ str: String) -> String {
         if str.isEmpty { return "" }
         return String(str.last!) + solution(String(str.dropLast()))
     }
-
 }

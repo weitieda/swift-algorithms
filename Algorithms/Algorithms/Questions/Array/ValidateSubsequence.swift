@@ -20,7 +20,7 @@ import Foundation
  [2, 4] . Note that a single number in an
  array and the array itself are both valid
  subsequences of the array.
- 
+
  e.g.
  array = [5, 1, 22, 25, 6, -1, 8, 10]
  sequence = [1, 6, -1, 10]
@@ -28,7 +28,6 @@ import Foundation
  */
 
 class ValidateSubsequence {
-
     // t: O(n), s: O(1)
     static func solution(input: [Int], sequence: [Int]) -> Bool {
         var inputIndex = 0

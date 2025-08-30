@@ -8,15 +8,14 @@
 import Foundation
 
 /*
- 
+
  Calculate sum of give array of int by recursion
 
  */
 
 /// https://youtu.be/wRH2I6IN4BE
 
-final class RecursiveSum {
-
+enum RecursiveSum {
     ///
     /// [1, 8, 4, -1]
     ///
@@ -63,5 +62,4 @@ final class RecursiveSum {
         let numbersExceptLast = Array(array.dropLast())
         return array.last! + sum2(array: numbersExceptLast)
     }
-
 }

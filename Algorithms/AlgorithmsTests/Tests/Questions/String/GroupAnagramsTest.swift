@@ -5,8 +5,8 @@
 //  Created by Tieda Wei on 2021-02-12.
 //
 
-import XCTest
 @testable import Algorithms
+import XCTest
 
 class GroupAnagramsTest: XCTestCase {
     func test() {
@@ -26,8 +26,8 @@ class GroupAnagramsTest: XCTestCase {
             (
                 ["123", "132"],
                 [["123", "132"]]
-            )
-        ].forEach { (input, result) in
+            ),
+        ].forEach { input, result in
             let same = isSame2DArray(GroupAnagrams.solution(strs: input), result)
             expect(true, when: same)
         }

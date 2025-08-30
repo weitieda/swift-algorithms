@@ -8,7 +8,7 @@
 import Foundation
 
 /*
- 
+
  Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0?
  Find all unique triplets in the array which gives the sum of zero.
 
@@ -17,19 +17,18 @@ import Foundation
  Example 1:
  Input: nums = [-1,0,1,2,-1,-4]
  Output: [[-1,-1,2],[-1,0,1]]
- 
+
  Example 2:
  Input: nums = []
  Output: []
- 
+
  Example 3:
  Input: nums = [0]
  Output: []
- 
+
  */
 
-final class ThreeSum {
-
+enum ThreeSum {
     // t: O(n^2), s: O(n)
     static func solution(input: [Int]) -> [[Int]] {
         var result = [[Int]]()
@@ -38,8 +37,7 @@ final class ThreeSum {
 
         let sortedInput = input.sorted()
 
-        for i in 0..<sortedInput.count - 2 {
-
+        for i in 0 ..< sortedInput.count - 2 {
             let isBaseNumberSameAsPrevious = i > 0 && sortedInput[i] == sortedInput[i - 1]
             if isBaseNumberSameAsPrevious {
                 continue
@@ -72,15 +70,14 @@ final class ThreeSum {
     }
 
     fileprivate static func skipDuplicateWhenMoveToLeft(_ j: Int, _ k: inout Int, _ sortedInput: [Int]) {
-        while j < k && sortedInput[k] == sortedInput[k + 1] {
+        while j < k, sortedInput[k] == sortedInput[k + 1] {
             k -= 1
         }
     }
 
     fileprivate static func skipDuplicateWhenMoveToRight(_ j: inout Int, _ k: Int, _ sortedInput: [Int]) {
-        while j < k && sortedInput[j] == sortedInput[j - 1] {
+        while j < k, sortedInput[j] == sortedInput[j - 1] {
             j += 1
         }
     }
-
 }

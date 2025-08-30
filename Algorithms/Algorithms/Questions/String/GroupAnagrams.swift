@@ -15,7 +15,7 @@ import Foundation
 
  An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase,
  typically using all the original letters exactly once.
- 
+
  Example 1:
  Input: strs = ["eat","tea","tan","ate","nat","bat"]
  Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
@@ -33,22 +33,20 @@ import Foundation
  1 <= strs.length <= 104
  0 <= strs[i].length <= 100
  strs[i] consists of lower-case English letters.
- 
+
  */
 
-final class GroupAnagrams {
-
+enum GroupAnagrams {
     // t: O(strs.count * longestWord.count), s: O(strs.count * longestWord.count)
     static func solution(strs: [String]) -> [[String]] {
-
         typealias CharCount = [Character: Int]
 
         var dictionary = [CharCount: [String]]()
 
-        strs.forEach { word in
+        for word in strs {
             var charCount = CharCount()
 
-            word.forEach { char in
+            for char in word {
                 charCount[char, default: 0] += 1
             }
 

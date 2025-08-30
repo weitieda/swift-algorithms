@@ -14,7 +14,7 @@ import DataStructure
  any nodes with duplicate values.
  The Linked List should be modified in place (i.e., you shouldn't create a brand new list),
  and the modified Linked List should still have its nodes sorted with respect to their values.
- 
+
  Each `LinkedList` node has integer `value` as well as a `next` node
  pointing to the next node in the list or to `None`/`Null` if it's the tail of the list.
 
@@ -24,8 +24,7 @@ import DataStructure
 
  */
 
-final class RemoveDuplicatesFromSortedOrderLinkedList {
-
+enum RemoveDuplicatesFromSortedOrderLinkedList {
     // t: O(n), s: O(1)
     static func solution(list: LinkedList<Int>) -> LinkedList<Int> {
         let cpList = list
@@ -40,5 +39,4 @@ final class RemoveDuplicatesFromSortedOrderLinkedList {
 
         return cpList
     }
-
 }

@@ -548,7 +548,7 @@
 				838087A925C2161900D5635C /* Sources */,
 				838087AA25C2161900D5635C /* Frameworks */,
 				838087AB25C2161900D5635C /* Resources */,
-				83F942A025C5C65C000CCB17 /* SwiftLint */,
+				839445D22E63696D001C95F9 /* SwfitFormat */,
 			);
 			buildRules = (
 			);
@@ -641,9 +641,8 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		83F942A025C5C65C000CCB17 /* SwiftLint */ = {
+		839445D22E63696D001C95F9 /* SwfitFormat */ = {
 			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -651,14 +650,14 @@
 			);
 			inputPaths = (
 			);
-			name = SwiftLint;
+			name = SwfitFormat;
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# For Apple Silicon, add Homebrew bin to PATH\nif [[ \"$(uname -m)\" == \"arm64\" ]]; then\n  export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n\n";
+			shellScript = "cd \"${SRCROOT}\"\nswift run --package-path BuildTools swiftformat .\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

@@ -8,9 +8,8 @@
 import Foundation
 
 /*
- 
- Given an m x n matrix, return all elements of the matrix in spiral order.
 
+ Given an m x n matrix, return all elements of the matrix in spiral order.
 
  Input: matrix =
  [[1,2,3],
@@ -21,11 +20,9 @@ import Foundation
 
  */
 
-final class SpiralMatrix {
-
+enum SpiralMatrix {
     // t: O(n), s: O(n)
     static func solution(_ input: [[Int]]) -> [Int] {
-
         var result: [Int] = []
 
         var top = 0
@@ -33,7 +30,7 @@ final class SpiralMatrix {
         var bottom = input.count - 1
         var left = 0
 
-        while left < right && top < bottom {
+        while left < right, top < bottom {
             for i in stride(from: left, to: right, by: 1) {
                 result.append(input[top][i])
             }
@@ -68,5 +65,4 @@ final class SpiralMatrix {
 
         return result
     }
-
 }

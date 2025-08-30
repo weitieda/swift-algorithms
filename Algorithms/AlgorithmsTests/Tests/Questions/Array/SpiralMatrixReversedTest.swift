@@ -5,11 +5,10 @@
 //  Created by Tieda Wei on 2021-02-01.
 //
 
-import XCTest
 @testable import Algorithms
+import XCTest
 
 class SpiralMatrixReversedTest: XCTestCase {
-
     func test() {
         [
             ([[1, 2, 3],
@@ -25,8 +24,8 @@ class SpiralMatrixReversedTest: XCTestCase {
               [12, 13, 14, 5],
               [11, 16, 15, 6],
               [10, 9, 8, 7]],
-             4)
-        ].forEach { (result, n) in
+             4),
+        ].forEach { result, n in
             expect(result, when: SpiralMatrixReversed.solution(n))
         }
     }

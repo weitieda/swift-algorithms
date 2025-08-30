@@ -5,11 +5,10 @@
 //  Created by Tieda Wei on 2021-02-06.
 //
 
-import XCTest
 @testable import Algorithms
+import XCTest
 
 class LinkedListTest: XCTestCase {
-
     func test_init() {
         let list = LinkedList<Int>()
 

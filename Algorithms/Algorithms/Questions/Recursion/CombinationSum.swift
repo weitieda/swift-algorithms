@@ -47,19 +47,18 @@ import Foundation
  1 <= candidates[i] <= 200
  All elements of candidates are distinct.
  1 <= target <= 500
- 
+
  */
 
-final class CombinationSum {
-
+enum CombinationSum {
     /// t: O(), s: O()
     /// https://youtu.be/oBt53YbR9Kk?t=5819
     static func solution(input: [Int], target: Int) -> [[Int]] {
         var result = [[Int]]()
-        
+
         var sum = 0
         var currentCombination = [Int]()
-        
+
         func dfs(baseIndex: Int) {
             if sum > target {
                 return
@@ -67,9 +66,9 @@ final class CombinationSum {
                 result.append(currentCombination)
                 return
             }
-            
+
             // keep exploring rest numbers
-            for i in baseIndex..<input.count {
+            for i in baseIndex ..< input.count {
                 let currentNumber = input[i]
                 sum += currentNumber
                 currentCombination.append(currentNumber)
@@ -77,9 +76,9 @@ final class CombinationSum {
                 sum -= currentCombination.removeLast()
             }
         }
-        
+
         dfs(baseIndex: 0)
-        
+
         return result
     }
 }

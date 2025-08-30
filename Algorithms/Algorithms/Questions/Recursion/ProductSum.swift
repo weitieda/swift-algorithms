@@ -8,7 +8,7 @@
 import Foundation
 
 /*
- 
+
  Write a function that takes in a "special" array and
  returns its product sum.
  A "special" array is a non-empty array that contains
@@ -32,8 +32,7 @@ import Foundation
 
  */
 
-final class ProductSum {
-
+enum ProductSum {
     // t: O(n), s: O(depth)
     static func solution(_ array: [Any]) -> Int {
         return productSum(array)
@@ -50,5 +49,4 @@ final class ProductSum {
         }
         return sum * depth
     }
-
 }

@@ -8,13 +8,12 @@
 import Foundation
 
 /*
- 
+
  Calculate the sum of all values in the tree
- 
+
  */
 
-final class BinaryTreeSum {
-
+enum BinaryTreeSum {
     // t: O(n), s: O(n)
     static func solution(_ root: BST<Int>) -> Int {
         return dfs(root)
@@ -24,5 +23,4 @@ final class BinaryTreeSum {
         guard let root = root else { return 0 }
         return dfs(root.left) + root.value + dfs(root.right)
     }
-
 }

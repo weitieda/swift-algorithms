@@ -16,10 +16,9 @@ import Foundation
  ->
  10 20 35 30
 
-*/
+ */
 
-final class DepthFirstTraversal {
-
+enum DepthFirstTraversal {
     // t: O(n), s: O(n)
     static func stackSolution(_ root: BST<Int>) -> [Int] {
         var stack = [root]
@@ -59,6 +58,4 @@ final class DepthFirstTraversal {
 
         return result
     }
-
-
 }

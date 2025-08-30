@@ -1,5 +1,5 @@
 //
-//  ProductOfArrayExcepSelf.swift
+//  ProductOfArrayExceptSelf.swift
 //  Algorithms
 //
 //  Created by Tieda Wei on 2021-02-04.
@@ -8,7 +8,7 @@
 import Foundation
 
 /*
- 
+
  Given an array nums of n integers where n > 1,
  return an array output such that output[i] is equal to the
  product of all the elements of nums except nums[i].
@@ -25,15 +25,13 @@ import Foundation
 
  */
 
-final class ProductOfArrayExceptSelf {
-
+enum ProductOfArrayExceptSelf {
     /// Product except self equals numbers on the left * all number on the right
     /// So we can create two array with running product from left to right and
     /// right to left. Then zip them.
     ///
     /// t: O(n), s: O(n)
     static func solution(array: [Int]) -> [Int] {
-
         var leftProducts = Array(repeating: 1, count: array.count)
 
         var leftRunningProduct = 1
@@ -45,12 +43,12 @@ final class ProductOfArrayExceptSelf {
         var rightProducts = Array(repeating: 1, count: array.count)
 
         var rightRunningProduct = 1
-        for i in stride(from: array.count-1, through: 0, by: -1) {
+        for i in stride(from: array.count - 1, through: 0, by: -1) {
             rightProducts[i] = rightRunningProduct
             rightRunningProduct *= array[i]
         }
 
-        return zip(leftProducts, rightProducts).map {$0 * $1}
+        return zip(leftProducts, rightProducts).map { $0 * $1 }
     }
 
     // t: O(n), s: O(1)
@@ -66,12 +64,11 @@ final class ProductOfArrayExceptSelf {
         }
 
         runningProduct = 1
-        for i in stride(from: count-1, through: 0, by: -1) {
+        for i in stride(from: count - 1, through: 0, by: -1) {
             result[i] *= runningProduct
             runningProduct *= array[i]
         }
 
         return result
     }
-
 }

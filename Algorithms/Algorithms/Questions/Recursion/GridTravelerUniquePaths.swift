@@ -37,11 +37,10 @@ import Foundation
  Example 4:
  Input: m = 3, n = 3
  Output: 6
- 
+
  */
 
-final class GridTravelerUniquePaths {
-
+enum GridTravelerUniquePaths {
     private struct Key: Hashable {
         let m: Int
         let n: Int
@@ -57,7 +56,7 @@ final class GridTravelerUniquePaths {
                 return cached
             }
             if m == 1 || n == 1 { return 1 }
-            let new = dfs(m-1, n) + dfs(m, n-1)
+            let new = dfs(m - 1, n) + dfs(m, n - 1)
             memo[key] = new
             return new
         }

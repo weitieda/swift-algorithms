@@ -8,7 +8,7 @@
 import Foundation
 
 /*
- 
+
  [1,2,3]
 
  ->
@@ -24,7 +24,7 @@ import Foundation
 
  */
 
-final class Permutation {
+enum Permutation {
     ///                               []
     /// 1                             [1]
     /// 12           [1,2]                           [2,1]
@@ -34,52 +34,50 @@ final class Permutation {
     ///
     /// t: O(n! * n * n), s: O(n! * n)
     static func solution(_ array: [Int]) -> [[Int]] {
-        
         func getPermutation(of array: [Int]) -> [[Int]] {
             if array.isEmpty { return [[]] }
-            
+
             var allPerms = [[Int]]()
-            
+
             let last = array.last!
             let rest = Array(array.dropLast())
-            
+
             let prevPerms = getPermutation(of: rest)
-            prevPerms.forEach { (perm) in
-                for i in (0...perm.count) {
+            for perm in prevPerms {
+                for i in 0 ... perm.count {
                     var cp = perm
                     cp.insert(last, at: i)
                     allPerms.append(cp)
                 }
             }
-            
+
             return allPerms
         }
-        
+
         return getPermutation(of: array)
     }
-    
+
     /// t: O(n! * n), s: O(n! * n)
     static func solution2(_ array: [Int]) -> [[Int]] {
-        
         var result = [[Int]]()
-        
+
         var nums = array
-        
+
         func dfs(baseIndex: Int) {
             if baseIndex == array.count {
                 result.append(nums)
                 return
             }
-            
-            for i in baseIndex..<array.count {
+
+            for i in baseIndex ..< array.count {
                 nums.swapAt(i, baseIndex)
                 dfs(baseIndex: baseIndex + 1)
                 nums.swapAt(i, baseIndex)
             }
         }
-        
+
         dfs(baseIndex: 0)
-        
+
         return result
     }
 }

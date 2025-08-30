@@ -8,7 +8,7 @@
 import Foundation
 
 /*
- 
+
  Given a string, determine if it is a palindrome,
  considering only alphanumeric characters and ignoring cases.
 
@@ -23,8 +23,7 @@ import Foundation
 
  */
 
-final class ValidPalindrome {
-
+enum ValidPalindrome {
     // t: O(n^2), s: O(1)
     //
     // NOTE:
@@ -33,7 +32,6 @@ final class ValidPalindrome {
     // This is O(n) operation in Swift
 
     static func solution(string: String) -> Bool {
-
         var i = 0
         var j = string.count - 1
 
@@ -59,12 +57,10 @@ final class ValidPalindrome {
 
     // t: O(n), s: O(n)
     static func solution2(string: String) -> Bool {
-
         let charArray = Array(string)
         var i = 0, j = charArray.count - 1
 
         while i < j {
-
             let leftChar = charArray[i]
             let rightChar = charArray[j]
 
@@ -80,7 +76,7 @@ final class ValidPalindrome {
         return true
     }
 
-    static private func isValid(char: Character) -> Bool {
+    private static func isValid(char: Character) -> Bool {
         char.isNumber || char.isLetter
     }
 }

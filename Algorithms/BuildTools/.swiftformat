@@ -1,0 +1,7 @@
+--swift-version 5.7
+
+--indent 4
+--maxwidth 80
+--commas inline
+--enable isEmpty
+--disable redundantType

@@ -5,11 +5,10 @@
 //  Created by Tieda Wei on 2021-02-20.
 //
 
-import XCTest
 @testable import Algorithms
+import XCTest
 
 class BinaryHeapTest: XCTestCase {
-
     func test_emptyMinHeap() {
         let sut = makeHeap()
 
@@ -46,7 +45,6 @@ class BinaryHeapTest: XCTestCase {
     }
 
     func test_poll() {
-
         ///            1
         ///         2     3
         ///       5  7   9
@@ -108,7 +106,8 @@ class BinaryHeapTest: XCTestCase {
     }
 
     private func makeHeap(_ type: BinaryHeap<Int>.HeapType = .min,
-                          _ elements: [Int] = []) -> BinaryHeap<Int> {
+                          _ elements: [Int] = []) -> BinaryHeap<Int>
+    {
         BinaryHeap(type: type, elements: elements)
     }
 }

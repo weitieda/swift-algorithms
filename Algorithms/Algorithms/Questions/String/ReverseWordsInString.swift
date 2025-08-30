@@ -8,16 +8,15 @@
 import Foundation
 
 /*
- 
+
  e.g.
 
  string = "London bridge is falling down!"
  -> "down! falling is bridge London"
- 
+
  */
 
-final class ReverseWordsInString {
-
+enum ReverseWordsInString {
     // t: O(n), s: O(1)
     static func solutionSpaceO1(string: String) -> String {
         String(string.reversed())
@@ -25,5 +24,4 @@ final class ReverseWordsInString {
             .map { String($0.reversed()) }
             .joined(separator: " ")
     }
-
 }

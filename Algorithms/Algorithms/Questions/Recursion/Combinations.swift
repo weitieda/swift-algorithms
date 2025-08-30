@@ -8,7 +8,7 @@
 import Foundation
 
 /*
- 
+
  [a, b, c]
 
  ->
@@ -23,7 +23,7 @@ import Foundation
     [a, c],
     [a, b, c]
  ]
- 
+
  */
 
 ///
@@ -42,8 +42,7 @@ import Foundation
 /// solution([c])        -> [[], [c]]  // keep []; add [c]
 /// solution([])         -> [[]]
 ///
-final class Combinations {
-
+enum Combinations {
     /// t: O(2^n)  growing like Binary Tree
     /// s: O(n^2)  call stack x n, each call stack `let restLetters = Array(array[1...])`
     static func solution<T: Equatable>(array: [T]) -> [[T]] {
@@ -64,5 +63,4 @@ final class Combinations {
 
         return combsWithoutFirstLetter + combsWithFirst
     }
-
 }

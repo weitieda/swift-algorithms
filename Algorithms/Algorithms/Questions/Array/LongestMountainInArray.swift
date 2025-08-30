@@ -1,5 +1,5 @@
 //
-//  LongestMountain.swift
+//  LongestMountainInArray.swift
 //  Algorithms
 //
 //  Created by Tieda Wei on 2021-02-01.
@@ -29,28 +29,25 @@ import Foundation
  Input: arr = [2,2,2]
  Output: 0
  Explanation: There is no mountain.
- 
+
  */
 
-final class LongestMountainInArray {
-
+enum LongestMountainInArray {
     // t: O(n), s: O(1)
     static func solution(_ input: [Int]) -> Int {
         var count = 0
 
-        for i in 1..<input.count-1 {
-            
-            let isPeek = input[i-1] < input[i] && input[i+1] < input[i]
+        for i in 1 ..< input.count - 1 {
+            let isPeek = input[i - 1] < input[i] && input[i + 1] < input[i]
 
             if isPeek {
-
-                var leftIndex = i-1
-                while leftIndex >= 1, input[leftIndex-1] < input[leftIndex] {
+                var leftIndex = i - 1
+                while leftIndex >= 1, input[leftIndex - 1] < input[leftIndex] {
                     leftIndex -= 1
                 }
 
-                var rightIndex = i+1
-                while rightIndex <= input.count-2, input[rightIndex] > input[rightIndex+1] {
+                var rightIndex = i + 1
+                while rightIndex <= input.count - 2, input[rightIndex] > input[rightIndex + 1] {
                     rightIndex += 1
                 }
 
@@ -60,5 +57,4 @@ final class LongestMountainInArray {
         }
         return count
     }
-
 }

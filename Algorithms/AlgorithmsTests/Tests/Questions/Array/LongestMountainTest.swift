@@ -5,12 +5,9 @@
 //  Created by Tieda Wei on 2021-02-02.
 //
 
-import XCTest
 @testable import Algorithms
+import XCTest
 
 class LongestMountainTest: XCTestCase {
-
-    func test1() {
-
-    }
+    func test1() {}
 }

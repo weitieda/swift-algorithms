@@ -8,15 +8,14 @@
 import Foundation
 
 /*
- 
+
  Leetcode 332
- 
+
  https://leetcode.com/problems/reconstruct-itinerary/
- 
+
  */
 
-final class ReconstructItinerary {
-    
+enum ReconstructItinerary {
     typealias Departure = String
     typealias Destinations = [String]
     typealias Graph = [Departure: Destinations]
@@ -24,7 +23,7 @@ final class ReconstructItinerary {
     // t: O(), s: O() todo
     static func solutionDFS(_ tickets: [[String]]) -> [String] {
         var graph = sortDestination(buildGraph(tickets))
-        
+
         func dfs(_ departure: Departure) {
             if graph[departure] == nil { // key not in graph means reach end
                 path.append(departure)
@@ -36,19 +35,19 @@ final class ReconstructItinerary {
             }
             path.append(departure)
         }
-        
+
         var path = [String]()
         dfs("JFK")
         path.reverse() // Could imporve by using LinkedList to avoid reverse()
-        
+
         return path
     }
-    
+
     static func solutionIterative(_ tickets: [[String]]) -> [String] {
         var graph = sortDestination(buildGraph(tickets))
         var path = [String]()
         var stack = ["JFK"]
-        
+
         while !stack.isEmpty, let lastAirport = stack.last {
             // no ticket depture from `lastAirport` OR all tickets have been used
             if graph[lastAirport] == nil || graph[lastAirport]!.isEmpty {
@@ -59,11 +58,11 @@ final class ReconstructItinerary {
                 stack.append(first)
             }
         }
-        
+
         return path.reversed()
     }
 
-    static private func buildGraph(_ tickets: [[String]]) -> Graph {
+    private static func buildGraph(_ tickets: [[String]]) -> Graph {
         var graph = Graph()
         for t in tickets {
             let from = t[0], to = t[1]
@@ -71,8 +70,8 @@ final class ReconstructItinerary {
         }
         return graph
     }
-    
-    static private func sortDestination(_ graph: Graph) -> Graph {
+
+    private static func sortDestination(_ graph: Graph) -> Graph {
         var graph = graph
         for (k, v) in graph {
             graph[k] = v.sorted(by: <)

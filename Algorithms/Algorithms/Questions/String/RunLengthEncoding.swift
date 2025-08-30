@@ -8,7 +8,7 @@
 import Foundation
 
 /*
- 
+
  Write a function that takes in a non-empty string and returns its run-length encoding.
 
  From Wikipedia, "run-length encoding is a form of lossless data compression in which runs of data are stored as a single data value and count, rather than as the original run."
@@ -21,11 +21,10 @@ import Foundation
 
  = "AAAAAAAAAAAAABBCCCCDD"
  -> "9A4A2B4C2D"
- 
+
  */
 
-final class RunLengthEncoding {
-
+enum RunLengthEncoding {
     // t: O(n), s: O(n)
     static func solution(string: String) -> String {
         var result = ""
@@ -34,8 +33,8 @@ final class RunLengthEncoding {
 
         var count = 1
 
-        for i in 1..<charArray.count {
-            if charArray[i] == charArray[i-1] {
+        for i in 1 ..< charArray.count {
+            if charArray[i] == charArray[i - 1] {
                 if count == 9 {
                     result += "9\(charArray[i])"
                     count = 1
@@ -43,12 +42,11 @@ final class RunLengthEncoding {
                     count += 1
                 }
             } else {
-                result += "\(count)\(String(charArray[i-1]))"
+                result += "\(count)\(String(charArray[i - 1]))"
                 count = 1
             }
         }
         result += "\(count)\(String(charArray.last!))"
         return result
     }
-
 }

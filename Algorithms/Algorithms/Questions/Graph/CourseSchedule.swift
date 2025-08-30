@@ -8,27 +8,25 @@
 import Foundation
 
 /*
- 
+
  https://leetcode.com/problems/course-schedule-ii/
- 
+
  */
 
-final class CourseSchedule {
-    
+enum CourseSchedule {
     // t: O(), s: O()  todo
     static func solution(_ numCourses: Int, _ prerequisites: [[Int]]) -> [Int] {
-
         // index->course, value->prerequistesCount
         var graph = Array(repeating: 0, count: numCourses)
         for pre in prerequisites {
             graph[pre[0]] += 1
         }
-        
+
         var readyToTake = [Int]()
-        for i in 0..<numCourses where graph[i] == 0 {
+        for i in 0 ..< numCourses where graph[i] == 0 {
             readyToTake.append(i)
         }
-        
+
         var path = [Int]()
         while !readyToTake.isEmpty {
             let course = readyToTake.removeLast()
@@ -40,8 +38,7 @@ final class CourseSchedule {
                 }
             }
         }
-        
+
         return path.count == numCourses ? path : []
     }
-
 }

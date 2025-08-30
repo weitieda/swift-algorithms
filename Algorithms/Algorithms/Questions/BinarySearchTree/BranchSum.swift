@@ -8,7 +8,7 @@
 import Foundation
 
 /*
- 
+
  Give binary tree, return sum of each branch.
 
  e.g.
@@ -25,19 +25,17 @@ import Foundation
 
  */
 
-final class BranchSum {
-
+enum BranchSum {
     // t: O(n), s: O(n)
     static func solution(_ root: BST<Int>) -> [Int] {
-
         var result = [Int]()
 
         func dfs(_ root: BST<Int>?, _ runningSum: Int) {
-            guard let root = root else {return}
+            guard let root = root else { return }
 
             let newSum = runningSum + root.value
 
-            if root.left == nil && root.right == nil {
+            if root.left == nil, root.right == nil {
                 result.append(newSum)
             }
             dfs(root.left, newSum)
@@ -48,5 +46,4 @@ final class BranchSum {
 
         return result
     }
-
 }

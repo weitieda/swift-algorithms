@@ -5,11 +5,10 @@
 //  Created by Tieda Wei on 2021-03-07.
 //
 
-import XCTest
 @testable import Algorithms
+import XCTest
 
 class CombinationSumTest: XCTestCase {
-
     func test() {
         [
             (
@@ -20,7 +19,7 @@ class CombinationSumTest: XCTestCase {
             (
                 [2, 3], 7,
                 [
-                    [2, 3, 2]
+                    [2, 3, 2],
                 ]
             ),
 
@@ -28,7 +27,7 @@ class CombinationSumTest: XCTestCase {
                 [5, 3, 4, 7], 7,
                 [
                     [3, 4],
-                    [7]
+                    [7],
                 ]
             ),
 
@@ -39,10 +38,10 @@ class CombinationSumTest: XCTestCase {
                     [5, 2, 3],
                     [10],
                     [2, 2, 2, 2, 2],
-                    [2, 2, 3, 3]
+                    [2, 2, 3, 3],
                 ]
-            )
-        ].forEach { (input, target, result) in
+            ),
+        ].forEach { input, target, result in
             let isSameArray = isSame2DArray(result, CombinationSum.solution(input: input, target: target))
             expect(true, when: isSameArray)
         }

@@ -7,9 +7,8 @@
 
 import Foundation
 
-final class TwoSum {
+enum TwoSum {
     static func solution(input: [Int], target: Int) -> [Int] {
-
         var numberHasSeen = [Int: Int]()
 
         for index in input.indices {

@@ -5,19 +5,18 @@
 //  Created by Tieda Wei on 2021-02-17.
 //
 
-import XCTest
 @testable import Algorithms
+import XCTest
 
 class BinarySearchTreeTest: XCTestCase {
-
     let tree2314 = """
-                          ┌──4
-                        ┌──3
-                        │ └──nil
-                        2
-                        └──1
+      ┌──4
+    ┌──3
+    │ └──nil
+    2
+    └──1
 
-                        """
+    """
 
     func test_init() {
         let sut = BinarySearchTree<Int>()

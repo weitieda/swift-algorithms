@@ -8,20 +8,18 @@
 import Foundation
 
 /*
- 
+
  0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987...
 
  */
 
-final class NthFibonacci {
-
+enum NthFibonacci {
     // t: O(2^n), s: O(n)
     static func solution2toN(n: Int) -> Int {
         if n == 1 { return 0 }
         if n == 2 { return 1 }
         return solution2toN(n: n - 1) + solution2toN(n: n - 2)
     }
-
 
     // t: O(n), s: O(n)
     static func solutionMemoization(n: Int) -> Int {
@@ -30,11 +28,10 @@ final class NthFibonacci {
     }
 
     private static func memoizationFib(n: Int, memoization: inout [Int: Int]) -> Int {
-
         if let cachedValue = memoization[n] { return cachedValue }
 
-        let newValue = memoizationFib(n: n-1, memoization: &memoization) +
-                       memoizationFib(n: n-2, memoization: &memoization)
+        let newValue = memoizationFib(n: n - 1, memoization: &memoization) +
+            memoizationFib(n: n - 2, memoization: &memoization)
 
         memoization[n] = newValue
 
@@ -43,7 +40,7 @@ final class NthFibonacci {
 
     // t: O(n), s: O(1)
     static func solutionIteration(n: Int) -> Int {
-        var prevValues: (Int, Int) = (0, 1)
+        var prevValues = (0, 1)
 
         if n == 1 { return prevValues.0 }
         if n == 2 { return prevValues.1 }

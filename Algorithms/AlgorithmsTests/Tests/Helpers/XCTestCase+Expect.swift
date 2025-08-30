@@ -12,19 +12,19 @@ extension XCTestCase {
                               when expression: @escaping @autoclosure () -> T,
                               timeout: TimeInterval = 0.01,
                               file: StaticString = #filePath,
-                              line: UInt = #line) {
-        
+                              line: UInt = #line)
+    {
         let fileName = String(describing: type(of: self))
         let expectation = XCTestExpectation(description: "\(fileName) Expectation)")
-        
+
         var expressionResult: T?
         DispatchQueue(label: fileName).async {
             expressionResult = expression()
             expectation.fulfill()
         }
-        
+
         let result = XCTWaiter().wait(for: [expectation], timeout: timeout)
-        
+
         switch result {
         case .completed:
             XCTAssertEqual(try XCTUnwrap(expressionResult), expectedResult, file: file, line: line)

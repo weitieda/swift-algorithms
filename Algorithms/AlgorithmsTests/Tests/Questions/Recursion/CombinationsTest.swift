@@ -5,8 +5,8 @@
 //  Created by Tieda Wei on 2021-02-27.
 //
 
-import XCTest
 @testable import Algorithms
+import XCTest
 
 class CombinationsTest: XCTestCase {
     func test() {
@@ -26,8 +26,8 @@ class CombinationsTest: XCTestCase {
             (
                 [String](),
                 [[]]
-            )
-        ].forEach { (input, result) in
+            ),
+        ].forEach { input, result in
             expect(result, when: Combinations.solution(array: input))
         }
     }

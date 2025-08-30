@@ -5,11 +5,10 @@
 //  Created by Tieda Wei on 2021-02-15.
 //
 
-import XCTest
 @testable import Algorithms
+import XCTest
 
 class BinarySearchTest: XCTestCase {
-
     func test() {
         expect(nil, input: [], target: 1)
         expect(nil, input: [2], target: 1)

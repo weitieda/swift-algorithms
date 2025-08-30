@@ -12,7 +12,7 @@ import Foundation
  Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive.
 
  There is only one repeated number in nums, return this repeated number.
- 
+
  Example 1:
  Input: nums = [1,3,4,2,2]
  Output: 2
@@ -28,11 +28,10 @@ import Foundation
  Example 4:
  Input: nums = [1,1,2]
  Output: 1
- 
+
  */
 
-final class FindDuplicateNumber {
-
+enum FindDuplicateNumber {
     /*
 
      Solution 1:
@@ -52,13 +51,12 @@ final class FindDuplicateNumber {
 
     // t: O(nlog(n)), s: O(1)
     static func solution(array: [Int]) -> Int {
-
         // number range [1, n]
         var left = 1
         var right = array.count - 1
 
         while left < right {
-            let middle = (left + right)/2
+            let middle = (left + right) / 2
             let count = array.filter { $0 <= middle }.count
             if count <= middle {
                 left = middle + 1
@@ -92,7 +90,6 @@ final class FindDuplicateNumber {
 
      And let's trying to redraw this array into a simple flow. (I am not sure we can call it a state machine or not lol)
 
-
      +---+    +---+    +---+    +---+
      | 1 | -> | 3 | -> | 2 | -> | 4 |
      +---+    +---+    +---+    +---+
@@ -105,7 +102,6 @@ final class FindDuplicateNumber {
 
     // t: O(n), s: O(1)
     static func solution2(array: [Int]) -> Int {
-        
         var slow = array[0]
         var fast = array[0]
 
@@ -113,7 +109,6 @@ final class FindDuplicateNumber {
             slow = array[slow]
             fast = array[array[fast]]
         } while slow != fast
-
 
         slow = array[0]
 

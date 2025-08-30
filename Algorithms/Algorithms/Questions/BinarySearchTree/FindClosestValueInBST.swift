@@ -8,11 +8,11 @@
 import Foundation
 
 /*
- 
+
  Write a function that takes in a Binary Search Tree (BST)
  and a target integer value and returns the closest value
  to that target value contained in the BST.
- 
+
  You can assume that there will only be one closest value.
 
  Each BST node has an integer `value`, a `left` child node,
@@ -39,8 +39,7 @@ import Foundation
 
  */
 
-final class FindClosestValueInBST {
-
+enum FindClosestValueInBST {
     // t: O(n), s: O(depth)
     static func solution(_ tree: BST<Int>, target: Int) -> Int {
         var closest = Int.max
@@ -61,7 +60,7 @@ extension BST {
     }
 
     func inOrderTraverse(bst: BST<T>?, completion: (T) -> Void) {
-        guard let bst = bst else {return}
+        guard let bst = bst else { return }
         inOrderTraverse(bst: bst.left, completion: completion)
         completion(bst.value)
         inOrderTraverse(bst: bst.right, completion: completion)

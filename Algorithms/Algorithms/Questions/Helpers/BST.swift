@@ -17,7 +17,7 @@ final class BST<T: Comparable> {
     }
 
     convenience init?(array: [T]) {
-        guard !array.isEmpty else {return nil}
+        guard !array.isEmpty else { return nil }
         self.init(value: array[0])
         for v in array.dropFirst() {
             insert(v)
