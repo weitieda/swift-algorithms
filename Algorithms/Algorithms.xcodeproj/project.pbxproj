@@ -658,7 +658,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"${SRCROOT}\"\nswift run --package-path BuildTools swiftformat .\n";
+			shellScript = "swift run --package-path \"${SRCROOT}/Sources/BuildTools\" swiftformat \"${SRCROOT}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

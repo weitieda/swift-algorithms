@@ -10,5 +10,5 @@ let package = Package(
             from: "0.55.0"
         )
     ],
-    targets: [.target(name: "BuildTools", path: "")]
+    targets: []
 )
