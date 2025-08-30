@@ -17,11 +17,9 @@ func isSame2DArray<T: Comparable>(_ lhs: [[T]], _ rhs: [[T]]) -> Bool {
         r[i].sort()
     }
 
-    for i in lhs.indices {
-        if !r.contains(l[i]) {
-            return false
-        }
-    }
+	for i in lhs.indices where r.contains(l[i]) == false {
+		return false
+	}
 
     return true
 }
