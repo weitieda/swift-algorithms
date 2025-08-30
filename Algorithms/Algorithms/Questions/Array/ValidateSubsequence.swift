@@ -33,7 +33,7 @@ class ValidateSubsequence {
         var inputIndex = 0
         var seqIndex = 0
 
-        while inputIndex != input.count && seqIndex != sequence.count {
+        while inputIndex != input.count, seqIndex != sequence.count {
             if input[inputIndex] == sequence[seqIndex] {
                 seqIndex += 1
             }

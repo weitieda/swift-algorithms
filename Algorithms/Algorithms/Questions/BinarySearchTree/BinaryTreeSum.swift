@@ -16,11 +16,11 @@ import Foundation
 enum BinaryTreeSum {
     // t: O(n), s: O(n)
     static func solution(_ root: BST<Int>) -> Int {
-        return dfs(root)
+        dfs(root)
     }
 
     private static func dfs(_ root: BST<Int>?) -> Int {
-        guard let root = root else { return 0 }
+        guard let root else { return 0 }
         return dfs(root.left) + root.value + dfs(root.right)
     }
 }

@@ -35,7 +35,7 @@ import Foundation
 enum ProductSum {
     // t: O(n), s: O(depth)
     static func solution(_ array: [Any]) -> Int {
-        return productSum(array)
+        productSum(array)
     }
 
     private static func productSum(_ array: [Any], depth: Int = 1) -> Int {

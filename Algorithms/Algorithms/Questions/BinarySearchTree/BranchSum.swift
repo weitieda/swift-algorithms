@@ -31,7 +31,7 @@ enum BranchSum {
         var result = [Int]()
 
         func dfs(_ root: BST<Int>?, _ runningSum: Int) {
-            guard let root = root else { return }
+            guard let root else { return }
 
             let newSum = runningSum + root.value
 

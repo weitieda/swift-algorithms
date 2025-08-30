@@ -41,6 +41,6 @@ enum Subsets {
     }
 
     static func solutionRecursive(array: [Int]) -> [[Int]] {
-        return Combinations.solution(array: array)
+        Combinations.solution(array: array)
     }
 }

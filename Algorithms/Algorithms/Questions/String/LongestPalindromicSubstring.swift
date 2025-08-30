@@ -59,7 +59,7 @@ enum LongestPalindromicSubstring {
 
         let charArray = Array(input)
 
-        while leftIndex >= 0 && rightIndex < charArray.count {
+        while leftIndex >= 0, rightIndex < charArray.count {
             if charArray[leftIndex] == charArray[rightIndex] {
                 leftIndex -= 1
                 rightIndex += 1

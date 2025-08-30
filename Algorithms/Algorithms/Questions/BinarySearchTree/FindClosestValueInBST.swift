@@ -60,7 +60,7 @@ extension BST {
     }
 
     func inOrderTraverse(bst: BST<T>?, completion: (T) -> Void) {
-        guard let bst = bst else { return }
+        guard let bst else { return }
         inOrderTraverse(bst: bst.left, completion: completion)
         completion(bst.value)
         inOrderTraverse(bst: bst.right, completion: completion)

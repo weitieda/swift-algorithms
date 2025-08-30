@@ -65,7 +65,7 @@ enum MonotonicArray {
 
             let hasDecreased = !isMonotoneIncreasing
             let hasIncreased = !isMonotoneDecreasing
-            if hasDecreased && hasIncreased {
+            if hasDecreased, hasIncreased {
                 return false
             }
         }

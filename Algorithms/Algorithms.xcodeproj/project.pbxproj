@@ -643,6 +643,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		839445D22E63696D001C95F9 /* SwfitFormat */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
