@@ -78,6 +78,8 @@
 		83B2CB032622A2C900C28DE4 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B2CB022622A2C900C28DE4 /* QuickSort.swift */; };
 		83BB275325D612D40035A0EE /* RunLengthEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB275225D612D40035A0EE /* RunLengthEncoding.swift */; };
 		83BB275725D612E40035A0EE /* RunLengthEncodingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BB275625D612E40035A0EE /* RunLengthEncodingTest.swift */; };
+		83BDDC032E64AE99007E7E84 /* KMostFrequentString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BDDC022E64AE99007E7E84 /* KMostFrequentString.swift */; };
+		83BDDC062E64AF70007E7E84 /* KMostFrequentStringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BDDC052E64AF70007E7E84 /* KMostFrequentStringTest.swift */; };
 		83C279AF25C8DDBB00FF32A4 /* SpiralMatrixReversed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C279AE25C8DDBB00FF32A4 /* SpiralMatrixReversed.swift */; };
 		83C279B325C8DE4600FF32A4 /* SpiralMatrixReversedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C279B225C8DE4600FF32A4 /* SpiralMatrixReversedTest.swift */; };
 		83C279BD25C9136400FF32A4 /* LongestMountainInArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C279BC25C9136400FF32A4 /* LongestMountainInArray.swift */; };
@@ -185,6 +187,8 @@
 		83B2CB022622A2C900C28DE4 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		83BB275225D612D40035A0EE /* RunLengthEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLengthEncoding.swift; sourceTree = "<group>"; };
 		83BB275625D612E40035A0EE /* RunLengthEncodingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLengthEncodingTest.swift; sourceTree = "<group>"; };
+		83BDDC022E64AE99007E7E84 /* KMostFrequentString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMostFrequentString.swift; sourceTree = "<group>"; };
+		83BDDC052E64AF70007E7E84 /* KMostFrequentStringTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMostFrequentStringTest.swift; sourceTree = "<group>"; };
 		83C279AE25C8DDBB00FF32A4 /* SpiralMatrixReversed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralMatrixReversed.swift; sourceTree = "<group>"; };
 		83C279B225C8DE4600FF32A4 /* SpiralMatrixReversedTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralMatrixReversedTest.swift; sourceTree = "<group>"; };
 		83C279BC25C9136400FF32A4 /* LongestMountainInArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestMountainInArray.swift; sourceTree = "<group>"; };
@@ -231,6 +235,7 @@
 		832E3E7225DDF96100A3D661 /* Questions */ = {
 			isa = PBXGroup;
 			children = (
+				83BDDC042E64AF62007E7E84 /* Heap */,
 				83E8864C2607C1D100DD995E /* Graph */,
 				83644E0A25E6B4240035531A /* Sorting */,
 				83B28E3B25E60B540035D470 /* BinarySearchTree */,
@@ -394,6 +399,7 @@
 		838087BE25C2164600D5635C /* Questions */ = {
 			isa = PBXGroup;
 			children = (
+				83BDDC012E64AE75007E7E84 /* Heap */,
 				83E886472607C15B00DD995E /* Graph */,
 				83644E0525E6B3590035531A /* Sorting */,
 				8339979725DB78DF0053C700 /* BinarySearchTree */,
@@ -444,6 +450,22 @@
 				83B28E4325E60E440035D470 /* BST.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		83BDDC012E64AE75007E7E84 /* Heap */ = {
+			isa = PBXGroup;
+			children = (
+				83BDDC022E64AE99007E7E84 /* KMostFrequentString.swift */,
+			);
+			path = Heap;
+			sourceTree = "<group>";
+		};
+		83BDDC042E64AF62007E7E84 /* Heap */ = {
+			isa = PBXGroup;
+			children = (
+				83BDDC052E64AF70007E7E84 /* KMostFrequentStringTest.swift */,
+			);
+			path = Heap;
 			sourceTree = "<group>";
 		};
 		83C279B625C8F4C400FF32A4 /* Array */ = {
@@ -700,6 +722,7 @@
 				83C308A625CE5BAD0046D54B /* FirstDuplicateValue.swift in Sources */,
 				8362C11725CF1C71007A79AD /* RemoveDuplicatesFromSortedOrderLinkedList.swift in Sources */,
 				8316519026098CA70030EAA4 /* ReconstructItinerary.swift in Sources */,
+				83BDDC032E64AE99007E7E84 /* KMostFrequentString.swift in Sources */,
 				83C279AF25C8DDBB00FF32A4 /* SpiralMatrixReversed.swift in Sources */,
 				8380FD0025E9EB7200DEE7E5 /* RecursiveSum.swift in Sources */,
 				8364163525C5F48C009FCBE7 /* MonotonicArray.swift in Sources */,
@@ -723,6 +746,7 @@
 				8380FD4125EB1A6000DEE7E5 /* BreadthFirstTraversalTest.swift in Sources */,
 				8337896825D7876000526DF0 /* GroupAnagramsTest.swift in Sources */,
 				8380FD0425E9EEE700DEE7E5 /* RecursiveSumTest.swift in Sources */,
+				83BDDC062E64AF70007E7E84 /* KMostFrequentStringTest.swift in Sources */,
 				837CE18625D8F81F00857363 /* ReverseWordsInStringTest.swift in Sources */,
 				8380FD5525EB432B00DEE7E5 /* BinaryTreeSumTest.swift in Sources */,
 				8380FD5D25EB5F4900DEE7E5 /* BranchSumTest.swift in Sources */,
