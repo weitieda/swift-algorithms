@@ -30,6 +30,7 @@ public class QueueUsingStack {
 
     // adds x to the end of the queue.
     public func enqueue(_ element: Int) {
+        transformToEnqueueStack()
         enqueueStack.push(element)
     }
 
@@ -41,12 +42,19 @@ public class QueueUsingStack {
 
     // returns the front element of the queue
     public func peek() -> Int? {
-        nil
+        transformToDequeueStack()
+        return dequeueStack.peek()
     }
 
     private func transformToDequeueStack() {
         while let element = enqueueStack.pop() {
             dequeueStack.push(element)
+        }
+    }
+
+    private func transformToEnqueueStack() {
+        while let element = dequeueStack.pop() {
+            enqueueStack.push(element)
         }
     }
 }

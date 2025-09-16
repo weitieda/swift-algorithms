@@ -16,13 +16,46 @@ class QueueUsingStackTest: XCTestCase {
         XCTAssertEqual(sut.dequeue(), 1)
     }
 
-    func test_peek() {
-//        let sut = QueueUsingStack()
-//        sut.enqueue(1)
-//        sut.enqueue(2)
-//
-//        XCTAssertEqual(sut.peek(), 1)
+    func test_longEnqueueThenDequeue() {
+        let sut = QueueUsingStack()
+        sut.enqueue(1)
+        sut.enqueue(2)
+        sut.enqueue(3)
+        sut.enqueue(4)
+        sut.enqueue(5)
+        sut.enqueue(6)
+
+        XCTAssertEqual(sut.dequeue(), 1)
+        XCTAssertEqual(sut.dequeue(), 2)
+        XCTAssertEqual(sut.dequeue(), 3)
+        XCTAssertEqual(sut.dequeue(), 4)
+        XCTAssertEqual(sut.dequeue(), 5)
+        XCTAssertEqual(sut.dequeue(), 6)
     }
 
-    func test_peek_remainSize() {}
+    func test_peek() {
+        let sut = QueueUsingStack()
+        sut.enqueue(1)
+        sut.enqueue(2)
+
+        XCTAssertEqual(sut.peek(), 1)
+        XCTAssertEqual(sut.peek(), 1)
+    }
+
+    func test_dequeueThenEnqueue() {
+        let sut = QueueUsingStack()
+        sut.enqueue(1)
+        sut.enqueue(2)
+        sut.enqueue(3)
+        sut.enqueue(4)
+
+        XCTAssertEqual(sut.dequeue(), 1)
+
+        sut.enqueue(5)
+
+        XCTAssertEqual(sut.dequeue(), 2)
+        XCTAssertEqual(sut.dequeue(), 3)
+        XCTAssertEqual(sut.dequeue(), 4)
+        XCTAssertEqual(sut.dequeue(), 5)
+    }
 }
