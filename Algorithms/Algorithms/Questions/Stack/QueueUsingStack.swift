@@ -21,10 +21,18 @@ public class QueueUsingStack {
         func peek() -> T? {
             elements.last
         }
+
+        var isEmpty: Bool {
+            elements.isEmpty
+        }
     }
 
     private var enqueueStack = Stack<Int>()
     private var dequeueStack = Stack<Int>()
+
+    public var isEmpty: Bool {
+        enqueueStack.isEmpty && dequeueStack.isEmpty
+    }
 
     public init() {}
 

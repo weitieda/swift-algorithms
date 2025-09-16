@@ -87,4 +87,29 @@ class QueueUsingStackTest: XCTestCase {
 
         XCTAssertEqual(sut.dequeue(), 6)
     }
+
+    func test_isEmptyUponInit() {
+        let sut = QueueUsingStack()
+        XCTAssertEqual(sut.isEmpty, true)
+    }
+
+    func test_enqueueItem_notEmpty() {
+        let sut = QueueUsingStack()
+        sut.enqueue(1)
+        XCTAssertEqual(sut.isEmpty, false)
+    }
+
+    func test_enqueueItemThenDequeue() {
+        let sut = QueueUsingStack()
+        sut.enqueue(1)
+        sut.enqueue(2)
+
+        XCTAssertEqual(sut.isEmpty, false)
+
+        _ = sut.dequeue()
+        XCTAssertEqual(sut.isEmpty, false)
+
+        _ = sut.dequeue()
+        XCTAssertEqual(sut.isEmpty, true)
+    }
 }
