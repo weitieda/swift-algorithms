@@ -100,6 +100,8 @@
 		83E96F7C25C2632D001E35DC /* ValidateSubsequenceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E96F7B25C2632D001E35DC /* ValidateSubsequenceTest.swift */; };
 		83F9429925C4C32A000CCB17 /* MoveElementToEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F9429825C4C32A000CCB17 /* MoveElementToEnd.swift */; };
 		83F9429D25C4C394000CCB17 /* MoveElementToEndTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F9429C25C4C394000CCB17 /* MoveElementToEndTest.swift */; };
+		83FE2C832E78EFA5000BC788 /* QueueUsingStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE2C822E78EF99000BC788 /* QueueUsingStack.swift */; };
+		83FE2C862E78F70F000BC788 /* QueueUsingStackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE2C852E78F70A000BC788 /* QueueUsingStackTest.swift */; };
 		83FEACB925F49F3D001C6C53 /* CombinationSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FEACB825F49F3D001C6C53 /* CombinationSumTest.swift */; };
 /* End PBXBuildFile section */
 
@@ -208,6 +210,8 @@
 		83E96F7B25C2632D001E35DC /* ValidateSubsequenceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateSubsequenceTest.swift; sourceTree = "<group>"; };
 		83F9429825C4C32A000CCB17 /* MoveElementToEnd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveElementToEnd.swift; sourceTree = "<group>"; };
 		83F9429C25C4C394000CCB17 /* MoveElementToEndTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveElementToEndTest.swift; sourceTree = "<group>"; };
+		83FE2C822E78EF99000BC788 /* QueueUsingStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueUsingStack.swift; sourceTree = "<group>"; };
+		83FE2C852E78F70A000BC788 /* QueueUsingStackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueUsingStackTest.swift; sourceTree = "<group>"; };
 		83FEACB825F49F3D001C6C53 /* CombinationSumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationSumTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -235,6 +239,7 @@
 		832E3E7225DDF96100A3D661 /* Questions */ = {
 			isa = PBXGroup;
 			children = (
+				83FE2C842E78EFDA000BC788 /* Stack */,
 				83BDDC042E64AF62007E7E84 /* Heap */,
 				83E8864C2607C1D100DD995E /* Graph */,
 				83644E0A25E6B4240035531A /* Sorting */,
@@ -399,6 +404,7 @@
 		838087BE25C2164600D5635C /* Questions */ = {
 			isa = PBXGroup;
 			children = (
+				83FE2C812E78EF84000BC788 /* Stack */,
 				83BDDC012E64AE75007E7E84 /* Heap */,
 				83E886472607C15B00DD995E /* Graph */,
 				83644E0525E6B3590035531A /* Sorting */,
@@ -547,6 +553,22 @@
 				8316519326098CEF0030EAA4 /* ReconstructItineraryTest.swift */,
 			);
 			path = Graph;
+			sourceTree = "<group>";
+		};
+		83FE2C812E78EF84000BC788 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				83FE2C822E78EF99000BC788 /* QueueUsingStack.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		83FE2C842E78EFDA000BC788 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				83FE2C852E78F70A000BC788 /* QueueUsingStackTest.swift */,
+			);
+			path = Stack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -705,6 +727,7 @@
 				8380FD4F25EB426C00DEE7E5 /* BinaryTreeSum.swift in Sources */,
 				8362C13225D0E27C007A79AD /* ValidPalindrome.swift in Sources */,
 				83C3B87425DB2CCE00CBECDB /* BinarySearch.swift in Sources */,
+				83FE2C832E78EFA5000BC788 /* QueueUsingStack.swift in Sources */,
 				8380FD5925EB5F3200DEE7E5 /* BranchSum.swift in Sources */,
 				83318B5125C3977A00EE4612 /* ThreeSum.swift in Sources */,
 				83AD336F25CCF906002C9C35 /* ProductOfArrayExceptSelf.swift in Sources */,
@@ -776,6 +799,7 @@
 				838087E725C22D0400D5635C /* TwoSumTest.swift in Sources */,
 				8380FD4B25EB33D700DEE7E5 /* DepthFirstTraversalTest.swift in Sources */,
 				83C3B87925DB2D9000CBECDB /* BinarySearchTest.swift in Sources */,
+				83FE2C862E78F70F000BC788 /* QueueUsingStackTest.swift in Sources */,
 				8316519426098CEF0030EAA4 /* ReconstructItineraryTest.swift in Sources */,
 				83318B4125C375C400EE4612 /* ThreeSumTest.swift in Sources */,
 				833997AB25DB91920053C700 /* ProductSumTest.swift in Sources */,

@@ -10,7 +10,7 @@ import XCTest
 
 class KMostFrequentStringTest: XCTestCase {
     private let k = 2
-	
+
     func test_fullExample() {
         let input = ["go", "coding", "byte", "byte", "go", "interview", "go"]
         let expected = ["go", "byte"]
