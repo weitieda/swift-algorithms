@@ -11,6 +11,7 @@
 		83081EC225CE49F50085333C /* FindDuplicateNumberTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83081EC125CE49F50085333C /* FindDuplicateNumberTest.swift */; };
 		8316519026098CA70030EAA4 /* ReconstructItinerary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8316518F26098CA70030EAA4 /* ReconstructItinerary.swift */; };
 		8316519426098CEF0030EAA4 /* ReconstructItineraryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8316519326098CEF0030EAA4 /* ReconstructItineraryTest.swift */; };
+		831847A62E79DB4100C95FAB /* RedoUndoManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831847A52E79DB4100C95FAB /* RedoUndoManagerTests.swift */; };
 		83318B4125C375C400EE4612 /* ThreeSumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83318B4025C375C400EE4612 /* ThreeSumTest.swift */; };
 		83318B4725C3971100EE4612 /* ThreeSumDistinct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83318B4625C3971100EE4612 /* ThreeSumDistinct.swift */; };
 		83318B4D25C3973600EE4612 /* ThreeSumDistinctTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83318B4C25C3973600EE4612 /* ThreeSumDistinctTest.swift */; };
@@ -120,6 +121,7 @@
 		83081EC125CE49F50085333C /* FindDuplicateNumberTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDuplicateNumberTest.swift; sourceTree = "<group>"; };
 		8316518F26098CA70030EAA4 /* ReconstructItinerary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconstructItinerary.swift; sourceTree = "<group>"; };
 		8316519326098CEF0030EAA4 /* ReconstructItineraryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconstructItineraryTest.swift; sourceTree = "<group>"; };
+		831847A52E79DB4100C95FAB /* RedoUndoManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedoUndoManagerTests.swift; sourceTree = "<group>"; };
 		83318B4025C375C400EE4612 /* ThreeSumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSumTest.swift; sourceTree = "<group>"; };
 		83318B4625C3971100EE4612 /* ThreeSumDistinct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSumDistinct.swift; sourceTree = "<group>"; };
 		83318B4C25C3973600EE4612 /* ThreeSumDistinctTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSumDistinctTest.swift; sourceTree = "<group>"; };
@@ -567,6 +569,7 @@
 			isa = PBXGroup;
 			children = (
 				83FE2C852E78F70A000BC788 /* QueueUsingStackTest.swift */,
+				831847A52E79DB4100C95FAB /* RedoUndoManagerTests.swift */,
 			);
 			path = Stack;
 			sourceTree = "<group>";
@@ -767,6 +770,7 @@
 				8364163925C5F540009FCBE7 /* MonotonicArrayTest.swift in Sources */,
 				8380FD2025EAB01900DEE7E5 /* ReverseStringRecursivelyTest.swift in Sources */,
 				8380FD4125EB1A6000DEE7E5 /* BreadthFirstTraversalTest.swift in Sources */,
+				831847A62E79DB4100C95FAB /* RedoUndoManagerTests.swift in Sources */,
 				8337896825D7876000526DF0 /* GroupAnagramsTest.swift in Sources */,
 				8380FD0425E9EEE700DEE7E5 /* RecursiveSumTest.swift in Sources */,
 				83BDDC062E64AF70007E7E84 /* KMostFrequentStringTest.swift in Sources */,
